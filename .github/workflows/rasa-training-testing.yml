@@ -12,11 +12,15 @@ on:
   workflow_dispatch:
 
 jobs:
-  training-testing:
+  training-testing:  
     name: Training and Testing
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+      
+      - name: Install Required Modules
+        run: pip install -r requirements.txt
+        
       - name: Rasa Train and Test GitHub Action
         uses: RasaHQ/rasa-train-test-gha@main
         with:
@@ -28,10 +32,7 @@ jobs:
           test_type: all
           publish_summary: true
           github_token: ${{ secrets.TOKEN }}
-          
-      - name: Install Required Modules
-        run: pip install -r requirements.txt
-        
+            
       - name: Upload model
         if: github.ref == 'refs/heads/main'
         uses: actions/upload-artifact@master
