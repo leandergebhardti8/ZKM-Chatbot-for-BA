@@ -1,0 +1,186 @@
+version: "2.0"
+rules:
+- rule: Rule to map `datum_ausstellung` intent to `utter_auswahl_kategorie` (automatic conversion)
+  steps:
+  - intent: datum_ausstellung
+  - action: utter_auswahl_kategorie
+- rule: Rule to map `go_back` intent to `action_back` (automatic conversion)
+  steps:
+  - intent: go_back
+  - action: action_back
+- rule: Rule to map `kategorie_ausstellung` intent to `action_category_exibition` (automatic conversion)
+  steps:
+  - intent: kategorie_ausstellung
+  - action: action_category_exibition
+- rule: Rule to map `kategorie_vortrag` intent to `action_category_lecture` (automatic conversion)
+  steps:
+  - intent: kategorie_vortrag
+  - action: action_category_lecture
+- rule: Rule to map `kategorie_konzert` intent to `action_category_concert` (automatic conversion)
+  steps:
+  - intent: kategorie_konzert
+  - action: action_category_concert
+- rule: Rule to map `restart` intent to `action_restart` (automatic conversion)
+  steps:
+  - intent: restart
+  - action: action_restart
+  
+- rule: Rule to handle messages with low NLU confidence (automated conversion from 'FallbackPolicy')
+  steps:
+  - intent: nlu_fallback
+  - action: utter_default
+
+- rule: Ask Name
+  steps:
+  - intent: start
+  - action: utter_anfang
+  - action: valid_name_form
+  - slot_was_set:
+    - name: valid_name_form
+  - active_loop: valid_name_form
+  - active_loop: null
+  - action: utter_wie_kann_ich_helfen
+
+# Guide Rules
+- rule: arche guide start
+  steps:
+  - intent: werk_arche
+  - action: utter_arche_001
+  - action: utter_arche_002
+
+- rule: sony guide start
+  steps:
+  - intent: werk_sony
+  - action: utter_sony_001
+  - action: utter_sony_002
+
+- rule: wipe guide start
+  steps:
+  - intent: werk_wipe
+  - action: utter_wipe_001
+  - action: utter_wipe_002
+  - action: utter_wipe_003
+
+- rule: who guide start
+  steps:
+  - intent: werk_who
+  - action: utter_who_001
+  - action: utter_who_002
+
+- rule: tisch guide start
+  steps:
+  - intent: werk_tisch
+  - action: utter_tisch_001
+  - action: utter_tisch_002
+
+- rule:  electric labyrinth guide start
+  steps:
+  - intent: werk_labyrinth
+  - action: utter_labyrinth_001
+  - action: utter_labyrinth_002
+
+- rule: legible city guide start
+  steps:
+  - intent: werk_city
+  - action: utter_city_001
+  - action: utter_city_002
+  - action: utter_city_003
+
+- rule: Sotachstische Texte guide start
+  steps:
+  - intent: werk_texte
+  - action: utter_texte_001
+
+- rule: 1960.1 guide start
+  steps:
+  - intent: werk_19601
+  - action: utter_19601_001
+  - action: utter_19601_002
+  - action: utter_19601_003
+
+- rule: Slave Labour guide start
+  steps:
+  - intent: werk_labour
+  - action: utter_labour_001
+  - action: utter_labour_002
+
+- rule: Alle Macht den Amateuren guide start
+  steps:
+  - intent: werk_amateure
+  - action: utter_amateure_intro
+  - action: utter_amateure_modal
+
+- rule: breakthrough guide start
+  steps:
+  - intent: werk_breakthrough
+  - action: utter_breakthrough_intro
+  - action: utter_breakthrough_modal
+
+- rule: Frage stellen
+  steps:
+  - intent: frage_stellen
+  - action: utter_frage_stellen
+
+- rule: Workshop sprache
+  steps:
+  - intent: workshop_sprache
+  - action: utter_workshop_sprache
+
+- rule: Programm - Wochenende
+  steps:
+  - intent: programm_wochenende
+  - action: action_query_programm_wochenende
+
+- rule: Programm - Tagesspezifisch
+  steps:
+  - intent: programm_tagesspezifisch
+  - action: action_query_programm_tagesspezifisch
+
+- rule: Programm - Beliebt bei Kindern
+  steps:
+  - intent: beliebt_bei_kindern
+  - action: action_beliebt_bei_kindern
+
+- rule: Führung buchen
+  steps:
+  - intent: fuehrung_buchen
+  - action: utter_fuehrung_buchen
+
+- rule: Ausstellung - Regeln Fotos
+  steps:
+  - intent: ausstellungen_regeln_fotografieren
+  - action: utter_ausstellungen_regeln_fotografieren
+
+- rule: Werke - Allgemein
+  steps:
+  - intent: werke_allgemein
+  - action: action_werke_allgemein
+
+- rule: Ausstellung katalog
+  steps:
+  - intent: ausstellung_katalog
+  - slot_was_set:
+    - event: event
+  - action: action_ausstellung_katalog
+
+# - rule: SendMail
+#   steps:
+#   - intent: email_senden
+#   - action: action_send_mail
+
+# - rule: Send DirektKontakt
+#   steps:
+#   - intent: email_direkt_senden
+#   - action: action_send_mail
+#   - action: utter_wie_kann_ich_helfen
+  # - action: utter_antwort_hilfreich_frage
+
+- rule: cancel DirektKontakt
+  steps:
+  - intent: email_direkt_cancel
+  - action: utter_wie_kann_ich_helfen
+
+# - rule: send_email_guide
+#   steps:
+#   - intent: email_senden_guide
+#   - action: action_send_mail

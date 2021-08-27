@@ -1,0 +1,1512 @@
+version: "2.0"
+nlu:
+- intent: datum_eingabe
+  examples: |
+    - [03.01.2020](date)
+    - [25.02.2020](date)
+    - [18.05.2020](date)
+    - [27.03.2020](date)
+    - [18.09.2021](date)
+    - [17.09.2020](date)
+    - [08.01.2020](date)
+    - [16.02.2020](date)
+    - [09.05.2020](date)
+    - [18.10.2021](date)
+    - [17.11.2020](date)
+- intent: datum_ausstellung
+  examples: |
+    - [03.07.2020](date)
+    - [25.08.2020](date)
+    - [18.10.2020](date)
+- intent: tageszeit_eingabe
+  examples: |
+    - [Vormittags](visit_time)
+    - [Nachmittags](visit_time)
+    - [Mittags](visit_time)
+- intent: jahreskarte
+  examples: |
+    - Jahreskarte
+    - jahreskarte
+    - gibts bei euch auch jahreskarten?
+- intent: start_tour
+  examples: |
+    - Starte Tour
+    - Starte tour
+- intent: get_guide_info
+  examples: |
+    - In Guide
+    - Guide Info
+- intent: query_attribute
+  examples: |
+    - Erzahlen Sie mir die [Biography](attribute) von [Holger Deuter](PER)
+    - Erzahlen Sie mir die [Biography](attribute) von [Robert Darroll](PER)
+    - Erzahlen Sie mir die [Biography](attribute) von der [erste](mention)
+    - Erzahlen Sie mir die [Biography](attribute) von der [zweite](mention)
+- intent: query_event_date
+  examples: |
+    - Wann wird Ausstellung [Tag der offenen Tür 2014](event) eröffnet?
+    - Wann wird die Ausstellung [Critical Zones](event) eröffnet?
+    - Ab wann läuft die Ausstellung [ausstellungen](event) ?
+    - Wie lange läuft die Ausstellung [Wittgenstein in Coen Country](event) ?
+    - Wird die Ausstellung [Visual Arts Festival Damascus @ ZKM](event) verlängert?
+    - Ist die Ausstellung [Ausstellung](event) noch zu sehen?
+    - Eröffnung Ausstellung [Critical Zones](event)
+    - [Critical Zones](event) Ausstellung Eröffnung
+    - Wann wird die Ausstellung [für Lehrkräfte – Die Kunst der neuen Medien](event) eröffnet?
+    - Eröffnung Ausstellung [für Lehrkräfte – Die Kunst der neuen Medien](event)
+    - [für Lehrkräfte – Die Kunst der neuen Medien](event) Ausstellung Eröffnung
+    - Wann wird die Ausstellung [für Lehrkräfte - Robotik trifft Kunst](event) eröffnet?
+    - Eröffnung Ausstellung [für Lehrkräfte - Robotik trifft Kunst](event)
+    - [für Lehrkräfte - Robotik trifft Kunst](event) Ausstellung Eröffnung
+    - Wann wird die Ausstellung [für Lehrkräfte - Interaktives Etwas mit dem Touch Board](event) eröffnet?
+    - Eröffnung Ausstellung [für Lehrkräfte - Interaktives Etwas mit dem Touch Board](event)
+    - [für Lehrkräfte - Interaktives Etwas mit dem Touch Board](event) Ausstellung Eröffnung
+    - Wann wird die Ausstellung [für Lehrkräfte - Kurzfilm](event) eröffnet?
+    - Wann wird die Ausstellung [Das Jahr 2050 – Hilfe! Wir retten Karlsruhe](event) eröffnet?
+    - Eröffnung Ausstellung [Das Jahr 2050 – Hilfe! Wir retten Karlsruhe](event)
+    - [Das Jahr 2050 – Hilfe! Wir retten Karlsruhe](event) Ausstellung Eröffnung
+    - Wann wird die Ausstellung [Upcycling Bags](event) eröffnet?
+    - Eröffnung Ausstellung [Upcycling Bags](event)
+    - [Upcycling Bags](event) Ausstellung Eröffnung
+    - Wann wird die Ausstellung [Klangmontage @ZKM](event) eröffnet?
+    - Eröffnung Ausstellung [Kunst am Freitag](event)
+    - [Kunst am Freitag](event) Ausstellung Eröffnung
+    - Wann wird die Ausstellung [BÄMlab](event) eröffnet?
+    - Eröffnung Ausstellung [BÄMlab](event)
+    - [BÄMlab](event) Ausstellung Eröffnung
+- intent: kontakt
+  examples: |
+    - Kontakt
+    - kontakt
+    - Direktkontakt
+    - Kontaktaufnehmen
+- intent: go_back
+  examples: |
+    - zurück
+    - go back
+- intent: frage_stellen
+  examples: |
+    - frage stellen
+    - Frage stellen
+    - Ich habe eine Frage
+    - ich hab eine frage
+    - fragen stellen
+    - Wo kann ich eine frage stellen
+    - Kann ich dich was fragen?
+    - Ich will eine Frage stellen
+    - Kann ich eine Frage stellen
+    - ich will eine frage stellen
+- intent: restart
+  examples: |
+    - restart
+    - Restart
+    - Neustart
+    - neustarten
+- intent: tour_fortsetzen
+  examples: |
+    - Fortfahren
+    - fortfahren
+- intent: affirm
+  examples: |
+    - ja
+    - Ja
+    - genau
+    - hört sich gut an
+    - richtig
+- intent: anfahrt_auto
+  examples: |
+    - Auto
+    - Mit dem Auto
+    - Anfahrt mit dem Auto
+    - auto
+    - wie ist die anfahrt mit dem auto
+    - wie kann ich mit dem auto anreisen
+    - anreise auto
+- intent: anfahrt_bahn
+  examples: |
+    - Bahn
+    - Öffentliche
+    - Öffentliche verkehrsmittel
+    - Anfahrt öffentliche
+    - anfahrt mit der bahn
+    - anfahrt mit öffentlichen verkehrsmitteln
+    - anfahrt mit bahn
+    - anfahrt mit bus
+    - anfahrt mit zug
+- intent: workshops_allgemein
+  examples: |
+    - informationen zu [Workshops](entity_type)
+    - [Workshops](entity_type)
+    - Welche [Workshop](entity_type)s bieten sie an?
+    - Wie genau sehen die Inhalte des [Workshops](entity_type) aus?
+    - Welche [Workshop](entity_type)s gibt es am ZKM?
+- intent: ankunft_vor_workshop
+  examples: |
+    - Wann muss ich vor einen [Workshop](entity_type) da sein?
+    - Wieviel früher muss ich vor einem [Workshop](entity_type) anwesend sein?
+    - ankunft vor [Workshop](entity_type)
+    - beginn vor [Workshop](entity_type)
+    - wie lange vor einem [Workshop](entity_type) muss man da sein
+    - wie lange vor [Workshop](entity_type) kommen
+    - Wann muss ich für einen [Workshop](entity_type) da sein?
+- intent: ausstellungen_am_montag
+  examples: |
+    - Ist die Ausstellung Open Codes am Montag offen?
+    - open codes am montag
+    - montags geöffnet
+    - montags offen
+    - ausstellungen am montag
+    - seid ihr am montag geöffnet
+    - ausstellungen montag
+    - öffnungszeiten montag
+- intent: anfahrt
+  examples: |
+    - Wie lange dauert es zu Fuß vom Hauptbahnhof zum ZKM zu laufen?
+    - Wie komme ich vom Hauptbahnhof ins ZKM?
+    - Welche Bahn fährt zum ZKM?
+    - Anfahrt
+    - Anfahrt info
+    - Wie kommt man zu euch
+    - Wie kommt man zum ZKM
+    - Anfahrt zum ZKM
+    - Hauptbahnhof ZKM
+    - Anfahrt ZKM
+    - anfahrt
+    - wo ist das zkm?
+    - wo finde ich das zkm?
+- intent: abfahrt
+  examples: |
+    - Ist der Weg vom ZKM in die Stadt weit?
+    - Wissen Sie den Fahrplan der Straßenbahn und wie schnell kommen wir zur Innenstadt?
+    - Wie komme ich zum Bahnhof?
+    - Wie komme ich in die Innenstadt?
+    - zkm zum hauptbahnhof
+    - zkm zum bhf
+    - abfahrt
+- intent: beliebt_bei_kindern
+  examples: |
+    - Was kann man hier mit Kindern anschauen?
+    - Was ist geeignet für Kinder?
+    - Gibt es auch etwas für Kinder?
+    - Gibt es im ZKM auch etwas für Kinder?
+    - Was ist beliebt bei Kindern?
+    - Was kannst Du uns für unser Kind empfehlen?
+    - Ist das auch was für Kinder?
+    - Welche Ausstellungen kannst Du mir für Kinder im Alter von xy empfehlen?
+    - ausstellungen für kinder
+    - veranstaltungen für kinder
+    - kinder events
+    - empfehlungen kinder
+- intent: bezahlung_workshop
+  examples: |
+    - Wie bezahle ich einen [Workshop](entity_type)?
+    - Kostet der [Workshop](entity_type) Geld?
+    - Was kostet ein [Workshop](entity_type)?
+    - kosten [Workshop](entity_type)
+    - preise [Workshop](entity_type)
+    - bezahlung [Workshop](entity_type)
+- intent: deny
+  examples: |
+    - Nein
+    - nein
+    - niemals
+    - ich denke nicht
+    - das mag ich nicht
+    - auf keinen Fall
+    - nicht wirklich
+    - Abbrechen
+- intent: hilfe
+  examples: |
+    - Hilfe
+    - FAQ
+    - Ich brauche Hilfe
+    - hilfe
+    - helfen
+    - ich brauch mal hilfe
+- intent: eintrittspreise
+  examples: |
+    - Ist die Ausstellung [Ausstellung](event) kostenlos?
+    - Wieviel kostet der Eintritt für die Ausstellung [Visual Arts Festival Damascus @ ZKM](event) ?
+    - Wieviel kostet der Eintritt für die Ausstellung [Sasha Waltz. Ein Portrait](event)?
+    - Wieviel kostet der Eintritt für die Ausstellung [Das ZKM auf der UNPAINTED − Media Art Fair](event) ?
+    - Kostet die Ausstellung [Ausstellung](event) Eintritt? Wenn ja, wieviel?
+    - Welche Eintrittspreise haben wir (Erwachsene, Kinder, Gruppen)?
+    - Wieviel kosten die Tickets? Gibt es Ermäßigung für Studenten etc.?
+    - wieviel kostet ein ticket ?
+    - ticketpreise
+    - Ist die Ausstellung [Critical Zones](event) kostenlos?
+    - Wieviel kostet der Eintritt für die Ausstellung [Critical Zones](event)?
+    - Ist die Ausstellung [für Lehrkräfte – Die Kunst der neuen Medien](event) kostenlos?
+    - Wieviel kostet der Eintritt für die Ausstellung [für Lehrkräfte – Die Kunst der neuen Medien](event)?
+    - Wieviel kostet der Eintritt für die Ausstellung [Besinnungen](event)?
+    - Ist die Ausstellung [ZKM Maker Days Evolution @BÄM](event) kostenlos?
+    - Wieviel kostet der Eintritt für die Ausstellung [ZKM Maker Days Evolution @BÄM](event)?
+    - Ist die Ausstellung [BÄM my Theremin – »Synthesizer« selbst bauen!](event) kostenlos?
+    - Wieviel kostet der Eintritt für die Ausstellung [BÄM my Theremin – »Synthesizer« selbst bauen!](event)?
+    - Ist die Ausstellung [Ein_Blick](event) kostenlos?
+    - Wieviel kostet der Eintritt für die Ausstellung [Ein_Blick](event)?
+    - Ist die Ausstellung [Kunst am Freitag](event) kostenlos?
+    - Wieviel kostet der Eintritt für die Ausstellung [Kunst am Freitag](event)?
+    - Ist die Ausstellung [BÄMlab](event) kostenlos?
+    - Wieviel kostet der Eintritt für die Ausstellung [BÄMlab](event)?
+    - Wieviel kostet der Eintritt?
+    - Wie viel kostet der Eintritt?
+- intent: lottie_test
+  examples: |
+    - lottie
+    - Lottie
+- intent: elterneintritt_kindergeburtstag
+  examples: |
+    - Dürfen Eltern beim Kindergeburtstags-Workshop mit in den Workshop?
+    - eltern kindergeburtstag
+    - Eintritt für eltern kindergeburtstag
+    - eintritt kindergeburtstag
+- intent: ermaessigung
+  examples: |
+    - Bekommen die StudentInnen der Uni xy freien Eintritt in die Ausstellungen?
+    - Gilt dieser Ausweis ( Museumspass, Icom, BBK, usw. usw.)  bei Ihnen für ermässigten / freien - - Eintritt?
+    - Bekomme ich als Senior reDuzierten Eintritt?
+    - ermäßigungen
+    - ermäßigte tickets
+    - studentenrabatt
+    - Bekomme ich freien Eintritt als Mensch mit Behinderung?
+    - Freier Eintritt bei Behinderung?
+    - Ermäßigung behinderte
+    - ermäßigung behinderung
+    - Bekomme ich Stundentenrabatt?
+    - Bekomme ich Studentenermäßigung?
+    - Stundentenrabatt
+    - Studentenermäßigung
+    - Stundentenvergünstigung
+    - Studententicket
+    - Wie sind die Preise für Studenten?
+    - Wie sind die Preise für StudentInnen?
+    - Bekomme ich als Senior reduzierten Eintritt?
+    - Senioreneintritt
+    - Seniorenermäßigung
+    - Senioren
+    - seniorenrabatt
+- intent: erreichbarkeit_workshopbuero
+  examples: |
+    - Wann ist das Workshopbüro erreichbar?
+    - Wie erreiche ich das Workshopbüro?
+    - Von wann bis wann ist das Workshopbüro geöffnet?
+    - Von wann bis wann ist das Workshopbüro erreichbar?
+    - workshopbüro anrufen
+    - workshopbüro
+    - [Workshop](entity_type)  büro
+- intent: fuehrung_buchen
+  examples: |
+    - Kann ich bei Ihnen eine Führung buchen ?
+    - Kann ich hier eine Führung buchen ?
+    - führung buchen
+    - führungen buchen
+    - wo führung buchen
+    - Führung buchen
+    - geführter rundgang
+- intent: fuehrung_fuer_ausstellung_xy
+  examples: |
+    - Wann gibt es eine Führung zur Ausstellung (x)?
+    - Führung für Ausstellung (x)
+    - (x) Ausstellung Führung
+- intent: fuehrung_sprache
+  examples: |
+    - Gibt es Führungen in anderen Sprachen?
+    - Welche Fremdsprachen bieten Sie an?
+    - Fremdsprachen
+    - führungen auf englisch
+    - führungen auf französisch
+    - sprachen führungen
+    - führungssprache
+    - führungen englisch
+    - führungen französisch
+- intent: fuehrung_allgemein_dauer
+  examples: |
+    - Wie lange dauert die Führung?
+    - dauer führung
+    - wie lange dauern führungen
+    - führung dauer
+    - dauer einer führung
+    - wie lange dauert eine führung
+- intent: schließfaecher
+  examples: |
+    - Wo sind die Schliessfächer?
+    - Wie groß sind die Schliessfächer?
+    - schließfächer
+    - schliessfächer
+    - sachen einschließen
+    - wo kann ich meine sachen einschließen
+    - rucksack einschließen
+    - kann ich meine sachen einschließen
+- intent: workshop_sprache
+  examples: |
+    - Gibt es den [Workshop](entity_type) auch auf Englisch?
+    - Gibt es den [Workshop](entity_type) auch auf Französisch?
+    - sprache [Workshops](entity_type)
+    - [Workshops](entity_type) englisch
+    - [Workshops](entity_type) französisch
+- intent: fuehrung_schulklasse
+  examples: |
+    - Können wir mit einer Schulklasse eine Führung buchen?
+    - Schulklassenführung
+    - schulkasse führung
+    - schule führung
+    - klasse führung
+- intent: greet
+  examples: |
+    - hey
+    - hallo
+    - hi
+    - guten Morgen
+    - guten Abend
+- intent: start
+  examples: |
+    - Starte Beratung
+    - starte beratung
+- intent: gruppenticket
+  examples: |
+    - Kann man Gruppentickets kaufen?
+    - Gibt es Gruppentickets?
+    - Gruppenkarte kaufen
+    - Gruppenticket kaufen
+    - Gruppenpreis
+    - Gruppenermäßigung
+    - Was kostet der Eintritt für Gruppen?
+    - gruppentickets
+    - Eintritt gruppen
+    - gruppenrabatt
+    - eintritt für gruppen
+    - gruppeneintritt
+    - gruppenticket
+    - tickets für gruppen
+    - rabatt für gruppen
+- intent: ticket_kaufen
+  examples: |
+    - Gibt es noch Tickets für die Veranstaltung?
+    - Wo kann ich diese Tickets kaufen?
+    - tickets kaufen
+    - karten kaufen
+    - eintrittskarten kaufen
+    - Woher bekomme ich die Eintrittskarten ?
+- intent: gutschein_kaufen
+  examples: |
+    - Kann man Gutscheine kaufen?
+    - Wo kann ich Gutscheine kaufen?
+    - Gibt es Gutscheine zu kaufen?
+    - Gutschein kaufen
+    - Gutscheine kaufen
+    - gutscheine
+    - zkm gutschein
+    - gibt es gutscheine
+- intent: termin_workshops
+  examples: |
+    - Wann ist der [Workshop](entity_type) [Die ganze Welt ein Bauhaus](event)?
+    - Wird es [Workshop](entity_type) [Die ganze Welt ein Bauhaus](event) in Zukunft noch einmal geben?
+    - Wie erfahre ich, wann [Workshop](entity_type) [Die ganze Welt ein Bauhaus](event) wieder angeboten wird?
+    - Wann ist der [Workshop](entity_type) [Eröffnung: Die ganze Welt ein Bauhaus](event)?
+    - Wird es [Workshop](entity_type) [Eröffnung: Die ganze Welt ein Bauhaus](event) in Zukunft noch einmal geben?
+    - Wie erfahre ich, wann [Workshop](entity_type) [Eröffnung: Die ganze Welt ein Bauhaus](event) wieder angeboten wird?
+    - Wann ist der [Workshop](entity_type) [Überschreitungen – Kirche im ZKM](event)?
+    - Wird es [Workshop](entity_type) [Überschreitungen – Kirche im ZKM](event) in Zukunft noch einmal geben?
+    - Wie erfahre ich, wann [Workshop](entity_type) [Überschreitungen – Kirche im ZKM](event) wieder angeboten wird?
+    - Wann ist der [Workshop](entity_type) [Ein_Blick](event)?
+    - Wird es [Workshop](entity_type) [Ein_Blick](event) in Zukunft noch einmal geben?
+    - Wann findet der [Workshop](entity_type) [Scratch Coding for Family](event) statt?
+    - Wann findet der [Workshop](entity_type) [Lerne coden mit dem »Calliope mini« – Familiensonntag](event) statt?
+    - Wann findet der [Workshop](entity_type) [Roboter-Familiensonntag MAXI](event) statt?
+    - Wann findet der [Workshop](entity_type) [Design your own poster](event) statt?
+    - Wann findet der [Workshop](entity_type) [ZKM Maker Days Evolution @BÄM](event) statt?
+    - Wann findet der [Workshop](entity_type) [Sonic Pi](event) statt?
+    - Wann findet der [Workshop](entity_type) [Klangverräumlichung mit Lautsprecherorchester ](event) statt?
+    - Wann findet der [Workshop](entity_type) [ANIMAL_ROBOTS](event) statt?
+    - Wann findet der [Workshop](entity_type) [Wilde Malroboter_Maschinen ](event) statt?
+    - Wann findet der [Workshop](entity_type) [Citizens’ Knowledge Lab WS 1](event) statt?
+    - Wann findet der [Workshop](entity_type) [Coaching LAB Karlsruhe](event) statt?
+    - Wann findet der [Workshop](entity_type) [Mit eID im Netz – Wie viel Kryptographie steckt in meinem elektronischen Personalausweis?](event) statt?
+    - Wann findet der [Workshop](entity_type) [CHORDEOGRAPH](event) statt?
+    - Wann findet der [Workshop](entity_type) [Light Graffiti Flash Family](event) statt?
+    - Wann findet der [Workshop](entity_type) [Höre Deine Stadt - Familien[Workshop](entity_type)](event) statt?
+- intent: video_test
+  examples: |
+    - video
+    - video test
+- intent: video_ansehen
+  examples: |
+    - Wie und wo kann ich Videos aus der Sammlung sichten/ansehen?
+    - videos aus der sammlung
+    - sammlungsvideos
+    - videos ansehen
+    - videos aus ausstellung
+    - wo videos sehen
+- intent: kosten_fuehrung
+  examples: |
+    - Was kostet eine Führung?
+    - Was kostet die Führung?
+    - Wieviel kostet die Führung?
+    - Wieviel kostet eine Führung?
+    - kosten führung
+    - preis führung
+    - ticketspreis führung
+    - kosten für führung
+    - was kosten führungen
+- intent: workshop_material
+  examples: |
+    - Muss ich etwas für den Workshop mitbringen?
+    - Arbeitsmaterial für Workshop mitbringen?
+    - workshop material
+    - workshop vorbereitung
+    - material für [Workshops](entity_type)
+    - was brauche ich für einen workshop
+    - was mitbringen zum workshop
+    - was muss man zum workshop mitbringen
+- intent: museum_nach_workshop
+  examples: |
+    - Kann nach dem Workshop noch die Ausstellung angeschaut werden bzw. ist das inbegriffen?
+    - Nach Workshop Ausstellung anschauen?
+    - kann ich nach dem workshop in die ausstellung
+    - ausstellung ansehen nach workshop
+- intent: museum_nach_workshop_fuer_schulklassen
+  examples: |
+    - Kann eine Schulklasse nach dem Workshop noch ins Museum?
+    - Schulklassen nach Workshop ins Museum
+    - schulklasse nach workshop ausstellung
+- intent: museumspass
+  examples: |
+    - Kann man im ZKM den Museumspass kaufen?
+    - Museumspass
+    - Museumspass kaufen
+    - museumspass zkm
+    - zkm museumspass
+    - museumspass shop
+- intent: ausstellungen_audioguide
+  examples: |
+    - Haben Sie einen Audioguide?
+    - Audioguide
+    - audioguide
+    - Gibt es einen Audioguide?
+    - habt ihr einen audio guide
+    - audio guide
+    - audio guides
+    - gibt es audio guides
+- intent: oeffnungszeiten
+  examples: |
+    - Wie sind die Öffnungszeiten für die Museen?
+    - Bis wann ist das Restaurant geöffnet?
+    - Bis wann ist das Foyer geöffnet?
+    - Bis wann hat das Museum geöffnet?
+    - Wann hat der Shop auf?
+    - Hat das ZKM an Feiertagen geöffnet?
+    - Haben Sie morgen geöffnet?
+    - Ab wieviel Uhr haben Sie geöffnet?
+    - Wann haben sie geöffnet?
+    - Um wieviel Uhr schließen sie?
+    - Wann hat der Shop geöffnet?
+    - Shop Öffnungszeiten
+    - Öffnungszeiten Shop
+    - Wann ist der Shop geöffnet?
+    - Ist der Shop offen?
+    - Ist der Shop geöffnet?
+    - Wann öffnet der Shop?
+    - öffnungszeiten shop
+    - öffnungszeiten
+- intent: infotheke_oeffnungszeiten
+  examples: |
+    - Öffnungszeiten Infotheke
+    - infotheke öffnungszeiten
+    - wann hat die infotheke geöffnet
+- intent: ausstellung_oeffnungszeiten
+  examples: |
+    - Öffnungszeiten Austellung
+    - ausstellung öffnungszeiten
+    - wann sind ausstellungen offen
+    - öffnungszeiten ausstellungen
+- intent: gueltigkeit
+  examples: |
+    - Kann ich mit dem Ticket raus und wieder rein?
+    - raus und rein
+    - mit ticket raus
+    - gültigkeit ticket
+    - wie lange sind tickets gültig
+- intent: parken
+  examples: |
+    - Wo kann ich parken?
+    - Wo kann ich am ZKM parken?
+    - Kann man am ZKM parken?
+    - Kann man dort parken?
+    - Gibt es Parkplätze?
+    - Gibt es einen Parkplatz?
+    - Parkplatz
+    - Parkplätze
+    - Parkmöglichkeiten
+    - Parkmöglichkeit
+    - Welche Parkmöglichkeiten gibt es am ZKM?
+    - Wo kann ich am ZMK parken?
+    - parken
+    - Autoparkplätze
+    - Wo ist die Kasse für das Parkhaus?
+    - kasse für parkhaus
+    - parkticket bezahlen
+    - parkhauskasse
+    - kasse parkhaus
+    - Kann ich den Parkschein hier bezahlen?
+- intent: personen_pro_fuehrung
+  examples: |
+    - Wieviel Leute braucht man für eine Führung?
+    - Wieviel Personen benötigt man für eine Führung?
+    - Anzahl Personen pro Führung?
+    - personen pro führung
+    - mindestanzahl führung
+    - mindesteilnehmer führung
+    - wieviele teilnehmer für führung
+    - Wieviele Leute braucht man für eine Führung?
+- intent: schulklassen_geeignet
+  examples: |
+    - Was eignet sich für meine Schulklasse?
+    - Schulklassen geeignet
+    - Was eigent sich für Schulklassen?
+    - für schulklassen
+    - ausstellungen für schulklassen
+    - welche veranstaltungen eignen sich für schulklassen
+    - events für schulklassen
+- intent: schulklasse_besuch
+  examples: |
+    - Ich möchte mit meiner Schulklasse vorbeikommen
+    - Besuch mit Schulklasse
+    - Mit Schule vorbeikommen
+    - mit schulklasse kommen
+    - besuch schulklasse
+- intent: shop_generell
+  examples: |
+    - kannst Du mich mit dem Shop verbinden?
+    - Ich habe Fragen zum Shop
+    - Ich habe eine Frage zum Shop
+    - frage zum shop
+    - shop
+    - fragen zum shop
+- intent: shop_standort
+  examples: |
+    - Wie erreiche ich den Shop?
+    - wo ist der shop
+    - wo shop
+    - shop finden
+    - shop lageplan
+- intent: sonderoeffnungszeiten
+  examples: |
+    - Ist das ZKM am 2. Weihnachtsfeiertag geöffnet?
+    - Hat das ZKM an Feiertagen geöffnet?
+    - Öffnung an Feiertagen
+    - Wie lange haben Sie am Feiertag  geöffnet?
+    - öffnungszeiten weihnachten
+    - öffnungszeiten ostern
+    - öffnungszeiten über die feiertage
+    - geöffnet an feiertagen
+    - sonderöffnungszeiten
+    - sonder öffnungszeiten
+- intent: spielausstellung
+  examples: |
+    - Wo ist die Spielausstellung?
+    - Wo ist die Spieleausstellung?
+    - Wie komme ich zur Spielausstellung?
+    - Wie kommt man zur Spieleausstellung?
+    - Weg zur Spielausstellung
+- intent: stornobedingungen
+  examples: |
+    - Wie sind die Stornobedingungen?
+    - Fällt eine Gebühr an, wenn ich den Workshop storniere?
+    - storno tickets
+    - ich möchte tickets stornieren
+    - ticket stornieren
+    - wie lange kann man tickets stornieren
+    - workshop stornokosten
+    - stornokosten
+    - stornieren kostenlos
+- intent: toiletten
+  examples: |
+    - Wo sind die Toiletten?
+    - Wo sind die Klos?
+    - Gibt es auf dieser Etage auch eine Toilette?
+    - toiletten
+    - wo sind toiletten
+    - wo ist das wc
+    - wc
+    - lageplan wc
+    - lageplan toiletten
+    - lageplan klos
+    - Wo kann ich mein Baby wickeln?
+    - Wickelmöglichkeit
+    - Wickelplatz
+    - Wo finde ich einen Wickelplatz?
+    - Baby wickeln
+    - wickeln
+    - wickeltisch
+    - baby wickeln tisch
+    - wo baby wickeln
+    - wo kann ich baby wickeln
+- intent: treffpunkt_workshop
+  examples: |
+    - Wo muss ich vor dem Workshop hingehen?
+    - Wo ist der Treffpunkt für einen Workshop?
+    - Treffpunkt Workshop
+    - Workshop Treffpunkt
+    - treffen workshop
+    - treffpunkt für [Workshops](entity_type)
+- intent: verpflegung_workshop
+  examples: |
+    - Gibt es Essen und Trinken während des [Workshops](entity_type) ?
+    - Gibt es Verpflegung beim Workshop?
+    - Gibt es Verpflegung während eines [Workshops](entity_type) ?
+    - verpflegung [Workshops](entity_type)
+    - Darf ich etwas zu Essen mitbringen?
+    - Kann man Essen mitbringen?
+    - Kann ich Verpflegung mitbringen?
+    - Essen mitbringen
+    - essen im workshop
+    - mittagessen mitbringen
+    - verpflegung workshop
+    - verpflegung im workshop
+    - workshop mittagessen
+    - workshop selber essen mitbringen
+    - eigene verpflegung
+    - eigenes essen
+- intent: warteliste_workshop
+  examples: |
+    - Gibt es eine Warteliste für den Workshop?
+    - Workshop Warteliste
+    - Warteliste Workshop
+    - warteliste für [Workshops](entity_type)
+    - [Workshops](entity_type)  warteliste
+- intent: workshop_anmeldung
+  examples: |
+    - Wie melde ich für einen Workshop an?
+    - Wie lange vorher sollte ich einen Workshop buchen, um noch einen Termin zu bekommen?
+    - Wann ist das Workshopbüro erreichbar?
+    - anmeldung workshop
+    - anmeldung für [Workshops](entity_type)
+    - workshop anmeldung
+    - an workshop anmelden
+    - wo kann man sich für workshop anmelden
+    - wie anmelden für workshop
+    - wie workshop anmeldung
+    - Kann ich einen Workshop reservieren?
+    - Wann kann ich einen Workshop buchen?
+- intent: workshop_erinnerung
+  examples: |
+    - Können die Kinder nach dem Workshop etwas mit nach Hause nehmen?
+    - Workshop Erinnerung
+    - Workshop Resultat
+    - workshop mitbringsel
+    - workshop resultat mitnehmen
+- intent: workshop_reservieren
+  examples: |
+    - Workshop reservieren
+    - Kann ich einen Workshop reservieren?
+    - Reservieren eines [Workshops](entity_type)
+    - Ich möchte einen Workshop reservieren
+    - workshop reservieren
+    - platz im workshop reservieren
+- intent: workshopeignung
+  examples: |
+    - Welcher Workshop ist für welches Alter geeignet?
+    - Für welche Altersgruppen sind die [Workshops](entity_type)  geeignet?
+    - Altersbegrenzung bei den [Workshops](entity_type)
+    - workshop welches alter
+    - für welches alter sind die [Workshops](entity_type)
+- intent: workshoppreise
+  examples: |
+    - Wieviel kostet mein Workshop?
+    - Wieviel kostet ein Workshop
+    - Ticketpreis Workshop
+    - Workshoppreise
+    - Workshoppreis
+    - Kostenpunkt Workshop
+    - Kosten Workshop
+- intent: werk_sony
+  examples: |
+    - sony guide
+- intent: ausstellung_katalog
+  examples: |
+    - Gibt es einen Katalog zu [MultiMediale](event)?
+    - Kann ich den Katalog zur Ausstellung [MultiMediale](event) bei Ihnen bestellen?
+    - Gibt es einen Katalog zu [Das Zentrum für Kunst und Medientechnologie Karlsruhe. Ein Architektur Wettbewerb](event)?
+    - Kann ich den Katalog zur Ausstellung [Das Zentrum für Kunst und Medientechnologie Karlsruhe. Ein Architektur Wettbewerb](event) bei Ihnen bestellen?
+    - Gibt es einen Katalog zu [Der digitale Faust](event)?
+    - Kann ich den Katalog zur Ausstellung [Der digitale Faust](event) bei Ihnen bestellen?
+    - Gibt es einen Katalog zu [Die Medien in Europa](event)?
+    - Kann ich den Katalog zur Ausstellung [Die Medien in Europa](event) bei Ihnen bestellen?
+    - Gibt es einen Katalog zu [Das Zentrum für Kunst und Medientechnologie und die Städtische Galerie Karlsruhe im IWKA-Hallenbau](event)?
+    - Kann ich den Katalog zur Ausstellung [Das Zentrum für Kunst und Medientechnologie und die Städtische Galerie Karlsruhe im IWKA-Hallenbau](event) bei Ihnen bestellen?
+    - Gibt es einen Ausstellungskatalog?
+    - ausstellung katalog
+    - katalog ausstellung
+    - katalog zu aussteelllungen
+    - ausstellungskatalog
+- intent: ausstellung_kuenstler
+  examples: |
+    - Ist der Künstler [Daniela Alina](PER) in der Ausstellung [Wittgenstein in Coen Country](event) auch ausgestellt?
+    - Ist der Künstler [Daniela Alina](PER) in der Ausstellung [Writing the History of the Future I](event) auch ausgestellt?
+    - Ist der Künstler [Daniela Alina](PER) in der Ausstellung [Eröffnung Teil II: Writing the History of the Future](event) auch ausgestellt?
+    - Ist der Künstler [Daniela Alina](PER) in der Ausstellung [Kuratorinnenführung durch »Writing the History of the Future«](event) auch ausgestellt?
+    - Ist der Künstler [Daniela Alina](PER) in der Ausstellung [Writing the History of the Future](event) auch ausgestellt?
+    - Ist der Künstler [Torsten Belschner](PER) in der Ausstellung [Tag der offenen Tür 2014](event) auch ausgestellt?
+    - Ist der Künstler [Daniela Alina](PER) in der Ausstellung [Tag der offenen Tür 2014](event) auch ausgestellt?
+    - Ist der Künstler [Torsten Belschner](PER) in der Ausstellung [Wittgenstein in Coen Country](event) auch ausgestellt?
+    - Ist der Künstler [John Cage](PER) in der Ausstellung [Danceroom Spectroscopy and Hidden Fields](event) auch ausgestellt?
+    - Ist der Künstler [Torsten Belschner](PER) in der Ausstellung [Danceroom Spectroscopy and Hidden Fields](event) auch ausgestellt?
+    - Ist der Künstler [Peter Weibel](PER) in der Ausstellung [Writing the History of the Future](event) auch ausgestellt ?
+    - Ist der Künstler [Peter Weibel](PER) in der Ausstellung [Writing the History of the Future](event) auch ausgestellt
+- intent: werke
+  examples: |
+    - Was für Werke gibt es in Ausstellung [Tag der offenen Tür 2014](event)?
+    - Welche Werke finde ich in der [Young Choreographers Session](event) ?
+    - Werke in [global aCtIVISm (Symposium)](event)
+    - Welche Werke gibt es in der Spiele-Ausstellung?
+    - Was gibt es in der Sammlung?
+    - Was gibt es in der Sammlungausstellung?
+    - Welche Werke gibt es in der Ausstellung [Gameplay. The NextLevel](event)?
+- intent: werke_spiele
+  examples: |
+    - Was für Spiele haben Sie in der Spiele-Ausstellung?
+    - Welche Spiele haben Sie in der Spiele-Ausstellung?
+    - Welche Werke gibt es in der Spiele-Ausstellung?
+    - werke in spieleausstellung
+    - Welche Werke gibt es in der Ausstellung Gameplay. The NextLevel?
+    - Welche Werke gibt es in der Ausstellung Writing the History?
+- intent: werke_allgemein
+  examples: |
+    - Was kannst Du mir zum Werk [Where R = Ryoanji 14 R/2 - 6/87](creation) erzählen?
+    - Was kannst Du mir zum Werk [Arche Noah](creation) erzählen?
+    - Was kannst Du mir zum Werk [Sony Portapak](creation) erzählen?
+    - Was kannst Du mir zum Werk [Wipe Cycle](creation) erzählen?
+    - Was kannst Du mir zum Werk [Who Are You](creation) erzählen?
+    - Was kannst Du mir zum Werk [FLick KA AI](creation) erzählen?
+    - Was kannst Du mir zum Werk [Tischtänzer](creation) erzählen?
+    - Was kannst Du mir zum Werk [Electric Labyrinth](creation) erzählen?
+    - Was kannst Du mir zum Werk [Legible City](creation) erzählen?
+    - Was kannst Du mir zum Werk [Zuse Z22](creation) erzählen?
+    - Was kannst Du mir zum Werk [Stochastische Texte](creation) erzählen?
+    - Was kannst Du mir zum Werk [1960.01](creation) erzählen?
+    - Was kannst Du mir zum Werk [Slave Labour](creation) erzählen?
+    - Was kannst Du mir zum Werk [Alle Macht den Amateuren](creation) erzählen?
+    - Was kannst Du mir zum Werk [Breakthrough of an Artist](creation) erzählen?
+    - infos zu [Blonden anderer Stelle](creation)
+    - weitere infos zu  [Blonden anderer Stelle](creation)
+    - [Blonden anderer Stelle](creation)
+- intent: werke_autor
+  examples: |
+    - Von wem ist das Werk [Where R = Ryoanji 14 R/2 - 6/87](creation) ?
+    - Von wem ist das Werk [Arche Noah](creation) ?
+    - Von wem ist das Werk [Sony Portapak](creation) ?
+    - Von wem ist das Werk [Wipe Cycle](creation) ?
+    - Von wem ist das Werk [Who Are You](creation) ?
+    - Von wem ist das Werk [FLick KA AI](creation) ?
+    - Von wem ist das Werk [Tischtänzer](creation) ?
+    - Von wem ist das Werk [Electric Labyrinth](creation) ?
+    - Von wem ist das Werk [Legible City](creation) ?
+    - Von wem ist das Werk [Zuse Z22](creation) ?
+    - Von wem ist das Werk [Stochastische Texte](creation) ?
+    - Von wem ist das Werk [1960.01](creation) ?
+    - Von wem ist das Werk [Slave Labour](creation) ?
+    - Von wem ist das Werk [Alle Macht den Amateuren](creation) ?
+    - Von wem ist das Werk [Breakthrough of an Artist](creation) ?
+    - Wer hat das Werk [Blonden anderer Stelle](creation) gemacht ?
+    - von wem ist [Blonden anderer Stelle](creation)
+    - künstler [Blonden anderer Stelle](creation)
+- intent: verpflegung
+  examples: |
+    - Wo kann man in der Umgebung gut essen?
+    - gute restaurants
+    - restaurant in der nähe
+    - restaurants in der nähe
+    - essen gehen
+- intent: besuchsdauer
+  examples: |
+    - Schaffe ich es, die Ausstellung in einer Stunde anzuschauen?
+    - besuchsdauer
+    - wie lange einplanen
+    - wie lange braucht man für die ausstellung
+- intent: besuchsdauer_workshop
+  examples: |
+    - wie lange dauert workshop
+    - dauer workshop
+    - zeit für workshop einplanen
+    - workshop zeit einplanen
+    - workshop dauer
+    - wieviel zeit soll man für einen workshop einplanen
+- intent: besuchsdauer_veranstaltungen
+  examples: |
+    - Wann sollte ich am besten da sein, um noch einen Sitzplatz zu bekommen?
+    - Wann muss ich da sein?
+    - wann da sein für veranstaltungen
+- intent: ausstellungen_regeln_fotografieren
+  examples: |
+    - Ist das Fotografieren in der Ausstellung erlaubt?
+    - Darf  man fotografieren?
+    - fotografieren ausstellung
+    - fotos machen
+    - ausstellung fotografieren
+    - fotos in ausstellung
+- intent: kinderwagen
+  examples: |
+    - Kann ich mit dem Kinderwagen in die Ausstellung?
+    - kinderwagen
+    - mit kinderwagen in ausstellung
+    - kinderwagen plätze
+- intent: programm_tagesspezifisch
+  examples: |
+    - Was für Programm gibt es im ZKM am [11.02.2020](date)?
+    - Was für Programm gibt es im ZKM am [15.09.2020](date)?
+    - Gibt es heute/am Mittwoch einen Vortrag?
+    - Welche [Ausstellung](entity_type) gibt es am Donnerstag?
+    - Welche [Veranstaltungen](entity_type) gibt es am Sonntag?
+    - Was kann man sich hier anschauen?
+    - Welche [Ausstellungen](entity_type) gibt es [gerade]{"entity": "date", "value": "heute"}?
+    - Was ist das aktuelle [Programm](entity_type)?
+    - Welche [Veranstaltungen](entity_type) gibt es nächste Woche?
+    - Welche [Veranstaltungen](entity_type) gibt es im April?
+    - [Programm](entity_type)
+    - Welche [Workshops](entity_type) gibt es am [27.09.2020?](date)
+    - Welche [Workshops](entity_type) gibt es am [27.09.2019?](date)
+    - Was für einen [Workshops](entity_type) gibt es morgen?
+    - Was kann ich [heute](date) an Vermittlungsprogrammen wahrnehmen?
+    - Welche [Workshops](entity_type) gibt es [heute](date)?
+    - Welche [Workshops](entity_type) gibt es am Donnerstag?
+    - Welche [Workshops](entity_type) gibt es am Sonntag?
+    - Welche [Workshops](entity_type) werden in nächster Zeit angeboten?
+    - Gibt es am Mittwoch einen [Workshop](entity_type)?
+    - Programm vom [24.06.2021](date)?
+- intent: programm_wochenende
+  examples: |
+    - Was gibt es im ZKM am Wochenende
+    - Veranstaltungen ZKM Wochenende
+    - Welches Programm gibt es im ZKM am Wochenende
+    - Was für Programm gibt es im ZKM am Wochenende
+    - Veranstaltungen Wochenende
+    - Programme Wochenende
+- intent: ausstellung_zeitaufwand
+  examples: |
+    - Wieviel Zeit sollte ich für eine Ausstellung einplanen?
+    - Zeitaufwand für eine Ausstellung
+    - Zeitaufwand pro Ausstellung
+    - zeitaufwand pro ausstellung
+    - dauer ausstellung
+    - zeit einplanen ausstellung
+- intent: baem_beschreibung
+  examples: |
+    - Was ist Bäm?
+    - Was ist BÄM?
+    - Was ist Bämm?
+    - Wie kann man Bäm verstehen?
+    - BÄM?
+    - bäm
+    - BÄM
+    - Bämm
+- intent: bibliothek_ausleihe
+  examples: |
+    - Darf ich hier Buecher ausleihen?
+    - bücher ausleihen
+    - bibliothek
+    - buch ausleihen
+    - bücherausleihe
+- intent: buchausleihdauer
+  examples: |
+    - Wie lange kann ich Bücher ausleihen?
+    - bücher ausleihdauer
+    - für wie lange darf man bücher ausleihen
+    - wie lange bücher ausleihen
+- intent: buch_anzahl
+  examples: |
+    - Wieviele Bücher darf ich ausleihen?
+    - max anzahl bücher ausleihen
+    - wieviele bücher gleichzeitig ausleihen
+    - wieviele bücher darf man ausleihen
+- intent: bibliothek_ausweis
+  examples: |
+    - Wie bekomme ich einen Bibliotheksausweis?
+    - bibliotheksausweis beantragen
+    - bibliotheksausweis
+    - bibliothek ausweis
+- intent: bibliothek_oeffnungzeiten
+  examples: |
+    - Wann hat die Bibliothek auf?
+    - öffnungszeiten bibliothek
+    - wie lange hat die bib auf
+    - öffnungszeiten bib
+- intent: bibliothek_ausleihe_studenten
+  examples: |
+    - ich bin student und möchte bücher ausleihen
+    - buch ausleihen als student
+    - bibliothek student
+- intent: bibliothek_funktion_scanner
+  examples: |
+    - Wie funktioniert der Scanner?
+    - scanner
+    - bibliothek scanner
+    - scannen in bib
+- intent: bibliothek_drucken
+  examples: |
+    - Kann ich hier etwas drucken?
+    - drucken
+    - ausdrucken
+    - drucker
+    - etwas ausdrucken
+- intent: bibliothek_rechner
+  examples: |
+    - Haben Sie auch Rechner für BesucherInnen?
+    - rechnerzugang
+    - computerzugang
+    - computer für besucher
+    - computer besucher
+    - rechner für besucher
+- intent: bibliothek_internet
+  examples: |
+    - Kann ich bei Ihnen ins Internet?
+    - gibt es internet?
+    - internnetzugang
+    - internet bibliothek
+    - wlan
+    - Internet
+    - wifi
+    - Gibt es im ZKM Wifi?
+    - Gibt es im ZKM Wlan?
+- intent: bibliothek_lesen
+  examples: |
+    - Darf hier jeder lesen?
+    - zugang bibliothek
+- intent: garderobe
+  examples: |
+    - tasche
+    - Tasche
+    - rucksack
+    - Rucksack
+    - Darf ich meine Tasche mit in die Ausstellung nehmen?
+    - Darf ich meinen Rucksack mit in die Ausstellung nehmen?
+    - garderobe
+    - gibt es eine garderobe
+    - jacke abgeben
+    - tasche abgeben
+    - tasche garderobe
+- intent: gehhilfe_rollstuhl
+  examples: |
+    - Kann ich mit der Gehhilfe in die Ausstellung?
+    - Kann ich mit dem Rollstuhl in die Ausstellung?
+    - rollstuhl zugang
+    - gehhilfe zugang
+    - rollstuhlgerechter zugang
+    - rollstuhlgerecht
+- intent: bibliothek_leseplaetze
+  examples: |
+    - Kann man hier lesen?
+    - Darf man hier lesen
+    - lesen in der bib
+    - Lesen in der Bibliothek
+    - kann jeder hier lesen?
+    - leseplätze bib
+- intent: utter_video_ansehen_01
+  examples: |
+    - Wie kann ich Videos aus der Sammlung ansehen?
+    - Wo kann ich Videos aus der Sammlung ansehen?
+    - Wie kann ich Videos aus der Sammlung sichten?
+    - Wo kann ich Videos aus der Sammlung sichten?
+    - Videos aus Sammlung ansehen
+    - Videos aus Sammlung anschauen
+    - bib mediathek
+    - bibliothek mediathek
+    - mediathek
+- intent: bibliothek_mediathek_suche
+  examples: |
+    - Haben Sie auch Spielfilme?
+    - Spielfilme im Katalog
+    - Spielfilme in der Sammlung
+    - Spielfilmsammlung
+    - Spielfilm leihen
+    - Spielfilme leihen
+    - Kann ich Spielfilme leihen?
+    - ich möchte spielfilme leihen
+    - ich möchte einen Spielfilm leihen
+- intent: bibliothek_regeln
+  examples: |
+    - Taschen in der Bibliothek
+    - Darf ich die Tasche in der Bib haben?
+    - tasche in der bib
+    - rucksack bibliothek
+    - tasche abgeben bib
+    - tasche mitnehmen bibliothek
+- intent: bibliothek_regeln_essen_trinken
+  examples: |
+    - Darf ich in der Bibliothek essen?
+    - Darf ich in der Bibliothek trinken?
+    - Kann man in der Bibliothek essen?
+    - Kann man in der Bibliothek trinken?
+    - Darf ich in der Bibliothek essen und trinken?
+    - Darf ich was zu Essen mitbringen
+- intent: bibliothek_suche
+  examples: |
+    - wo finde ich diese signatur?
+    - ich möchte eine bestimmte signatur finden
+    - signatur finden
+    - signatur suchen
+    - ich suche eine signatur
+- intent: bibliothek_suche_dvd
+  examples: |
+    - Wie kann ich DVDs finden?
+    - Wie finde ich bestimmte Werkgruppe?
+    - Werkgruppen finden?
+    - DVDs finden
+    - dvds finden
+    - ich möchte dvds finden
+    - wie finde ich eine dvd?
+    - ich will dvds finde
+    - dvd bibliothek
+    - dvd ausleihen
+- intent: info_lageplan
+  examples: |
+    - Haben Sie einen Plan fürs Museum?
+    - plan museum
+    - lageplan
+    - plan zkm
+    - lageplan zkm
+- intent: info_service_taxi
+  examples: |
+    - kannst Du mir ein Taxi rufen?
+    - taxi rufen
+    - taxi
+    - taxi rufnummer
+    - taxi hotline
+- intent: museumsshop_kontakt
+  examples: |
+    - Wie kann man den Museumsshop erreichen?
+    - Kontakt Museumsshop
+    - ich möchte den museumsshop kontaktieren
+    - shop kontakt
+- intent: museumsshop_bezahlung
+  examples: |
+    - Kann man bei euch mit Karte bezahlen?
+    - Kann ich bei euch bar bezahlen?
+    - Akzeptiert ihr Kartenzahlung
+    - kartenzahlung
+    - barzahlung
+    - Welchen zahlungsmittel werden akzeptiert
+    - zahlungsmittel shop
+    - bezahlen im shop
+- intent: veranstaltung_einlass
+  examples: |
+    - Wann soll ich am besten da sein, um noch einen Sitzplatz zu bekommen?
+    - Wann ist Einlass
+    - Wann geht der Einlass los?
+    - Wann öffnen die Türen bei den Veranstaltungen
+    - Wann soll ich vor einer Veranstaltung da sein?
+    - wieviel früher soll man für eine veranstaltung da sein?
+    - wieviel puffer vor einer veranstaltung
+    - einlass veranstaltungen
+- intent: veranstaltung_eintritt
+  examples: |
+    - Ticketpreise
+    - Tickets kaufen
+    - ich möchte tickets kaufen
+    - ich will tickets kaufen
+    - ich möchte ein ticket erwerben
+    - tickets erwerben
+    - Wieviel kosten die Tickets?
+    - was kostet ein ticket?
+- intent: veranstaltung_eintritt_abendkasse
+  examples: |
+    - Abendkasse Veranstaltung
+    - Kann man sich abends ein ticket kaufen?
+    - kann ich mir ein ticket für diese veranstaltung am abend kaufen
+    - ich möchte an der abendkasse ein ticket für diese veranstaltung kaufen.
+    - abendkasse
+    - Gibt es noch Tickets an der Abendkasse?
+    - Gibt es eine Abendkasse?
+- intent: veranstaltung_eintritt_reservierung
+  examples: |
+    - Kann ich bei Ihnen Tickets reservieren für den Abend?
+    - tickets reservieren
+    - kann man tickets reservieren
+    - reservieren
+- intent: veranstaltung_eintritt_verkauf
+  examples: |
+    - Gibt es noch Tickets für die Veranstaltung XY?
+    - kann ich noch tickets für die veranstaltung xy kaufen?
+    - kann ich noch tickets für diese veranstaltung kaufen?
+    - wo kann ich diese tickets kaufen?
+- intent: veranstaltung_mitwirkende
+  examples: |
+    - Ist der Regisseur anwesend?
+    - Welche Mitwirkenden sind anwesend?
+    - werden mitwirkende vor ort sein?
+    - wird jemand der crew dabei sein
+- intent: teilnehmerzahl_maximal
+  examples: |
+    - Wird es voll werden?
+    - Wird es bei der Veranstaltung voll werden?
+    - Wieviele Personen können maximal teilnehmen?
+    - kapazität bei der veranstaltung xy
+    - wieviel kapazität besteht bei der veranstaltung xy
+- intent: workshop_beschreibung
+  examples: |
+    - Wie genau sieht der Inhalt des [Workshops](entity_type)  aus?
+    - Workshopinhalt
+    - Wie ist der Workshop aufgebaut?
+    - Wie kann man sich den Inhalt eines [Workshops](entity_type)  vorstellen?
+- intent: workshop_leitung
+  examples: |
+    - Wer macht den Workshop?
+    - Wer leite den Workshop
+    - wer leitet die zkm [Workshops](entity_type)
+    - leitung [Workshops](entity_type)
+    - betreuung workshop
+    - wer macht die betreuung der [Workshops](entity_type)
+    - von wem wird mein workshop betreut
+- intent: workshop_teilnehmerzahl_maximal
+  examples: |
+    - Wie viel Personen dürfen an einem Workshop teilnehme?
+    - teilnehmer maximal workshop
+    - workshop kapazität
+- intent: zkm_architektur_geschichte
+  examples: |
+    - Was war das Gebäude davor?
+    - Geschichte des Gebäudes?
+    - War hier schon immer das ZKM drin?
+    - Was war vor dem ZKM in diesem Gebäude?
+    - Wie lange gibt es das Gebäude schon?
+    - Entstehung des Gebäudes
+    - Gibt es etwas zu dem Gebäude?
+    - Was gibt es zum Gebäude zu sagen?
+    - kannst Du etwas zum gebäude zu sagen
+- intent: zkm_beschreibung
+  examples: |
+    - Was ist das ZKM?
+    - Informationen zum ZKM
+    - Was kannst Du mir zum ZKM sagen?
+    - Was gibt es zum zkm zu erzählen
+    - zkm infos
+    - wofür steht das zkm?
+- intent: zkm_beschreibung_geschichte
+  examples: |
+    - Wann wurde das ZKM gegründet?
+    - Wer hat das ZKM gegründet?
+- intent: zkm_beschreibung_medienkunst
+  examples: |
+    - Was ist Medienkunst?
+    - medienkunst
+- intent: zkm_beschreibung_personen
+  examples: |
+    - Wer ist der Chef hier?
+    - wer leitet das zkm?
+    - wer führt das zkm?
+    - chef im zkm
+    - leitung zkm
+- intent: zkm_kino
+  examples: |
+    - Kann ich Kinokarten für die Vorstellung xy kaufen?
+    - Ist das hier das ZKM Kino?
+- intent: buch_suchen
+  examples: |
+    - Wo finde ich dieses Buch?
+    - Wo finde ich ein bestimmtes Buch?
+    - Wo bekomme ich Infos zu einem Buch?
+    - Buch finden
+    - Bücher finden
+    - ich suche ein buch
+    - Bist du ein Mensch oder ein Bot?
+    - suche ein buch
+- intent: zkm_kontakt
+  examples: |
+    - kannst Du mich zur Person XY durchstellen?
+    - Wie erreiche ich Person XY?
+    - Wie kann ich zuständige Personen erreichen?
+    - Wie kann ich XY erreichen?
+    - Wie kann ich [Margit Rosen](PER) erreichen?
+    - Wie kann ich [Peter Weibel](PER) erreichen?
+- intent: zkm_newsletter
+  examples: |
+    - Gibt es einen Newsletter?
+    - Wie erhalte ich regelmäßige Updates?
+    - newsletter
+- intent: zkm_regeln_tiere
+  examples: |
+    - Darf ich meinen Hund mitbringen?
+    - hund mitbringen
+    - mit hund ins museum
+- intent: zkm_restaurant
+  examples: |
+    - Wo bekommt man was zu essen?
+    - wo kann ich etwas essen?
+    - gibt es hier was zu essen?
+    - essensmöglichkeit
+    - restaurant
+    - verpflegung
+    - hello
+    - start
+- intent: werke_entstehungsjahr
+  examples: |
+    - Welche Werke entstanden im Jahr [1994](year)?
+    - Entstehungsjahr [1990](year)
+    - Was ist im Jahr [1985](year) entstanden?
+    - Welche Werke sind [2000](year) gemacht worden?
+- intent: test_kalender
+  examples: |
+    - kalender test
+    - kalender testen
+    - test kalender
+- intent: werke_kuenstler
+  examples: |
+    - Welche Werke hat Künstler [Daniela Alina Plewe](PER) gemacht?
+    - Welche Werke hat Künstler [Daniela Alina Plewe](PER) in der ZKM Sammlung?
+    - Welche Werke hat Künstler [Torsten Belschner](PER) gemacht?
+    - Welche Werke hat Künstler [Torsten Belschner](PER) in der ZKM Sammlung?
+    - Welche Werke hat Künstler [Caroline Dlugos](PER) gemacht?
+    - Welche Werke hat Künstler [Caroline Dlugos](PER) in der ZKM Sammlung?
+    - Werke von [Sebastian Egner](PER)
+    - Arbeiten von [Sebastian Egner](PER)
+    - Welche Werke hat Künslter [John Cage](PER) in der ZKM Sammlung?
+    - Künstler [Joseph Beuys](PER)
+- intent: freitag_kostenlos
+  examples: |
+    - freitags kostenlos
+    - ist freitags der Eintritt immer noch frei
+    - freitag gratis Eintritt
+    - eintritt freitags
+    - freitags tickeets
+- intent: corona
+  examples: |
+    - was muss ich wegen corona beachten
+    - öffnungszeiten corona
+    - corona regeln
+    - corona
+    - covid-19 regeln
+    - regeln covid-19
+    - covid regeln
+- intent: inform
+  examples: |
+    - [Bahar](name)
+    - [Bircan](name)
+- intent: smalltalk_wie_gehts
+  examples: |
+    - wie gehts
+    - wie geht's
+    - wie gehts dir
+    - wie gehts dir denn?
+- intent: smalltalk_name
+  examples: |
+    - wie heißt du?
+    - wie ist dein name
+    - dein name
+    - was war dein name nochmal
+    - und wie heißt du?
+- intent: smalltalk_geschlecht
+  examples: |
+    - Bist Du männlich oder weiblich
+    - bist du mann oder frau
+    - bist du ein mann?
+    - bist du eine  frau?
+    - welches geschlecht hast du?
+- intent: smalltalk_alter
+  examples: |
+    - Wie alt bist Du?
+    - wie alt bist du
+    - was ist dein alter
+    - wie alt
+    - darf man fragen wie alt du bist
+- intent: smalltalk_treffen
+  examples: |
+    - Können wir uns mal treffen?
+    - lass mal treffen
+    - ich würde dich gerne treffen
+    - persönlich treffen
+- intent: smalltalk_beruf
+  examples: |
+    - Was machst Du von Beruf
+    - was ist dein job
+    - was arbeitest du
+    - wo arbeitest du
+    - was ist dein beruf
+    - was bist du vom beruf her
+    - was machst du beruflich
+- intent: smalltalk_wetter
+  examples: |
+    - Wie wird das Wetter?
+    - scheint die sonne
+    - kannst du mir das wetter sagen
+    - wetter
+    - kannst du auch das wetter vorhersehen
+    - wie wird denn das wetter
+- intent: smalltalk_uhrzeit
+  examples: |
+    - Wie spät ist es
+    - wie spät
+    - uhrzeit
+    - kennst du auch die uhrzeit
+    - kannst du mir sagen wie spät es ist
+    - wie spät ist es?
+- intent: smalltalk_tschuess
+  examples: |
+    - Tschüss
+    - ciao
+    - bye
+    - tschau
+    - auf wiedersehen
+- intent: smalltalk_du_nervst
+  examples: |
+    - Du nervst
+    - nerv nicht
+    - du nervst mich
+    - du bist nervig
+    - du bist dumm
+    - du bist bescheuert
+- intent: smalltalk_gut_gemacht
+  examples: |
+    - Gut gemacht
+    - super gemacht
+    - super
+    - toll
+    - cool
+- intent: smalltalk_mensch
+  examples: |
+    - Bist Du ein Mensch?
+    - bist du ein bot oder ein mensch
+    - bist du ein richtiger mensch
+    - bist du ein bot
+    - bot oder mensch
+    - rede ich mit einem menschen
+    - du bist doch ein mensch
+    - bist du ein mensch?
+- intent: smalltalk_was_kannst_du
+  examples: |
+    - Was kannst du
+    - was kannst du überhaupt
+    - wie kannst du mir helfen
+    - was kannst du machen
+    - was kannst du überhaupt?
+- intent: smalltalk_kontakt
+  examples: |
+    - Wie kann ich Euch erreichen?
+    - kontaktdaten
+    - direktkontakt
+- intent: smalltalk_schoepfer
+  examples: |
+    - Wer hat Dich erschaffen
+    - wer ist dein schöpfer
+    - wer hat dich programmieren
+- intent: smalltalk_freizeit
+  examples: |
+    - Was machst Du in Deiner Freizeit?
+    - hobbies
+    - hast du hobbys
+    - was sind deine hobbys
+    - was machst du wenn du freizeit hast
+    - was machst du nach der arbeit
+    - was machst du in deiner freizeit eigentlich
+- intent: smalltalk_witz
+  examples: |
+    - Erzähl mir einen Witz
+    - witz erzählen
+    - kannst du einen witz erzählen
+    - erzähl mir mal einen witz
+    - kennst du auch witze?
+- intent: smalltalk_woher
+  examples: |
+    - Woher kommst Du
+    - woher bist du
+    - woher kommst du
+- intent: smalltalk_wohnort
+  examples: |
+    - Wo wohnst Du
+    - wo wohnst du?
+    - hast du eine wohnung
+    - wo ist dein wohnort
+- intent: smalltalk_langweilig
+  examples: |
+    - Mir ist langweilig
+    - es ist langweilig
+    - mir ist so langweilig
+    - lanweilig
+    - krass langweilig
+- intent: smalltalk_sinn
+  examples: |
+    - Was ist der Sinn des Lebens?
+    - sinn des lebens
+    - kennst du den sinn des lebens
+    - was ist der sinn des lebens
+- intent: smalltalk_bewusstsein
+  examples: |
+    - Hast Du ein Bewusstsein?
+    - hast du ein bewusstsein
+    - haben bots ein bewusstsein
+    - bist du dir deiner selbst bewusst
+- intent: werk_breakthrough
+  examples: |
+    - breakthrough guide
+    - breakthrough of an artist guide
+- intent: werk_arche
+  examples: |
+    - arche guide
+    - arche noah guide
+- intent: werk_wipe
+  examples: |
+    - wipe guide
+    - wipe cycle guide
+- intent: werk_tisch
+  examples: |
+    - tisch guide
+    - tisch tänzer guide
+- intent: werk_city
+  examples: |
+    - city guide
+    - legible city guide
+- intent: werk_zuse
+  examples: |
+    - zuse guide
+    - zuse 22 guide
+- intent: werk_labour
+  examples: |
+    - labour guide
+    - slave labour guide
+- intent: werk_texte
+  examples: |
+    - texte guide
+    - stochastische texte guide
+- intent: werk_19601
+  examples: |
+    - 1960 guide
+    - 1960
+    - 19601
+    - 1960.01 guide
+    - 1960 01 guide
+- intent: werk_amateure
+  examples: |
+    - amateure guide
+    - alle Macht den Amateuren guide
+- intent: werk_labyrinth
+  examples: |
+    - labyrinth guide
+    - Electric Labyrinth guide
+- intent: werk_who
+  examples: |
+    - who guide
+    - Who are you guide
+- intent: smalltalk_danke
+  examples: |
+    - danke schön
+    - danke
+    - vielen dank
+    - danke danke
+    - danke dir
+    - danke auch
+- synonym: heute
+  examples: |
+    - gerade
+- synonym: spielausstellung
+  examples: |
+    - spieleausstellung
+    - gameplay
+    - spiele-ausstellung
+    - spiele ausstelllung
+    - spiel ausstellung
+    - spiel-ausstellung
+- regex: date
+  examples: |
+    - [0-9]{4}
+- regex: year
+  examples: |
+    - [0-9]{4}

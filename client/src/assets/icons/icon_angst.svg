@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="203" height="204" viewBox="0 0 203 204">
+  <rect id="Rechteck_1" data-name="Rechteck 1" width="203" height="204" fill="#fff"/>
+  <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(10 15)" fill="#fff" stroke="#000" stroke-width="4">
+    <circle cx="89" cy="89" r="89" stroke="none"/>
+    <circle cx="89" cy="89" r="87" fill="none"/>
+  </g>
+  <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(52 63)" fill="none" stroke="#000" stroke-width="4">
+    <circle cx="18.5" cy="18.5" r="18.5" stroke="none"/>
+    <circle cx="18.5" cy="18.5" r="16.5" fill="none"/>
+  </g>
+  <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(125 78)" stroke="#000" stroke-width="1">
+    <circle cx="4.5" cy="4.5" r="4.5" stroke="none"/>
+    <circle cx="4.5" cy="4.5" r="4" fill="none"/>
+  </g>
+  <path id="Pfad_4" data-name="Pfad 4" d="M152.44,237.279c1.347-5.656,5.656-18.853,11.042-15.89s12.389,17.776,14.544,13.736,10.5-26.664,17.237-13.736,5.925,23.432,12.658,7,10.773-13.736,15.621-3.232,4.309,12.12,4.309,12.12" transform="translate(-89 -89)" fill="none" stroke="#000" stroke-width="4"/>
+  <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(110 63)" fill="none" stroke="#000" stroke-width="4">
+    <circle cx="19.5" cy="19.5" r="19.5" stroke="none"/>
+    <circle cx="19.5" cy="19.5" r="17.5" fill="none"/>
+  </g>
+  <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(66 76)" stroke="#000" stroke-width="1">
+    <circle cx="5" cy="5" r="5" stroke="none"/>
+    <circle cx="5" cy="5" r="4.5" fill="none"/>
+  </g>
+</svg>

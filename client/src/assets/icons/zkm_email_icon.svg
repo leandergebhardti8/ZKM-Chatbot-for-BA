@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="189" height="189" viewBox="0 0 189 189">
+  <g id="Gruppe_35" data-name="Gruppe 35" transform="translate(-137 -471)">
+    <path id="Pfad_121" data-name="Pfad 121" d="M218.757,603.057" transform="translate(59)" fill="none" stroke="#707070" stroke-width="1"/>
+    <g id="Gruppe_37" data-name="Gruppe 37">
+      <g id="Ellipse_35" data-name="Ellipse 35" transform="translate(137 471)" fill="none" stroke="#fff" stroke-width="10">
+        <circle cx="94.5" cy="94.5" r="94.5" stroke="none"/>
+        <circle cx="94.5" cy="94.5" r="89.5" fill="none"/>
+      </g>
+      <g id="Gruppe_36" data-name="Gruppe 36" transform="translate(0 -3)">
+        <path id="Pfad_118" data-name="Pfad 118" d="M184.718,533.18h92.926v69.876H184.718Z" fill="none" stroke="#fff" stroke-width="8"/>
+        <path id="Pfad_119" data-name="Pfad 119" d="M184.732,533.119l46.659,44.362,46.252-44.362" fill="none" stroke="#fff" stroke-width="8"/>
+        <path id="Pfad_120" data-name="Pfad 120" d="M184.732,603.057l36.552-34.581" fill="none" stroke="#fff" stroke-width="8"/>
+        <path id="Pfad_122" data-name="Pfad 122" d="M221.054,603.057l-36.513-34.782" transform="translate(57)" fill="none" stroke="#fff" stroke-width="8"/>
+      </g>
+    </g>
+  </g>
+</svg>

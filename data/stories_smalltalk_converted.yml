@@ -1,0 +1,111 @@
+version: "2.0"
+stories:
+- story: smalltalk_wie_gehts
+  steps:
+  - intent: smalltalk_wie_gehts
+  - action: utter_wie_gehts
+- story: smalltalk_name
+  steps:
+  - intent: smalltalk_name
+  - action: utter_name
+- story: smalltalk_geschlecht
+  steps:
+  - intent: smalltalk_geschlecht
+  - action: utter_geschlecht
+- story: smalltalk_alter
+  steps:
+  - intent: smalltalk_alter
+  - action: utter_alter
+- story: smalltalk_treffen
+  steps:
+  - intent: smalltalk_treffen
+  - action: utter_treffen
+- story: smalltalk_beruf
+  steps:
+  - intent: smalltalk_beruf
+  - action: utter_beruf
+- story: smalltalk_wetter
+  steps:
+  - intent: smalltalk_wetter
+  - action: utter_wetter
+- story: smalltalk_uhrzeit
+  steps:
+  - intent: smalltalk_uhrzeit
+  - action: action_uhrzeit
+  - action: utter_uhrzeit
+- story: smalltalk_tschuess
+  steps:
+  - intent: smalltalk_tschuess
+  - action: utter_tschuess
+- story: smalltalk_du_nervst
+  steps:
+  - intent: smalltalk_du_nervst
+  - action: utter_du_nervst
+- story: smalltalk_gut_gemacht
+  steps:
+  - intent: smalltalk_gut_gemacht
+  - action: utter_gut_gemacht
+- story: smalltalk_mensch_ja
+  steps:
+  - intent: smalltalk_mensch
+  - action: utter_mensch
+  - intent: affirm
+  - action: utter_mensch_ja
+  - intent: inform
+  - action: utter_interessant
+- story: smalltalk_was_kannst_du
+  steps:
+  - intent: smalltalk_was_kannst_du
+  - action: utter_was_kannst_du
+- story: smalltalk_hilfe
+  steps:
+  - intent: hilfe
+  - action: utter_hilfe
+- story: smalltalk_kontakt
+  steps:
+  - intent: smalltalk_kontakt
+  - action: utter_kontakt
+  - action: utter_antwort_hilfreich_frage
+- story: smalltalk_schoepfer
+  steps:
+  - intent: smalltalk_schoepfer
+  - action: utter_schoepfer
+  - action: utter_antwort_hilfreich_frage
+- story: smalltalk_freizeit
+  steps:
+  - intent: smalltalk_freizeit
+  - action: utter_freizeit
+- story: smalltalk_witz
+  steps:
+  - intent: smalltalk_witz
+  - action: utter_witz
+- story: smalltalk_woher
+  steps:
+  - intent: smalltalk_woher
+  - action: utter_woher
+- story: smalltalk_wohnort
+  steps:
+  - intent: smalltalk_wohnort
+  - action: utter_wohnort
+- story: smalltalk_langweilig
+  steps:
+  - intent: smalltalk_langweilig
+  - action: utter_langweilig
+- story: smalltalk_sinn_des_lebens
+  steps:
+  - intent: smalltalk_sinn
+  - action: utter_sinn
+- story: smalltalk_bewusstsein
+  steps:
+  - intent: smalltalk_bewusstsein
+  - action: utter_bewusstsein
+  - action: utter_antwort_hilfreich_frage
+- story: smalltalk_danke
+  steps:
+  - intent: smalltalk_danke
+  - action: utter_danke
+  - action: utter_antwort_hilfreich_frage
+- story: smalltalk_halllo
+  steps:
+  - intent: greet
+  - action: utter_wie_kann_ich_helfen

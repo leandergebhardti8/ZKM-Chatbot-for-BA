@@ -1,0 +1,45 @@
+#chatbot {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    height: 812px;
+    max-height: 85%;
+    width: 375px;
+}
+
+#bubble {
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-align: center;
+    background-image: url(https://zkm-chatbot.s3.eu-central-1.amazonaws.com/chatbot/button.gif);
+    border-radius: 50%;
+    filter: brightness(200%);
+    -webkit-filter: brightness(200%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+#bubble, #chatbot {
+    z-index: 10000;
+    right: 30px;
+    bottom: 75px;
+}
+
+@media only screen and (max-width: 800px) {
+    #chatbot {
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        height: 100vh !important;
+        max-height: 100vh;
+        width: 100vw;
+    }
+  }

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="324" height="285" viewBox="0 0 324 285">
+  <rect id="Rechteck_8" data-name="Rechteck 8" width="324" height="285" fill="#fff"/>
+  <g id="Ellipse_16" data-name="Ellipse 16" transform="translate(11 147)" fill="#fff" stroke="#000" stroke-width="14">
+    <circle cx="62.5" cy="62.5" r="62.5" stroke="none"/>
+    <circle cx="62.5" cy="62.5" r="55.5" fill="none"/>
+  </g>
+  <g id="Ellipse_17" data-name="Ellipse 17" transform="translate(188 147)" fill="#fff" stroke="#000" stroke-width="14">
+    <circle cx="62.5" cy="62.5" r="62.5" stroke="none"/>
+    <circle cx="62.5" cy="62.5" r="55.5" fill="none"/>
+  </g>
+  <path id="Pfad_47" data-name="Pfad 47" d="M679.593-484.233s-.729,10.914,9.259,10.762,9.309-10.762,9.309-10.762,5.857-27.141-11.763-54.706a167.507,167.507,0,0,0-39.768-43.116s8.81-15.185,29.256-27.594,35.574-18.285,35.574-18.285,11.074,29.763,29.193,39.757,42.413,10.23,42.413,10.23,6.358-.385,6.767-7.765-6.767-8.72-6.767-8.72a61.052,61.052,0,0,1-29.41-7.928c-14.545-8.411-18.669-21.226-27.364-36.57s-6.1-20.98-14.832-26.643-22.607,0-22.607,0-30.171,9.821-55.189,26.643S595.1-604.179,595.1-604.179s-8.313,12.386-4.988,22.124S608.4-568.092,608.4-568.092s30.658,6.283,51.2,30.767A87.905,87.905,0,0,1,679.593-484.233Z" transform="translate(-523 700.591)" stroke="#000" stroke-width="1"/>
+  <circle id="Ellipse_18" data-name="Ellipse 18" cx="24.5" cy="24.5" r="24.5" transform="translate(202 8)"/>
+</svg>

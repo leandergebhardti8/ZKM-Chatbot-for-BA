@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="155" viewBox="0 0 340 155">
+  <rect id="Rechteck_12" data-name="Rechteck 12" width="340" height="155" fill="#fff"/>
+  <g id="Ellipse_20" data-name="Ellipse 20" transform="translate(61 89)" fill="none" stroke="#000" stroke-width="12">
+    <circle cx="27" cy="27" r="27" stroke="none"/>
+    <circle cx="27" cy="27" r="21" fill="none"/>
+  </g>
+  <g id="Ellipse_21" data-name="Ellipse 21" transform="translate(220 89)" fill="none" stroke="#000" stroke-width="12">
+    <circle cx="27" cy="27" r="27" stroke="none"/>
+    <circle cx="27" cy="27" r="21" fill="none"/>
+  </g>
+  <path id="Pfad_57" data-name="Pfad 57" d="M573-281H523.388v-52.222h62.236l19.881-41.059H696.7l63.1,41.059s47.492,3.564,68.021,16.62,14.1,35.6,14.1,35.6H785.3" transform="translate(-512 397)" fill="none" stroke="#000" stroke-width="5"/>
+  <path id="Pfad_58" data-name="Pfad 58" d="M627-281H732.571" transform="translate(-512 397)" fill="none" stroke="#000" stroke-width="5"/>
+  <path id="Pfad_59" data-name="Pfad 59" d="M729.113-333.222H616.742" transform="translate(-512 397)" fill="none" stroke="#000" stroke-width="5"/>
+</svg>

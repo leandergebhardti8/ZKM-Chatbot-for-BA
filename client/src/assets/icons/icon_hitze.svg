@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="258" height="335" viewBox="0 0 258 335">
+  <rect id="Rechteck_16" data-name="Rechteck 16" width="258" height="335" fill="#fff"/>
+  <path id="Pfad_68" data-name="Pfad 68" d="M713.552-245.529V-429.255s-5.619-25.283-30.34-25.283-26.969,25.283-26.969,25.283v183.726S632.56-229.435,632.3-202.582s22.521,51.56,50.908,52.328,52.918-24.2,52.918-52.328S713.552-245.529,713.552-245.529Z" transform="translate(-522 469)" fill="#fff" stroke="#000" stroke-width="8"/>
+  <circle id="Ellipse_24" data-name="Ellipse 24" cx="29" cy="29" r="29" transform="translate(133 241)"/>
+  <line id="Linie_21" data-name="Linie 21" y1="186" transform="translate(161.5 63.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="18"/>
+  <line id="Linie_22" data-name="Linie 22" x2="28" transform="translate(210.5 46.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
+  <line id="Linie_23" data-name="Linie 23" x2="14" transform="translate(210.5 69.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
+  <line id="Linie_24" data-name="Linie 24" x2="28" transform="translate(210.5 92.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
+  <line id="Linie_25" data-name="Linie 25" x2="14" transform="translate(210.5 115.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
+  <line id="Linie_26" data-name="Linie 26" x2="28" transform="translate(210.5 138.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
+  <line id="Linie_27" data-name="Linie 27" x2="14" transform="translate(210.5 161.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
+  <line id="Linie_28" data-name="Linie 28" x2="28" transform="translate(210.5 184.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
+  <path id="Pfad_69" data-name="Pfad 69" d="M577.913-460.539s-23.324,25.4-19.437,55.558,28.6,31.131,34.986,59.453-22.214,61.793-22.214,61.793,29.433-26.566,29.988-58.516c.35-20.16-4.7-25.732-13.328-35.11-4.744-5.157-12.408-12.9-16.66-22.47C559.725-425.775,577.913-460.539,577.913-460.539Z" transform="translate(-525.254 475)"/>
+  <path id="Pfad_70" data-name="Pfad 70" d="M570.356-460.539s-14.456,15.364-12.047,33.6,17.726,18.83,21.684,35.961S566.226-353.6,566.226-353.6s18.242-16.069,18.587-35.394c.217-12.194-2.914-15.565-8.261-21.237-2.94-3.119-7.691-7.8-10.326-13.591C559.084-439.511,570.356-460.539,570.356-460.539Z" transform="translate(-547.039 537.861)"/>
+  <path id="Pfad_71" data-name="Pfad 71" d="M569.533-460.539s-13.49,15.364-11.241,33.6,16.541,18.83,20.234,35.961S565.678-353.6,565.678-353.6s17.023-16.069,17.344-35.394c.2-12.194-2.719-15.565-7.708-21.237-2.744-3.119-7.176-7.8-9.635-13.591C559.014-439.511,569.533-460.539,569.533-460.539Z" transform="translate(-482.039 487.861)"/>
+</svg>

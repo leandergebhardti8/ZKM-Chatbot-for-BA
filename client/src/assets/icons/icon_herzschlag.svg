@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="338" height="306" viewBox="0 0 338 306">
+  <rect id="Rechteck_10" data-name="Rechteck 10" width="338" height="306" fill="#fff"/>
+  <g transform="translate(8.825 12.497)">
+    <g id="Gruppe_7" data-name="Gruppe 7" transform="translate(0 0)">
+      <g id="Gruppe_6" data-name="Gruppe 6">
+        <path id="Pfad_50" data-name="Pfad 50" d="M232.755,30A75.039,75.039,0,0,0,185.89,46.2c-13.325,10.3-22.2,23.43-27.419,32.974C153.249,69.628,144.377,56.5,131.053,46.2A75.039,75.039,0,0,0,84.188,30C36.193,30,0,69.257,0,121.315c0,56.241,45.154,94.721,113.511,152.973,11.608,9.893,24.765,21.106,38.441,33.065a9.908,9.908,0,0,0,13.039,0c13.677-11.961,26.834-23.173,38.448-33.072,68.349-58.246,113.5-96.726,113.5-152.967C316.943,69.257,280.749,30,232.755,30Z" transform="translate(0 -30)"/>
+      </g>
+    </g>
+  </g>
+  <path id="Pfad_51" data-name="Pfad 51" d="M550.1-229.032h81.084l11.341-30.16L676.1-160.449l27.672-170.218,39.466,133.035,15.877-31.4h70.313" transform="translate(-517.011 406.32)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"/>
+</svg>

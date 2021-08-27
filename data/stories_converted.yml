@@ -1,0 +1,1203 @@
+version: "2.0"
+stories:
+- story: Query Attribute
+  steps:
+  - intent: query_attribute
+  - action: action_query_attribute
+- story: Besuchsdauer
+  steps:
+  - intent: besuchsdauer
+  - action: utter_besuchsdauer
+  - action: utter_antwort_hilfreich_frage
+- story: Programm Wochenende
+  steps:
+  - intent: programm_wochenende
+  - action: action_query_programm_wochenende
+- story: Garderobe
+  steps:
+  - intent: garderobe
+  - action: utter_garderobe
+  - action: utter_antwort_hilfreich_frage
+- story: Direktkontakt
+  steps:
+  - intent: kontakt
+  - action: utter_kontakt
+- story: Direktkontakt - Affirm
+  steps:
+  - action: utter_kontakt
+  - intent: email_direkt_senden
+  - action: action_send_mail
+
+- story: DirektKontakt after send mail
+  steps:
+  - intent: weiter_direkt
+  - action: utter_wie_kann_ich_helfen
+- story: Direktkontakt - Deny
+  steps:
+  - action: utter_kontakt
+  - intent: email_direkt_cancel
+  - action: utter_wie_kann_ich_helfen
+- story: Feedback - Affirm
+  steps:
+  - action: utter_antwort_hilfreich_frage
+  - intent: affirm_frage
+  - action: utter_freut_mich_zu_hören_affirm
+  - action: utter_danke
+- story: Feedback - Deny
+  steps:
+  - action: utter_antwort_hilfreich_frage
+  - intent: deny_frage_2
+  - action: utter_frage_anfrage_direkt_an_uns
+- story: Feedback - Deny - Affirm
+  steps:
+  - action: utter_frage_anfrage_direkt_an_uns
+  - intent: affirm_frage_2
+  - action: utter_kontakt
+- story: Feedback - Deny - Deny
+  steps:
+  - action: utter_frage_anfrage_direkt_an_uns
+  - intent: deny_frage
+  - action: utter_wie_kann_ich_helfen
+- story: Lottie Test
+  steps:
+  - intent: lottie_test
+  - action: utter_lottie_test
+- story: Frage stellen
+  steps:
+  - action: utter_wie_kann_ich_helfen
+  - intent: frage_stellen
+  - action: utter_frage_stellen
+- story: Abfahrt
+  steps:
+  - intent: abfahrt
+  - action: utter_abfahrt
+  - action: utter_antwort_hilfreich_frage
+- story: Workshops - Allgemein
+  steps:
+  - intent: workshops_allgemein
+  - action: utter_workshops_allgemein
+- story: Workshops - Ankunftszeit
+  steps:
+  - intent: ankunft_vor_workshop
+  - action: utter_ankunft_vor_workshop
+  - action: utter_antwort_hilfreich_frage
+- story: Ausstellungen montags
+  steps:
+  - intent: ausstellungen_am_montag
+  - action: utter_ausstellungen_am_montag
+  - action: utter_antwort_hilfreich_frage
+- story: Ausstellungseroeffnung
+  steps:
+  - intent: ausstellungseroeffnung
+  - action: utter_ausstellungseroeffnung
+  - action: utter_antwort_hilfreich_frage
+- story: Schließfaecher
+  steps:
+  - intent: schließfaecher
+  - action: utter_schließfaecher
+  - action: utter_antwort_hilfreich_frage
+- story: Programm fuer Kinder
+  steps:
+  - intent: beliebt_bei_kindern
+  - action: action_beliebt_bei_kindern
+- story: Workshop - Bezahlung
+  steps:
+  - intent: bezahlung_workshop
+  - action: utter_bezahlung_workshop
+  - action: utter_antwort_hilfreich_frage
+- story: Verpflegung
+  steps:
+  - intent: verpflegung
+  - action: utter_verpflegung
+  - action: utter_antwort_hilfreich_frage
+- story: Eintrittspreise
+  steps:
+  - intent: eintrittspreise
+  - action: action_query_entrance
+  - action: utter_antwort_hilfreich_frage
+- story: Eintrittspreise - Kindergeburtstag
+  steps:
+  - intent: elterneintritt_kindergeburtstag
+  - action: utter_elterneintritt_kindergeburtstag
+  - action: utter_antwort_hilfreich_frage
+- story: Eintrittspreise - Ermaessigung
+  steps:
+  - intent: ermaessigung
+  - action: utter_ermaessigung
+  - action: utter_antwort_hilfreich_frage
+- story: Rollstuhl
+  steps:
+  - intent: gehhilfe_rollstuhl
+  - action: utter_gehhilfe_rollstuhl
+  - action: utter_antwort_hilfreich_frage
+- story: Eintrittskarte - Gueltigkeit
+  steps:
+  - intent: gueltigkeit
+  - action: utter_gueltigkeit
+  - action: utter_antwort_hilfreich_frage
+- story: Erreichbarkeit Workshopbuero
+  steps:
+  - intent: erreichbarkeit_workshopbuero
+  - action: utter_erreichbarkeit_workshopbuero
+  - action: utter_antwort_hilfreich_frage
+- story: Veranstaltungen - Besuchsdauer
+  steps:
+  - intent: besuchsdauer_veranstaltungen
+  - action: utter_besuchsdauer_veranstaltungen
+  - action: utter_antwort_hilfreich_frage
+- story: Workshop - Besuchsdauer
+  steps:
+  - intent: besuchsdauer_workshop
+  - action: utter_besuchsdauer_workshop
+  - action: utter_antwort_hilfreich_frage
+- story: Veranstaltungen - Fuehrungen
+  steps:
+  - intent: fuehrung_fuer_ausstellung_xy
+  - action: utter_fuehrung_fuer_ausstellung_xy
+  - action: utter_antwort_hilfreich_frage
+- story: Veranstaltungen -  Sprachen
+  steps:
+  - intent: fuehrung_sprache
+  - action: utter_fuehrung_sprache
+  - action: utter_antwort_hilfreich_frage
+- story: Veranstaltungen - Dauer
+  steps:
+  - intent: fuehrung_allgemein_dauer
+  - action: utter_fuehrung_allgemein_dauer
+  - action: utter_antwort_hilfreich_frage
+- story: Veranstaltungen - Schulklassen Fuehrung
+  steps:
+  - intent: fuehrung_schulklasse
+  - action: utter_fuehrung_kontakt
+  - action: utter_antwort_hilfreich_frage
+- story: Eintrittspreise - Gruppenticket
+  steps:
+  - intent: gruppenticket
+  - action: utter_gruppenticket
+  - action: utter_antwort_hilfreich_frage
+- story: Ticket kaufen
+  steps:
+  - intent: ticket_kaufen
+  - action: utter_ticket_kaufen
+  - action: utter_antwort_hilfreich_frage
+- story: Gutschein kaufen
+  steps:
+  - intent: gutschein_kaufen
+  - action: utter_gutschein_kaufen
+  - action: utter_antwort_hilfreich_frage
+- story: Fuehrung - Kosten - affirm
+  steps:
+  - intent: kosten_fuehrung
+  - action: utter_kosten_fuehrung_01
+  - action: utter_kosten_fuehrung_02
+  - action: utter_kosten_fuehrung_03
+  - action: utter_kosten_fuehrung_04
+  - intent: affirm
+  - action: utter_kosten_fuehrung_05
+  - action: utter_antwort_hilfreich_frage
+- story: Fuehrung - Kosten - Deny
+  steps:
+  - intent: kosten_fuehrung
+  - action: utter_kosten_fuehrung_01
+  - action: utter_kosten_fuehrung_02
+  - action: utter_kosten_fuehrung_03
+  - action: utter_kosten_fuehrung_04
+  - intent: deny
+  - action: utter_kosten_fuehrung_06
+  - action: utter_antwort_hilfreich_frage
+- story: Workshop - Museumseintritt
+  steps:
+  - intent: museum_nach_workshop
+  - action: utter_museum_nach_workshop
+  - action: utter_antwort_hilfreich_frage
+- story: Workshop - Museumseintritt Schulklassen
+  steps:
+  - intent: museum_nach_workshop_fuer_schulklassen
+  - action: utter_museum_nach_workshop_fuer_schulklassen
+  - action: utter_antwort_hilfreich_frage
+- story: Museumspass
+  steps:
+  - intent: museumspass
+  - action: utter_museumspass
+  - action: utter_antwort_hilfreich_frage
+- story: Oeffnungszeiten
+  steps:
+  - intent: oeffnungszeiten
+  - action: utter_oeffnungszeiten
+  - action: action_shop_opening
+  - action: utter_oeffnungszeiten_andere
+  - intent: deny
+  - action: utter_antwort_hilfreich_frage
+- story: Spieleausstellungswerke
+  steps:
+  - intent: werke_spiele
+  - action: utter_werke_spiele
+  - action: utter_antwort_hilfreich_frage
+- story: Parken
+  steps:
+  - intent: parken
+  - action: utter_parken
+  - action: utter_antwort_hilfreich_frage
+- story: Fuehrung buchen - Start
+  steps:
+  - intent: fuehrung_buchen
+  - action: utter_fuehrung_buchen
+  - intent: affirm_fuehrung
+    entities:
+      - guide_title: fuehrung
+  - action: utter_fuehrung_buchen_affirm
+- story: Fuehrung buchen - Start
+  steps:
+  - intent: fuehrung_buchen
+  - action: utter_fuehrung_buchen
+  - intent: deny_fuehrung
+  - action: utter_fuehrung_kontakt
+- story: Fuehrung buchen - For Who - 1
+  steps:
+  - action: utter_fuehrung_buchen_affirm
+  - intent: opt1
+    entities:
+    - num_people: one
+  - action: utter_alleine
+- story: Fuehrung buchen - For Who - 1 - oeffentlich
+  steps:
+  - action: utter_alleine
+  - intent: fuehrung_oeffentlich
+  - action: utter_fuehrung_oeffentlich
+- story: Fuehrung buchen - For Who - 1 - privat
+  steps:
+  - action: utter_alleine
+  - intent: fuehrung_privat
+  - action: utter_datum_fragen
+- story: Fuehrung buchen - For Who - 4
+  steps:
+  - action: utter_fuehrung_buchen_affirm
+  - intent: opt2
+    entities:
+    - num_people: four
+  - action: utter_vier
+- story: Fuehrung buchen - For Who - 4 - Oeffentlich
+  steps:
+  - action: utter_vier
+  - intent: fuehrung_oeffentlich
+  - action: utter_fuehrung_oeffentlich
+- story: Fuehrung buchen - For Who - 4 - Privat
+  steps:
+  - action: utter_vier
+  - intent: fuehrung_privat
+  - action: utter_datum_fragen
+- story: Fuehrung buchen - For Who - <20
+  steps:
+  - action: utter_fuehrung_buchen_affirm
+  - intent: opt3
+    entities:
+    - num_people: less_twenty
+  - action: utter_datum_fragen
+- story: Fuehrung buchen - For Who - Schulklasse
+  steps:
+  - action: utter_fuehrung_buchen_affirm
+  - intent: opt5
+    entities:
+    - num_people: Schulklasse
+  - action: utter_fuer_schulklasse
+- story: Fuehrung buchen - For Who - Schulklasse - >20
+  steps:
+  - action: utter_fuer_schulklasse
+  - intent: affirm_fuehrung
+  - action: utter_fuehrung_20plus
+  - action: utter_datum_fragen
+- story: Fuehrung buchen - For Who - Schulklasse - <=20
+  steps:
+  - action: utter_fuer_schulklasse
+  - intent: deny_fuehrung
+  - action: utter_datum_fragen
+- story: Fuehrung buchen - For Who - >20
+  steps:
+  - action: utter_fuehrung_buchen_affirm
+  - intent: opt4
+    entities:
+    - num_people: more_twenty
+  - action: utter_fuehrung_20plus
+  - action: utter_datum_fragen
+- story: Fuehrung buchen - Datum fragen
+  steps:
+  - action: utter_datum_fragen
+  - intent: datum_eingabe
+    entities:
+    - date: '2020-06-23T13:44:00.000+02:00'
+  - slot_was_set:
+    - date: '2020-06-23T13:44:00.000+02:00'
+  - action: utter_datum_bestaetigen
+  - action: utter_oeffnungszeiten_woche
+- story: Fuehrung buchen - Datum fragen - Vormittags
+  steps:
+  - action: utter_oeffnungszeiten_woche
+  - intent: tageszeit_eingabe
+    entities:
+    - visit_time: Vormittags
+  - action: utter_auswahl_austellung
+- story: Fuehrung buchen - Datum fragen - Mittags
+  steps:
+  - action: utter_oeffnungszeiten_woche
+  - intent: tageszeit_eingabe
+    entities:
+    - visit_time: Mittags
+  - action: utter_auswahl_austellung
+- story: Fuehrung buchen - Datum fragen - Nachmittags
+  steps:
+  - action: utter_oeffnungszeiten_woche
+  - intent: tageszeit_eingabe
+    entities:
+    - visit_time: Nachmittags
+  - action: utter_auswahl_austellung
+- story: Fuehrung buchen - Auswahl Ausstellung - Writing the History of the Future
+  steps:
+  - action: utter_auswahl_austellung
+  - intent: ausstellung_history_of_future
+    entities:
+    - guide_event: Writing the History of the Future
+  - action: utter_persoenliche_fuehrung
+- story: Fuehrung buchen - Auswahl Ausstellung - Critical Zones
+  steps:
+  - action: utter_auswahl_austellung
+  - intent: ausstellung_critical_zones
+    entities:
+    - guide_event: Critical Zones
+  - action: utter_persoenliche_fuehrung
+- story: Fuehrung buchen - Auswahl Ausstellung - Auswahl Offen
+  steps:
+  - action: utter_auswahl_austellung
+  - intent: auswahl_offen
+    entities:
+    - guide_event: Auswahl offen
+  - action: utter_persoenliche_fuehrung
+- story: Fuehrung buchen - Persönliche Führung - Dialogführung - Email senden
+  steps:
+  - action: utter_persoenliche_fuehrung
+  - intent: opt1
+    entities:
+    - kind_of_event: Dialogführung
+  - action: utter_fuehrungsart
+  - action: action_slot_values
+  - intent: email_senden
+  - action: action_send_mail
+
+- story: fuehrung buchen after send mail
+  steps:
+  - intent: weiter_fuehrung
+  - action: utter_jahreskarte
+- story: Fuehrung buchen - Persönliche Führung - Dialogführung - Email Cancel
+  steps:
+  - action: utter_persoenliche_fuehrung
+  - intent: opt1
+    entities:
+    - kind_of_event: Dialogführung
+  - action: utter_fuehrungsart
+  - action: action_slot_values
+  - intent: email_cancel
+  - action: utter_kontakt_abbrechen
+- story: Fuehrung buchen - Persönliche Führung - Aktionsführung - Email Senden
+  steps:
+  - action: utter_persoenliche_fuehrung
+  - intent: opt2
+    entities:
+    - kind_of_event: Aktionsführung
+  - action: utter_fuehrungsart
+  - action: action_slot_values
+  - intent: email_senden
+  - action: action_send_mail
+
+  # - action: utter_jahreskarte
+- story: Fuehrung buchen - Persönliche Führung - Aktionsführung - Email cancel
+  steps:
+  - action: utter_persoenliche_fuehrung
+  - intent: opt2
+    entities:
+    - kind_of_event: Aktionsführung
+  - action: utter_fuehrungsart
+  - action: action_slot_values
+  - intent: email_cancel
+  - action: utter_kontakt_abbrechen
+- story: Fuehrung buchen - Persönliche Führung - Unterschied
+  steps:
+  - action: utter_persoenliche_fuehrung
+  - intent: unterschied
+  - action: utter_unterschied_dialog
+  - action: utter_unterschied_aktion
+  - action: utter_persoenliche_fuehrung
+- story: Fuehrung buchen - Jahreskarte - Ja
+  steps:
+  - action: utter_jahreskarte
+  - intent: opt1
+    entities:
+    - example_werk: fuehrung_buchen
+  - action: utter_jahreskarte_affirm
+- story: Fuehrung buchen - Jahreskarte - Nein
+  steps:
+  - action: utter_jahreskarte
+  - intent: opt2
+    entities:
+    - example_werk: fuehrung_buchen
+  - action: utter_jahreskarte_deny
+  - action: utter_jahreskarte_erwerben
+- story: Fuehrung buchen - Jahreskarte erwerben - Ja
+  steps:
+  - action: utter_jahreskarte_erwerben
+  - intent: affirm
+  - action: utter_jahreskarte_erwerben_affirm
+- story: Fuehrung buchen - Jahreskarte erwerben - Nein
+  steps:
+  - action: utter_jahreskarte_erwerben
+  - intent: deny
+  - action: utter_jahreskarte_affirm
+- story: question ausstellung_date
+  steps:
+  - intent: query_event_date
+  - action: action_query_event_date
+  - action: utter_antwort_hilfreich_frage
+- story: question Werke
+  steps:
+  - intent: werke
+  - action: action_werke
+  - action: utter_antwort_hilfreich_frage
+- story: Programm - Wochenende
+  steps:
+  - intent: programm_wochenende
+  - action: action_query_programm_wochenende
+- story: Programm - Tagesspezifisch no date given
+  steps:
+  - intent: programm_tagesspezifisch
+  - action: action_query_programm_tagesspezifisch
+- story: Programm - Tagesspezifisch
+  steps:
+  - intent: programm_tagesspezifisch
+  - slot_was_set:
+    - date: 20.02.2020
+  - action: action_query_programm_tagesspezifisch
+- story: Fuehrung - Teilnehmerzahl
+  steps:
+  - intent: personen_pro_fuehrung
+  - action: utter_personen_pro_fuehrung
+  - action: utter_antwort_hilfreich_frage
+- story: Schulklassen - Eignung
+  steps:
+  - intent: schulklassen_geeignet
+  - action: utter_schulklassen_geeignet
+  - action: utter_antwort_hilfreich_frage
+- story: Schulklassen - Besuch
+  steps:
+  - intent: schulklasse_besuch
+  - action: utter_schulklasse_besuch
+  - action: utter_antwort_hilfreich_frage
+- story: Shop
+  steps:
+  - intent: shop_generell
+  - action: utter_shop_generell
+  - action: utter_antwort_hilfreich_frage
+- story: Shop - Standort
+  steps:
+  - intent: shop_standort
+  - action: utter_shop_standort
+  - action: utter_antwort_hilfreich_frage
+- story: Oeffnungszeiten - Sonderoeffnungszeiten
+  steps:
+  - intent: sonderoeffnungszeiten
+  - action: utter_sonderoeffnungszeiten
+  - action: utter_antwort_hilfreich_frage
+- story: Spielausstellung
+  steps:
+  - intent: spielausstellung
+  - action: utter_spielausstellung
+  - action: utter_antwort_hilfreich_frage
+- story: Tour Starten
+  steps:
+  - intent: tour_starten
+  - action: utter_start_tour
+- story: Guide Info
+  steps:
+  - intent: get_guide_info
+  - action: action_get_guide_info
+- story: Stornobedingungen
+  steps:
+  - intent: stornobedingungen
+  - action: utter_stornobedingungen
+  - action: utter_antwort_hilfreich_frage
+- story: Toiletten
+  steps:
+  - intent: toiletten
+  - action: utter_toiletten
+  - action: utter_antwort_hilfreich_frage
+- story: Workshop - Treffpunkt
+  steps:
+  - intent: treffpunkt_workshop
+  - action: utter_treffpunkt_workshop
+  - action: utter_antwort_hilfreich_frage
+- story: Workshop - Termin
+  steps:
+  - intent: termin_workshops
+  - action: action_termin_workshops
+  - action: utter_antwort_hilfreich_frage
+- story: Workshop - Verpflegung
+  steps:
+  - intent: verpflegung_workshop
+  - action: utter_verpflegung_workshop
+  - action: utter_antwort_hilfreich_frage
+- story: Workshop - Warteliste
+  steps:
+  - intent: warteliste_workshop
+  - action: utter_warteliste_workshop
+  - action: utter_antwort_hilfreich_frage
+- story: Workshop - Anmeldung
+  steps:
+  - intent: workshop_anmeldung
+  - action: utter_workshop_anmeldung
+  - action: utter_antwort_hilfreich_frage
+- story: Workshop - Erinnerung
+  steps:
+  - intent: workshop_erinnerung
+  - action: utter_workshop_erinnerung
+  - action: utter_antwort_hilfreich_frage
+- story: Workshop - Reservierung
+  steps:
+  - action: utter_workshop_reservieren
+  - action: utter_antwort_hilfreich_frage
+- story: Workshop - Eignung
+  steps:
+  - intent: workshopeignung
+  - action: utter_workshopeignung
+  - action: utter_antwort_hilfreich_frage
+- story: Workshop - Preise
+  steps:
+  - intent: workshoppreise
+  - action: utter_workshoppreise
+  - action: utter_antwort_hilfreich_frage
+- story: Videos ansehen
+  steps:
+  - intent: video_ansehen
+  - action: utter_video_ansehen_01
+  - or:
+    - intent: deny
+    - intent: affirm
+  - action: utter_video_ansehen_02
+  - action: utter_antwort_hilfreich_frage
+- story: Audio Guide
+  steps:
+  - intent: ausstellungen_audioguide
+  - action: utter_ausstellungen_audioguide
+  - action: utter_antwort_hilfreich_frage
+- story: Katalogee
+  steps:
+  - intent: ausstellung_katalog
+  - action: action_ausstellung_katalog
+- story: Katalogee
+  steps:
+  - intent: ausstellung_katalog
+  - slot_was_set:
+    - event: event
+  - action: action_ausstellung_katalog
+  - intent: affirm
+  - action: action_slot_values
+  - intent: email_senden
+  - action: action_send_mail
+  # - action: utter_antwort_hilfreich_frage
+- story: Katalogee
+  steps:
+  - intent: ausstellung_katalog
+  - slot_was_set:
+    - event: event
+  - action: action_ausstellung_katalog
+  - intent: affirm
+  - action: action_slot_values
+  - intent: email_cancel
+  - action: utter_kontakt_abbrechen
+- story: Katalogee
+  steps:
+  - intent: ausstellung_katalog
+  - slot_was_set:
+    - event: event
+  - action: action_ausstellung_katalog
+  - intent: deny
+  - action: utter_wie_kann_ich_helfen
+- story: Katalogee
+  steps:
+  - intent: ausstellung_katalog
+  - slot_was_set:
+    - event: event
+  - action: action_ausstellung_katalog
+- story: Ist Kuenstler in Ausstellung
+  steps:
+  - intent: ausstellung_kuenstler
+  - action: action_query_exhibition_artist
+  - action: utter_antwort_hilfreich_frage
+- story: Termin Workshops
+  steps:
+  - intent: termin_workshops
+  - action: action_termin_workshops
+  - action: utter_antwort_hilfreich_frage
+- story: Kuenstler - Werke
+  steps:
+  - intent: werke_kuenstler
+  - action: action_werke_kuenstler
+  - action: utter_antwort_hilfreich_frage
+- story: Kuenstler - Werke 1
+  steps:
+  - intent: werke_kuenstler
+    entities:
+    - PER: Torsten Belschner
+  - slot_was_set:
+    - PER: Torsten Belschner
+  - action: action_werke_kuenstler
+  - action: utter_antwort_hilfreich_frage
+- story: Werk - Allgemeine Infos
+  steps:
+  - intent: werke_allgemein
+  - action: action_werke_allgemein
+- story: Werk - Allgemeine Infos deny contact form
+  steps:
+  - intent: werke_allgemein
+  - action: action_werke_allgemein
+  - intent: deny
+  - action: utter_wie_kann_ich_helfen
+- story: Werk - Allgemeine Infos deny contact form
+  steps:
+  - intent: werke_allgemein
+  - action: action_werke_allgemein
+  - intent: affirm
+  - action: action_slot_values
+  - intent: email_senden
+  - action: action_send_mail
+  # - action: utter_antwort_hilfreich_frage
+- story: Werk - Autor
+  steps:
+  - intent: werke_autor
+  - action: action_werke_allgemein
+- story: Ausstellung - Laufzeit
+  steps:
+  - intent: ausstellung_laufzeit
+  - action: utter_ausstellung_laufzeit
+  - action: utter_antwort_hilfreich_frage
+- story: Ausstellung - Regeln Fotos
+  steps:
+  - intent: ausstellungen_regeln_fotografieren
+  - action: utter_ausstellungen_regeln_fotografieren
+  - intent: affirm
+    entities:
+    - email_type: approval
+  - action: action_slot_values
+  - intent: email_senden
+  - action: action_send_mail
+  # - action: utter_antwort_hilfreich_frage
+- story: Ausstellung - Regeln Fotos
+  steps:
+  - intent: ausstellungen_regeln_fotografieren
+  - action: utter_ausstellungen_regeln_fotografieren
+  - intent: affirm
+    entities:
+    - email_type: approval
+  - action: action_slot_values
+  - intent: email_cancel
+  - action: utter_kontakt_abbrechen
+  - action: utter_antwort_hilfreich_frage
+- story: Kinderwagen
+  steps:
+  - intent: kinderwagen
+  - action: utter_kinderwagen
+  - action: utter_antwort_hilfreich_frage
+- story: Ausstellung - Zeitaufwand
+  steps:
+  - intent: ausstellung_zeitaufwand
+  - action: utter_ausstellung_zeitaufwand
+  - action: utter_antwort_hilfreich_frage
+- story: Baem
+  steps:
+  - intent: baem_beschreibung
+  - action: utter_baem_beschreibung
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Ausleihee
+  steps:
+  - intent: bibliothek_ausleihe
+  - action: utter_bibliothek_ausleihe
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Lesen
+  steps:
+  - intent: bibliothek_lesen
+  - action: utter_bibliothek_lesen
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Buchanzahl
+  steps:
+  - intent: buch_anzahl
+  - action: utter_buch_anzahl
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Ausleihdauer
+  steps:
+  - intent: buchausleihdauer
+  - action: utter_buchausleihdauer
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Ausweis
+  steps:
+  - intent: bibliothek_ausweis
+  - action: utter_bibliothek_ausweis
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Oeffnungszeiten
+  steps:
+  - intent: bibliothek_oeffnungzeiten
+  - action: utter_bibliothek_oeffnungzeiten
+  - action: action_library_opening
+  - action: utter_antwort_hilfreich_frage
+- story: Infotheke - Oeffnungszeiten
+  steps:
+  - intent: infotheke_oeffnungszeiten
+  - action: utter_oeffnungszeiten_infotheke
+  - action: action_infopoint_opening
+  - action: utter_antwort_hilfreich_frage
+- story: Ausstellung - Oeffnungszeiten
+  steps:
+  - intent: ausstellung_oeffnungszeiten
+  - action: utter_oeffnungszeiten_ausstellung
+  - action: action_exhibition_opening
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Ausleihe Studenten
+  steps:
+  - intent: bibliothek_ausleihe_studenten
+  - action: utter_bibliothek_ausleihe_studenten
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Scanner
+  steps:
+  - intent: bibliothek_funktion_scanner
+  - action: utter_bibliothek_funktion_scanner
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Drucken
+  steps:
+  - intent: bibliothek_drucken
+  - action: utter_bibliothek_drucken
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Rechner
+  steps:
+  - intent: bibliothek_rechner
+  - action: utter_bibliothek_rechner
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Internet
+  steps:
+  - intent: bibliothek_internet
+  - action: utter_bibliothek_internet
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Leseplaetzee
+  steps:
+  - intent: bibliothek_leseplaetze
+  - action: utter_bibliothek_leseplaetze
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Mediathek
+  steps:
+  - intent: bibliothek_mediathek
+  - action: utter_bibliothek_mediathek
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Mediathek Suche
+  steps:
+  - intent: bibliothek_mediathek_suche
+  - action: utter_bibliothek_mediathek_suche
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Regeln
+  steps:
+  - intent: bibliothek_regeln
+  - action: utter_bibliothek_regeln
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Essen und Trinken
+  steps:
+  - intent: bibliothek_regeln_essen_trinken
+  - action: utter_bibliothek_regeln_essen_trinken
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - Suche
+  steps:
+  - intent: bibliothek_suche
+  - action: utter_bibliothek_suche
+  - action: utter_antwort_hilfreich_frage
+- story: Bib - DVD Suche
+  steps:
+  - intent: bibliothek_suche_dvd
+  - action: utter_bibliothek_suche_dvd
+  - action: utter_antwort_hilfreich_frage
+- story: Lageplan
+  steps:
+  - intent: info_lageplan
+  - action: utter_info_lageplan
+  - action: utter_antwort_hilfreich_frage
+- story: Taxi
+  steps:
+  - intent: info_service_taxi
+  - action: utter_info_service_taxi
+  - action: utter_antwort_hilfreich_frage
+- story: Shop - Kontakt
+  steps:
+  - intent: museumsshop_kontakt
+  - action: utter_museumsshop_kontakt
+  - action: utter_antwort_hilfreich_frage
+- story: Workshop - Material
+  steps:
+  - intent: workshop_material
+  - action: utter_workshop_material
+  - action: utter_antwort_hilfreich_frage
+- story: Shop - Bezahlung
+  steps:
+  - intent: museumsshop_bezahlung
+  - action: utter_museumsshop_bezahlung
+  - action: utter_antwort_hilfreich_frage
+- story: Veranstaltung - Einlass
+  steps:
+  - intent: veranstaltung_einlass
+  - action: utter_veranstaltung_einlass
+  - action: utter_antwort_hilfreich_frage
+- story: Veranstaltung - Eintritt
+  steps:
+  - intent: veranstaltung_eintritt
+  - action: utter_veranstaltung_eintritt
+  - action: utter_antwort_hilfreich_frage
+- story: question veranstaltung_eintritt_abendkasse
+  steps:
+  - intent: veranstaltung_eintritt_abendkasse
+  - action: utter_ticket_kaufen
+  - action: utter_antwort_hilfreich_frage
+- story: question veranstaltung_eintritt_reservierung
+  steps:
+  - intent: veranstaltung_eintritt_reservierung
+  - action: utter_veranstaltung_eintritt_reservierung
+  - action: utter_antwort_hilfreich_frage
+- story: question veranstaltung_eintritt_verkauf
+  steps:
+  - intent: veranstaltung_eintritt_verkauf
+  - action: utter_ticket_kaufen
+  - action: utter_antwort_hilfreich_frage
+- story: question veranstaltung_mitwirkende
+  steps:
+  - intent: veranstaltung_mitwirkende
+  - action: utter_veranstaltung_mitwirkende
+  - action: utter_antwort_hilfreich_frage
+- story: question teilnehmerzahl_maximal
+  steps:
+  - intent: teilnehmerzahl_maximal
+  - action: utter_teilnehmerzahl_maximal
+  - action: utter_antwort_hilfreich_frage
+- story: question workshop_beschreibung
+  steps:
+  - intent: workshop_beschreibung
+  - action: utter_workshop_beschreibung
+  - action: utter_antwort_hilfreich_frage
+- story: question workshop_leitung
+  steps:
+  - intent: workshop_leitung
+  - action: utter_workshop_leitung
+  - action: utter_antwort_hilfreich_frage
+- story: question workshop_sprache
+  steps:
+  - intent: workshop_sprache
+  - action: utter_workshop_sprache
+- story: question workshop_teilnehmerzahl_maximal
+  steps:
+  - intent: workshop_teilnehmerzahl_maximal
+  - action: utter_workshops_allgemein
+  - action: utter_antwort_hilfreich_frage
+- story: question zkm_architektur_geschichte
+  steps:
+  - intent: zkm_architektur_geschichte
+  - action: utter_zkm_architektur_geschichte
+  - action: utter_zkm_architektur_geschichte_01
+  - intent: affirm
+  - action: utter_zkm_architektur_geschichte_02
+  - action: utter_antwort_hilfreich_frage
+- story: question zkm_beschreibung
+  steps:
+  - intent: zkm_beschreibung
+  - action: utter_zkm_beschreibung
+  - action: utter_antwort_hilfreich_frage
+- story: question zkm_beschreibung_geschichte
+  steps:
+  - intent: zkm_beschreibung_geschichte
+  - action: utter_zkm_beschreibung_geschichte
+  - action: utter_antwort_hilfreich_frage
+- story: question zkm_beschreibung_medienkunst
+  steps:
+  - intent: zkm_beschreibung_medienkunst
+  - action: utter_zkm_beschreibung_medienkunst
+  - action: utter_antwort_hilfreich_frage
+- story: question zkm_beschreibung_personen
+  steps:
+  - intent: zkm_beschreibung_personen
+  - action: utter_zkm_beschreibung_personen
+  - action: utter_antwort_hilfreich_frage
+- story: question zkm_kino
+  steps:
+  - intent: zkm_kino
+  - action: utter_zkm_kino
+- story: question auswahl_kunst
+  steps:
+  - intent: opt1
+  - action: utter_kunst
+- story: question auswahl_kuesse
+  steps:
+  - intent: opt2
+  - action: utter_kuesse
+- story: question auswahl_kueche
+  steps:
+  - intent: opt3
+  - action: utter_kueche
+- story: question auswahl_kino
+  steps:
+  - intent: opt4
+  - action: utter_kino
+  - action: utter_antwort_hilfreich_frage
+- story: question buch_suchen_affirm
+  steps:
+  - intent: buch_suchen
+  - action: utter_buch_suchen
+  - intent: affirm
+  - action: utter_bibliothek_suche
+  - action: utter_antwort_hilfreich_frage
+- story: question buch_suchen_deny
+  steps:
+  - intent: buch_suchen
+  - action: utter_buch_suchen
+  - intent: deny
+  - action: utter_buch_deny
+  - action: utter_antwort_hilfreich_frage
+- story: question zkm_kontakt
+  steps:
+  - intent: zkm_kontakt
+  - action: utter_zkm_kontakt
+  - action: utter_antwort_hilfreich_frage
+- story: question zkm_newsletter
+  steps:
+  - intent: zkm_newsletter
+  - action: utter_zkm_newsletter
+  - action: utter_antwort_hilfreich_frage
+- story: question zkm_regeln_tiere
+  steps:
+  - intent: zkm_regeln_tiere
+  - action: utter_zkm_regeln_tiere
+  - action: utter_antwort_hilfreich_frage
+- story: question zkm_restaurant
+  steps:
+  - intent: zkm_restaurant
+  - action: utter_zkm_restaurant
+  - action: utter_antwort_hilfreich_frage
+- story: question werke_entstehungsjahr
+  steps:
+  - intent: werke_entstehungsjahr
+  - action: action_jahresuebersicht
+  - action: utter_antwort_hilfreich_frage
+- story: corona_regeln
+  steps:
+  - intent: corona
+  - action: utter_corona
+  - action: utter_antwort_hilfreich_frage
+- story: freitag kostenlos
+  steps:
+  - intent: freitag_kostenlos
+  - action: utter_freitag_kostenlos
+  - action: utter_antwort_hilfreich_frage
+- story: interactive_story_vor_ort_affirm
+  steps:
+  - intent: start
+  - action: utter_anfang
+  - action: valid_name_form
+  - slot_was_set:
+    - name: valid_name_form
+  - active_loop: valid_name_form
+  - active_loop: null
+  - action: utter_wie_kann_ich_helfen
+- story: interactive_anfahrt_auto
+  steps:
+  - intent: anfahrt
+  - action: utter_anfahrt
+  - intent: anfahrt_auto
+  - action: utter_anfahrt_auto
+  - action: utter_antwort_hilfreich_frage
+- story: interactive_anfahrt_ bahn
+  steps:
+  - intent: anfahrt
+  - action: utter_anfahrt
+  - intent: anfahrt_bahn
+  - action: utter_anfahrt_bahn
+  - action: utter_antwort_hilfreich_frage
+- story: interactive_parken_bus
+  steps:
+  - intent: parken
+  - action: utter_parken
+  - action: utter_antwort_hilfreich_frage
+- story: interactive_ermaessigung
+  steps:
+  - intent: ermaessigung
+  - action: utter_ermaessigung
+  - action: utter_antwort_hilfreich_frage
+- story: interactive_oeffnungszeiten
+  steps:
+  - intent: start
+  - action: utter_anfang
+  - action: valid_name_form
+  - slot_was_set:
+    - name: valid_name_form
+  - active_loop: valid_name_form
+  - active_loop: null
+  - action: utter_wie_kann_ich_helfen
+  - intent: oeffnungszeiten
+  - action: utter_oeffnungszeiten
+  - action: action_shop_opening
+  - action: utter_oeffnungszeiten_andere
+  - action: utter_antwort_hilfreich_frage
+- story: interactive_story_1
+  steps:
+  - intent: ausstellung_kuenstler
+    entities:
+    - PER: Torsten Belschner
+    - event: Wittgenstein in Coen Country
+  - slot_was_set:
+    - PER: Torsten Belschner
+  - slot_was_set:
+    - event: Wittgenstein in Coen Country
+  - action: action_query_exhibition_artist
+  - action: utter_antwort_hilfreich_frage
+- story: interactive_story_1
+  steps:
+  - intent: start
+  - action: utter_anfang
+  - action: valid_name_form
+  - slot_was_set:
+    - name: Bahar
+  - active_loop: Bahar
+  - active_loop: null
+  - action: utter_wie_kann_ich_helfen
+- story: oeffnungszeiten
+  steps:
+  - intent: oeffnungszeiten
+  - action: utter_oeffnungszeiten
+  - action: action_shop_opening
+  - action: utter_oeffnungszeiten_andere
+  - action: utter_antwort_hilfreich_frage
+  - intent: deny
+  - action: utter_wie_kann_ich_helfen
+  - intent: oeffnungszeiten
+  - action: utter_oeffnungszeiten
+  - action: action_shop_opening
+  - action: utter_oeffnungszeiten_andere
+  - action: utter_antwort_hilfreich_frage
+  - intent: oeffnungszeiten
+  - action: utter_oeffnungszeiten
+  - action: action_shop_opening
+  - action: utter_oeffnungszeiten_andere
+  - action: utter_antwort_hilfreich_frage
+# - story: Story from Conversation ID ee5dd6fcb0b84eeab62f26d5438604e8
+#   steps:
+#   - intent: werk_wipe
+#   - action: utter_wipe_001
+#   - action: utter_wipe_002
+#   - action: utter_wipe_003
+#   - intent: affirm_wipe_2
+#   - action: utter_wipe_004
+#   - action: utter_wipe_005
+#   - intent: affirm_wipe
+#   - action: utter_wipe_006
+#   - intent: affirm_wipe_2
+#   - action: utter_wipe_009
+#   - action: utter_wipe_010
+#   - action: utter_wipe_011
+#   - action: utter_wipe_015
+#   - intent: option4_wipe
+#     entities:
+#     - email_type: custom_message
+#   - slot_was_set:
+#     - email_type: custom_message
+#   - action: action_slot_values_guides
+#   - intent: email_senden_guide
+#   - action: action_guide_send_mail
+#   - action: utter_wipe_023
+#   - action: utter_wipe_022
+#   - intent: affirm_wipe_2
+#   - action: utter_wipe_024
+#   - action: utter_wipe_0261
+#   - action: utter_wipe_026
+#   - intent: affirm_wipe_2
+#   - action: utter_wipe_027
+#   - action: utter_wipe_029
+#   - action: utter_wipe_ende
+# - story: Story from Conversation ID f5167e7fa25d4bca929f147b40084390
+#   steps:
+#   - intent: werk_texte
+#   - action: utter_texte_001
+#   - intent: affirm_texte_2
+#   - action: utter_texte_002
+#   - action: utter_texte_004
+#   - intent: affirm_texte
+#   - action: utter_texte_005
+#   - action: utter_texte_006
+#   - intent: deny_texte
+#     entities:
+#     - email_type: custom_message
+#   - slot_was_set:
+#     - email_type: custom_message
+#   - action: action_slot_values_guides
+#   - intent: email_senden_guide
+#   - action: action_guide_send_mail
+#   - action: utter_texte_008
+#   - action: utter_texte_003
+#   - action: utter_texte_009
+#   - intent: affirm_texte
+#     entities:
+#     - example_werk: texte
+#   - slot_was_set:
+#     - example_werk: texte
+#   - action: utter_texte_011
+#   - action: utter_texte_012
+#   - intent: affirm_texte
+#   - action: utter_texte_0121
+#   - intent: affirm_texte_3
+#   - action: utter_texte_0123
+#   - action: utter_texte_013
+#   - intent: falsch
+#   - action: utter_texte_016
+#   - action: utter_texte_015
+#   - action: utter_texte_017
+#   - intent: affirm_texte
+#   - action: utter_texte_022
+#   - intent: affirm_texte
+#   - action: utter_texte_023
+#   - action: utter_texte_ende
+# - story: Story from Conversation ID f5167e7fa25d4bca929f147b40084390
+#   steps:
+#   - intent: werk_texte
+#   - action: utter_texte_001
+#   - intent: affirm_texte_2
+#   - action: utter_texte_002
+#   - action: utter_texte_004
+#   - intent: affirm_texte
+#   - action: utter_texte_005
+#   - action: utter_texte_006
+#   - intent: deny_texte
+#     entities:
+#     - email_type: custom_message
+#   - slot_was_set:
+#     - email_type: custom_message
+#   - action: action_slot_values_guides
+#   - intent: email_senden_guide
+#   - action: action_guide_send_mail
+#   - action: utter_texte_008
+#   - action: utter_texte_003
+#   - action: utter_texte_009
+#   - intent: affirm_texte
+#     entities:
+#     - example_werk: texte
+#   - slot_was_set:
+#     - example_werk: texte
+#   - action: utter_texte_011
+#   - action: utter_texte_012
+#   - intent: affirm_texte
+#   - action: utter_texte_0121
+#   - intent: affirm_texte_3
+#   - action: utter_texte_0123
+#   - action: utter_texte_013
+#   - intent: falsch
+#   - action: utter_texte_016
+#   - action: utter_texte_015
+#   - action: utter_texte_017
+#   - intent: affirm_texte
+#   - action: utter_texte_022
+#   - intent: affirm_texte
+#   - action: utter_texte_023
+#   - action: utter_texte_ende

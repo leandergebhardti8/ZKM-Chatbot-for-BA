@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="203" height="204" viewBox="0 0 203 204">
+  <rect id="Rechteck_1" data-name="Rechteck 1" width="203" height="204" fill="#fff"/>
+  <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(13 10)" fill="#fff" stroke="#000" stroke-width="4">
+    <circle cx="89" cy="89" r="89" stroke="none"/>
+    <circle cx="89" cy="89" r="87" fill="none"/>
+  </g>
+  <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(66 73)" stroke="#000" stroke-width="1">
+    <circle cx="6.5" cy="6.5" r="6.5" stroke="none"/>
+    <circle cx="6.5" cy="6.5" r="6" fill="none"/>
+  </g>
+  <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(119 73)" stroke="#000" stroke-width="1">
+    <circle cx="6.5" cy="6.5" r="6.5" stroke="none"/>
+    <circle cx="6.5" cy="6.5" r="6" fill="none"/>
+  </g>
+  <path id="Pfad_1" data-name="Pfad 1" d="M154.824,247.988c5.784-38.988,71.634-26.257,68.964,0" transform="translate(-87.867 -103)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="5"/>
+</svg>

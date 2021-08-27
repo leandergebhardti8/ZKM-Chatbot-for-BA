@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="234" height="224" viewBox="0 0 234 224">
+  <rect id="Rechteck_3" data-name="Rechteck 3" width="234" height="224" fill="#fff"/>
+  <g id="Ellipse_9" data-name="Ellipse 9" transform="translate(20 19)" fill="#fff" stroke="#000" stroke-width="8">
+    <circle cx="94.5" cy="94.5" r="94.5" stroke="none"/>
+    <circle cx="94.5" cy="94.5" r="90.5" fill="none"/>
+  </g>
+  <line id="Linie_1" data-name="Linie 1" y2="59" transform="translate(114.5 54.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="5"/>
+  <line id="Linie_2" data-name="Linie 2" x1="21" y1="21" transform="translate(114.5 113.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="5"/>
+  <line id="Linie_3" data-name="Linie 3" y2="11" transform="translate(114.5 32.5)" fill="none" stroke="#000" stroke-width="6"/>
+  <line id="Linie_4" data-name="Linie 4" y2="11" transform="translate(113.5 184.5)" fill="none" stroke="#000" stroke-width="6"/>
+  <line id="Linie_5" data-name="Linie 5" y2="11" transform="translate(42 114) rotate(90)" fill="none" stroke="#000" stroke-width="6"/>
+  <line id="Linie_6" data-name="Linie 6" y2="11" transform="translate(198 114) rotate(90)" fill="none" stroke="#000" stroke-width="6"/>
+  <line id="Linie_7" data-name="Linie 7" y2="11" transform="translate(174.389 56.111) rotate(45)" fill="none" stroke="#000" stroke-width="5"/>
+  <line id="Linie_8" data-name="Linie 8" y2="11" transform="translate(67.389 168.111) rotate(45)" fill="none" stroke="#000" stroke-width="5"/>
+  <line id="Linie_9" data-name="Linie 9" y2="11" transform="translate(166.611 164.111) rotate(-45)" fill="none" stroke="#000" stroke-width="5"/>
+  <line id="Linie_10" data-name="Linie 10" y2="11" transform="translate(54.611 56.111) rotate(-45)" fill="none" stroke="#000" stroke-width="5"/>
+</svg>

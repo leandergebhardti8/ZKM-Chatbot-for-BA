@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="232" height="204" viewBox="0 0 232 204">
+  <rect id="Rechteck_1" data-name="Rechteck 1" width="232" height="204" fill="#fff"/>
+  <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(12 19)" fill="#fff" stroke="#000" stroke-width="8">
+    <circle cx="89" cy="89" r="89" stroke="none"/>
+    <circle cx="89" cy="89" r="85" fill="none"/>
+  </g>
+  <path id="Pfad_86" data-name="Pfad 86" d="M169.225,255.337s9.326-13.632,30.25-13.3c20.945.332,23.276,9.643,23.276,9.643s-4.626-1.327-23.276-1.895S169.225,255.337,169.225,255.337Z" transform="translate(-96 -99)" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+  <g id="Ellipse_25" data-name="Ellipse 25" transform="translate(65 77)" stroke="#000" stroke-width="1">
+    <circle cx="10" cy="10" r="10" stroke="none"/>
+    <circle cx="10" cy="10" r="9.5" fill="none"/>
+  </g>
+  <g id="Ellipse_26" data-name="Ellipse 26" transform="translate(123 77)" stroke="#000" stroke-width="1">
+    <circle cx="10" cy="10" r="10" stroke="none"/>
+    <circle cx="10" cy="10" r="9.5" fill="none"/>
+  </g>
+  <g id="Gruppe_26" data-name="Gruppe 26" transform="translate(-88.032 -71.073)">
+    <path id="Pfad_96" data-name="Pfad 96" d="M241.039,146.107s8.635-30.653,30.475-31.252,25.153,10.5,25.265,28.084-16.867,25.772-24.316,40.242-7.963,34.591-7.963,34.591-1.277,8.5,7.351,8.833,8.233-6.52,8.233-6.52-1.8-12.244,7.106-30.4,27.494-19.26,27.494-44.1-8.331-47.714-43.169-47.108-45.938,42.764-45.938,42.764-2.945,7.689,4.59,9.744S241.039,146.107,241.039,146.107Z" transform="translate(-4.504 -11)" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    <g id="Ellipse_27" data-name="Ellipse 27" transform="translate(255.032 214.073)" stroke="#fff" stroke-width="4">
+      <circle cx="13" cy="13" r="13" stroke="none"/>
+      <circle cx="13" cy="13" r="11" fill="none"/>
+    </g>
+  </g>
+</svg>

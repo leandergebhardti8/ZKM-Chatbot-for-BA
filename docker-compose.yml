@@ -1,0 +1,92 @@
+version: "3.4"
+
+services:
+  rasa-production:
+    restart: always
+    build: "."
+    expose:
+      - "5005"
+      - "5055"
+    volumes:
+      - ./models:/app/models
+      - ./oldmodels:/app/oldmodels
+      - ./environments.yml:/app/environments.yml
+      - ./credentials.yml:/app/credentials.yml
+      - ./endpoints.yml:/app/endpoints.yml
+      - ./logs:/logs
+      - ./auth:/app/auth
+      - ./channels:/app/channels
+      - ./tracker_store.py:/app/tracker_store.py
+    env_file:
+      - ".env"
+    depends_on:
+      - rasa-worker
+    networks:
+      default:
+        ipv4_address: 192.195.130.180
+
+  rasa-worker:
+    container_name: "rasa-worker"
+    restart: always
+    build: "./rasaw"
+    expose:
+      - "9999"
+      - "5055"
+    volumes:
+      - ./models:/app/models
+      - ./oldmodels:/app/oldmodels
+      - ./environments.yml:/app/environments.yml
+      - ./credentials.yml:/app/credentials.yml
+      - ./endpoints.yml:/app/endpoints.yml
+      - ./config.yml:/app/config.yml
+      - ./domain.yml:/app/domain.yml
+      - ./logs:/logs
+      - ./auth:/app/auth
+      - ./channels:/app/channels
+      - ./data:/app/data
+      - ./scripts:/app/scripts
+    env_file:
+      - "./rasaw/.env"
+    depends_on:
+      - db
+
+  client:
+    build: "./client"
+    env_file:
+      - ./client/client.env
+
+  db:
+    image: "mysql:8.0.22"
+    restart: always
+    volumes:
+      - ./sqldb:/var/lib/mysql
+    expose:
+      - "3306"
+    env_file:
+      - ./db.env
+
+  duckling:
+    restart: always
+    image: "rasa/duckling:0.1.6.3"
+    expose:
+      - "8000"
+    command: ["duckling-example-exe", "--no-access-log", "--no-error-log"]
+
+  nginx:
+    restart: always
+    image: "rasa/nginx:stable"
+    ports:
+      - "80:8080"
+      - "443:8443"
+    volumes:
+      - ./certs:/opt/bitnami/certs
+      - ./terms:/opt/bitnami/nginx/conf/bitnami/terms
+      - ./nginx:/opt/bitnami/nginx/conf/conf.d
+    depends_on:
+      - rasa-production
+      - rasa-worker
+
+networks:
+  default:
+    external:
+      name: chatbot-network 

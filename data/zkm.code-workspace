@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "/Users/tillkundrun/Projects/ZKM-Chatbot"
+		},
+		{
+			"path": "/Users/tillkundrun/Projects/lyon-academie-chatbot"
+		},
+		{
+			"path": "/Users/tillkundrun/Projects/tuev-academy-chatbot"
+		},
+		{
+			"path": "/Users/tillkundrun/Projects/zkm-frontend"
+		},
+		{
+			"path": "/Users/tillkundrun/Projects/skoda-botkit"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "skoda-botkit"
+	}
+}

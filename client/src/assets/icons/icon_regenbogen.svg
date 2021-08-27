@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="104" viewBox="0 0 147 104">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rechteck_23" data-name="Rechteck 23" width="140" height="63" transform="translate(129.708 629.75)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <rect id="Rechteck_24" data-name="Rechteck 24" width="147" height="104" fill="#fff"/>
+  <g id="Gruppe_maskieren_1" data-name="Gruppe maskieren 1" transform="translate(-124.708 -625.75)" clip-path="url(#clip-path)">
+    <g id="Ellipse_28" data-name="Ellipse 28" transform="translate(185.708 683.75)" fill="#fff" stroke="#000" stroke-width="5">
+      <circle cx="13" cy="13" r="13" stroke="none"/>
+      <circle cx="13" cy="13" r="10.5" fill="none"/>
+    </g>
+    <g id="Ellipse_29" data-name="Ellipse 29" transform="translate(173.708 671.75)" fill="none" stroke="#000" stroke-width="5">
+      <circle cx="25.5" cy="25.5" r="25.5" stroke="none"/>
+      <circle cx="25.5" cy="25.5" r="23" fill="none"/>
+    </g>
+    <g id="Ellipse_30" data-name="Ellipse 30" transform="translate(161.708 659.75)" fill="none" stroke="#000" stroke-width="5">
+      <ellipse cx="37.5" cy="37" rx="37.5" ry="37" stroke="none"/>
+      <ellipse cx="37.5" cy="37" rx="35" ry="34.5" fill="none"/>
+    </g>
+    <g id="Ellipse_31" data-name="Ellipse 31" transform="translate(151.708 647.75)" fill="none" stroke="#000" stroke-width="5">
+      <circle cx="48.5" cy="48.5" r="48.5" stroke="none"/>
+      <circle cx="48.5" cy="48.5" r="46" fill="none"/>
+    </g>
+    <g id="Ellipse_32" data-name="Ellipse 32" transform="translate(139.708 636.75)" fill="none" stroke="#000" stroke-width="5">
+      <ellipse cx="59.5" cy="60" rx="59.5" ry="60" stroke="none"/>
+      <ellipse cx="59.5" cy="60" rx="57" ry="57.5" fill="none"/>
+    </g>
+  </g>
+  <line id="Linie_38" data-name="Linie 38" x2="120" transform="translate(15.5 69.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="5"/>
+  <line id="Linie_39" data-name="Linie 39" x2="101" transform="translate(25.5 81.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="5"/>
+  <line id="Linie_40" data-name="Linie 40" x2="63" transform="translate(44.5 93.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="5"/>
+</svg>

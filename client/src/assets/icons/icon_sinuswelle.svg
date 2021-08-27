@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="230" viewBox="0 0 320 230">
+  <rect id="Rechteck_20" data-name="Rechteck 20" width="320" height="230" fill="#fff"/>
+  <g id="Rechteck_19" data-name="Rechteck 19" transform="translate(7 5)" fill="#fff" stroke="#000" stroke-linejoin="round" stroke-width="8">
+    <rect width="293" height="210" rx="18" stroke="none"/>
+    <rect x="4" y="4" width="285" height="202" rx="14" fill="none"/>
+  </g>
+  <path id="Pfad_83" data-name="Pfad 83" d="M590.508-298s12.361-73.3,48.319-58.215,59.276,104,95.515,118.551S783.786-298,783.786-298" transform="translate(-534 408)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
+</svg>

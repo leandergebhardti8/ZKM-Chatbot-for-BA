@@ -1,0 +1,1528 @@
+version: "2.0"
+stories:
+- story: starte_tour
+  steps:
+  - intent: start_tour
+  - action: utter_start_tour
+  - intent: affirm
+  - action: utter_arche_001
+- story: fuehrung_breakthrough_00
+  steps:
+  - intent: werk_breakthrough
+  - action: utter_breakthrough_intro
+  - action: utter_breakthrough_modal
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_001
+- story: fuehrung_breakthrough_01
+  steps:
+  - action: utter_breakthrough_001
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_002
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_004
+  - action: utter_breakthrough_005
+  - action: utter_breakthrough_0051
+  # - checkpoint: check_breakthrough_04
+- story: fuehrung_breakthrough_011
+  steps:
+  # - checkpoint: check_breakthrough_01
+  - action: utter_breakthrough_001
+  - intent: deny_breakthrough
+  - action: utter_breakthrough_003
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_004
+  - action: utter_breakthrough_005
+  - action: utter_breakthrough_0051
+  # - checkpoint: check_breakthrough_04
+- story: fuehrung_breakthrough_031
+  steps:
+  # - checkpoint: check_breakthrough_04
+  - action: utter_breakthrough_0051
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_006
+  - action: utter_breakthrough_007
+  - action: utter_breakthrough_008
+  # - checkpoint: check_breakthrough_05
+- story: fuehrung_breakthrough_032
+  steps:
+  # - checkpoint: check_breakthrough_04
+  - action: utter_breakthrough_0051
+  - intent: deny_breakthrough
+  - action: utter_breakthrough_028
+  - action: utter_breakthrough_029
+  - action: utter_breakthrough_030
+  - action: utter_breakthrough_031
+- story: fuehrung_breakthrough_032
+  steps:
+  # - checkpoint: check_breakthrough_10
+  - action: utter_breakthrough_031
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_007
+  - action: utter_breakthrough_008
+  # - checkpoint: check_breakthrough_05
+- story: fuehrung_breakthrough_032
+  steps:
+  # - checkpoint: check_breakthrough_10
+  - action: utter_breakthrough_031
+  - intent: deny_breakthrough
+  - action: utter_breakthrough_032
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_011
+  # - checkpoint: check_breakthrough_06
+- story: fuehrung_breakthrough_04
+  steps:
+  # - checkpoint: check_breakthrough_05
+  - action: utter_breakthrough_008
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_009
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_010
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_011
+  # - checkpoint: check_breakthrough_06
+- story: fuehrung_breakthrough_041
+  steps:
+  # - checkpoint: check_breakthrough_06
+  - action: utter_breakthrough_011
+  - intent: affirm
+  - action: utter_breakthrough_012
+  - action: utter_breakthrough_013
+  - action: utter_breakthrough_014
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_015
+  - action: utter_breakthrough_0151
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_016
+  - action: utter_breakthrough_017
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_018
+  - action: utter_breakthrough_019
+  - action: utter_breakthrough_020
+  # - checkpoint: check_breakthrough_07
+- story: fuehrung_breakthrough_05
+  steps:
+  # - checkpoint: check_breakthrough_07
+  - action: utter_breakthrough_020
+  - intent: opt1
+  - action: utter_breakthrough_021
+  - action: utter_breakthrough_024
+  - action: utter_breakthrough_025
+  - action: utter_breakthrough_026
+  # - checkpoint: check_breakthrough_081
+- story: fuehrung_breakthrough_051
+  steps:
+  # - checkpoint: check_breakthrough_07
+  - action: utter_breakthrough_020
+  - intent: opt2
+  - action: utter_breakthrough_0211
+  - action: utter_breakthrough_022
+  - action: utter_breakthrough_024
+  - action: utter_breakthrough_025
+  - action: utter_breakthrough_026
+  # - checkpoint: check_breakthrough_081
+- story: fuehrung_breakthrough_052
+  steps:
+  # - checkpoint: check_breakthrough_07
+  - action: utter_breakthrough_020
+  - intent: opt3
+  - action: utter_breakthrough_023
+  - action: utter_breakthrough_024
+  - action: utter_breakthrough_025
+  - action: utter_breakthrough_026
+- story: fuehrung_breakthrough_061
+  steps:
+  # - checkpoint: check_breakthrough_08
+  - action: utter_breakthrough_026
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_033
+  - action: utter_breakthrough_034
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_035
+  - action: utter_breakthrough_036
+  # - checkpoint: check_breakthrough_11
+- story: fuehrung_breakthrough_062
+  steps:
+  # - checkpoint: check_breakthrough_08
+  - action: utter_breakthrough_026
+  - intent: deny_breakthrough
+  - action: utter_breakthrough_0261
+  - action: utter_breakthrough_027
+  - action: utter_breakthrough_ende
+  # - checkpoint: check_breakthrough_12
+- story: fuehrung_breakthrough_071
+  steps:
+  # - checkpoint: check_breakthrough_11
+  - action: utter_breakthrough_036
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_037
+  - action: utter_breakthrough_038
+  - action: utter_breakthrough_039
+  - action: utter_breakthrough_040
+  - action: utter_breakthrough_041
+  # - checkpoint: check_breakthrough_13
+- story: fuehrung_breakthrough_072
+  steps:
+  # - checkpoint: check_breakthrough_11
+  - action: utter_breakthrough_036
+  - intent: deny_breakthrough
+  - action: utter_breakthrough_0261
+  - action: utter_breakthrough_027
+  - action: utter_breakthrough_ende
+  # - checkpoint: check_breakthrough_12
+- story: fuehrung_breakthrough_08
+  steps:
+  # - checkpoint: check_breakthrough_13
+  - action: utter_breakthrough_041
+  - intent: affirm_breakthrough
+  - action: utter_breakthrough_042
+  - action: utter_breakthrough_027
+  - action: utter_breakthrough_ende
+- story: fuehrung_sony_01
+  steps:
+  - intent: werk_sony
+  - action: utter_sony_001
+  - action: utter_sony_002
+  - intent: affirm_sony_2
+  - action: utter_sony_0011
+  - action: utter_sony_0012
+  
+- story: fuehrung_sony_0012_affirm
+  steps:
+  - action: utter_sony_0012
+  - intent: affirm_sony
+  - action: utter_sony_0013
+  - action: utter_sony_004
+- story: fuehrung_sony_0012_deny
+  steps:
+  - action: utter_sony_0012
+  - intent: deny_sony
+  - action: utter_sony_003
+  - action: utter_sony_004
+- story: fuehrung_sony_03
+  steps:
+  # - checkpoint: check_sony_01
+  - action: utter_sony_004
+  - intent: affirm_sony_2
+  - action: utter_sony_005
+  - action: utter_sony_006
+  - action: utter_sony_007
+  - action: utter_sony_009
+  - intent: falsch
+  - action: utter_sony_011
+  - action: utter_sony_012
+  # - checkpoint: check_sony_02
+- story: fuehrung_sony_031
+  steps:
+  # - checkpoint: check_sony_01
+  - action: utter_sony_004
+  - intent: affirm_sony_2
+  - action: utter_sony_005
+  - action: utter_sony_006
+  - action: utter_sony_007
+  - action: utter_sony_009
+  - intent: richtig
+  - action: utter_sony_010
+  - action: utter_sony_012
+  # - checkpoint: check_sony_02
+- story: fuehrung_sony_041
+  steps:
+  # - checkpoint: check_sony_02
+  - action: utter_sony_012
+  - intent: opt1
+  - action: utter_sony_122
+  - action: utter_sony_013
+  - action: utter_sony_014
+  - action: utter_sony_015
+  # - action: utter_sony_012
+  # - checkpoint: check_sony_03
+- story: fuehrung_sony_042
+  steps:
+  # - checkpoint: check_sony_02
+  - action: utter_sony_012
+  - intent: opt2
+  - action: utter_sony_121
+  - action: utter_sony_013
+  - action: utter_sony_014
+  - action: utter_sony_015
+  # - action: utter_sony_012
+  # - checkpoint: check_sony_03
+- story: fuehrung_sony_043
+  steps:
+  # - checkpoint: check_sony_02
+  - action: utter_sony_012
+  - intent: opt3
+  - action: utter_sony_122
+  - action: utter_sony_013
+  - action: utter_sony_014
+  - action: utter_sony_015
+  # - action: utter_sony_012
+  # - checkpoint: check_sony_03
+- story: fuehrung_sony_051
+  steps:
+  # - checkpoint: check_sony_03
+  - action: utter_sony_015
+  - intent: opt1
+  - action: utter_sony_016
+  - action: utter_sony_0161
+  - action: utter_sony_0162
+  - action: utter_sony_0163
+  - action: utter_sony_025
+  - action: utter_sony_026
+  - action: utter_sony_ende
+  # - checkpoint: check_sony_04
+- story: fuehrung_sony_052
+  steps:
+  # - checkpoint: check_sony_03
+  - action: utter_sony_015
+  - intent: opt2
+  - action: utter_sony_018
+  - action: utter_sony_023
+  - action: utter_sony_024
+  - action: utter_sony_027
+  - action: utter_sony_025
+  - action: utter_sony_026
+  - action: utter_sony_ende
+  # - checkpoint: check_sony_04
+- story: fuehrung_sony_053
+  steps:
+  # - checkpoint: check_sony_03
+  - action: utter_sony_015
+  - intent: opt3
+  - action: utter_sony_017
+  - action: utter_sony_019
+  - action: utter_sony_020
+  - action: utter_sony_025
+  - action: utter_sony_026
+  - action: utter_sony_ende
+  # - checkpoint: check_sony_04
+- story: fuehrung_sony_054
+  steps:
+  # - checkpoint: check_sony_03
+  - action: utter_sony_015
+  - intent: opt4
+  - action: utter_sony_201
+  - action: utter_sony_021
+  - action: utter_sony_020
+  - action: utter_sony_025
+  - action: utter_sony_026
+  - action: utter_sony_ende
+- story: fuehrung_arche_01
+  steps:
+  - intent: werk_arche
+  - action: utter_arche_001
+  - action: utter_arche_002
+  - intent: affirm_arche_2
+  - action: utter_arche_003
+  - intent: affirm_arche
+  - action: utter_arche_007
+  # - checkpoint: check_arche_03
+- story: fuehrung_arche_01
+  steps:
+  - intent: werk_arche
+  - action: utter_arche_001
+  - action: utter_arche_002
+  - intent: affirm_arche_2
+  - action: utter_arche_003
+  - intent: deny_arche
+  - action: utter_arche_0031
+  - action: utter_arche_004
+  - action: utter_arche_005
+  - intent: affirm_arche_2
+  - action: utter_arche_006
+  - action: utter_arche_007
+  # - checkpoint: check_arche_02
+# - story: fuehrung_arche_02
+#   steps:
+#   # - checkpoint: check_arche_02
+#   - action: utter_arche_005
+#   - intent: affirm
+#   - action: utter_arche_007
+  # - checkpoint: check_arche_03
+- story: fuehrung_arche_03
+  steps:
+  # - checkpoint: check_arche_03
+  - action: utter_arche_007
+  - intent: affirm_arche
+  - action: utter_arche_009
+  - action: utter_arche_011
+  - action: utter_arche_012
+- story: fuehrung_arche_031
+  steps:
+  - action: utter_arche_007
+  - intent: deny_arche
+  - action: utter_arche_010
+  - action: utter_arche_011
+  - action: utter_arche_012
+- story: fuehrung_arche_04
+  steps:
+  - action: utter_arche_012
+  - intent: falsch
+  - action: utter_arche_0121
+  - action: utter_arche_013  
+  - action: utter_arche_015
+- story: fuehrung_arche_041
+  steps:
+  - action: utter_arche_012
+  - intent: richtig
+  - action: utter_arche_0131
+  - action: utter_arche_014
+  - action: utter_arche_015
+- story: fuehrung_arche_05
+  steps:
+  - action: utter_arche_015
+  - intent: affirm_arche
+  - action: utter_arche_016
+  - action: utter_arche_161
+  - intent: affirm_arche_2
+  - action: utter_arche_017
+  - action: utter_arche_020
+- story: fuehrung_arche_051
+  steps:
+  - action: utter_arche_015
+  - intent: deny_arche
+  - action: utter_arche_018
+  - action: utter_arche_020
+- story: fuehrung_arche_061
+  steps:
+  - action: utter_arche_020
+  - intent: affirm_arche
+    entities:
+    - example_werk: arche
+  - action: utter_arche_021
+  - intent: affirm_arche_2
+  - action: utter_arche_022
+  - action: utter_arche_0231
+  - action: utter_arche_023
+  - intent: affirm_arche_2
+  - action: utter_arche_024
+  - action: utter_arche_025
+  - action: utter_arche_026
+  - action: utter_arche_027
+- story: fuehrung_arche_062
+  steps:
+  - action: utter_arche_020
+  - intent: deny_arche
+  - action: utter_arche_027
+- story: fuehrung_arche_07
+  steps:
+  - action: utter_arche_027
+  - intent: opt1
+  - action: utter_arche_028
+  - action: utter_arche_030
+  - action: utter_arche_ende
+- story: fuehrung_arche_07
+  steps:
+  - action: utter_arche_027
+  - intent: opt2
+  - action: utter_arche_0281
+  - action: utter_arche_030
+  - action: utter_arche_ende
+- story: fuehrung_arche_07
+  steps:
+  - action: utter_arche_027
+  - intent: opt3
+  - action: utter_arche_029
+  - action: utter_arche_030
+  - action: utter_arche_ende
+- story: fuehrung_wipe_01
+  steps:
+  - intent: werk_wipe
+  - action: utter_wipe_001
+  - action: utter_wipe_002
+  - action: utter_wipe_003
+  - intent: affirm_wipe_2
+  - action: utter_wipe_004
+  - action: utter_wipe_005
+# - story: fuehrung_wipe_01_01
+#   steps:
+  # - action: utter_wipe_003
+  # - intent: affirm
+  # - action: utter_wipe_004
+  # - action: utter_wipe_005
+- story: fuehrung_wipe_01_02
+  steps:
+  - action: utter_wipe_005
+  - intent: affirm_wipe
+  - action: utter_wipe_006
+- story: fuehrung_wipe_01
+  steps:
+  - action: utter_wipe_005
+  - intent: deny_wipe
+  - action: utter_wipe_007
+  - action: utter_wipe_008
+- story: fuehrung_wipe_021
+  steps:
+  - action: utter_wipe_008
+  - intent: affirm_wipe_2
+  - action: utter_wipe_009
+  - action: utter_wipe_010
+  - action: utter_wipe_011
+  - action: utter_wipe_015
+- story: fuehrung_wipe_02
+  steps:
+  - action: utter_wipe_006
+  - intent: affirm_wipe_2
+  - action: utter_wipe_009
+  - action: utter_wipe_010
+  - action: utter_wipe_011
+  - action: utter_wipe_015
+- story: fuehrung_wipe_031
+  steps:
+  - action: utter_wipe_015
+  - intent: option1_wipe
+  - action: utter_wipe_016
+  - action: utter_wipe_017
+- story: fuehrung_wipe_032
+  steps:
+  - action: utter_wipe_015
+  - intent: option2_wipe
+  - action: utter_wipe_018
+  - action: utter_wipe_019
+  - action: utter_wipe_020
+- story: fueherung_wipe_032_01
+  steps:
+  - action: utter_wipe_020
+  - intent: affirm_wipe_2
+  - action: utter_wipe_024
+  - action: utter_wipe_0261
+  - action: utter_wipe_026
+- story: fuehrung_wipe_033
+  steps:
+  - action: utter_wipe_015
+  - intent: option3_wipe
+  - action: utter_wipe_021
+  - action: utter_wipe_022
+  - intent: affirm_wipe_2
+  - action: utter_wipe_024
+  - action: utter_wipe_0261
+  - action: utter_wipe_026
+- story: fuehrung_wipe_03_custom_msg_success
+  steps:
+  - action: utter_wipe_015
+  - intent: option4_wipe
+    entities:
+    - email_type: custom_message
+  - slot_was_set:
+    - email_type: custom_message
+  - action: action_slot_values_guides
+  - intent: email_senden_guide
+  - action: action_send_mail
+
+- story: after action_send_mail_wipe
+  steps:
+  - intent: weiter_wipe
+  - action: utter_wipe_023
+  - action: utter_wipe_022
+  - intent: affirm_wipe_2
+  - action: utter_wipe_024
+  - action: utter_wipe_0261
+  - action: utter_wipe_026
+# - story: fuehrung_wipe_034
+#   steps:
+#   - action: utter_wipe_022
+#   - intent: affirm
+#   - action: utter_wipe_024
+#   - action: utter_wipe_026
+#   - action: utter_wipe_0261
+- story: fuehrung_wipe_03_custom_msg_success
+  steps:
+  - action: utter_wipe_015
+  - intent: option4_wipe
+    entities:
+    - email_type: custom_message
+  - action: action_slot_values_guides
+  - intent: email_cancel_guide
+  - action: utter_kontakt_abbrechen
+  - action: utter_wipe_016
+  - action: utter_wipe_017
+- story: fuehrung_wipe_031_01
+  steps:
+  - action: utter_wipe_017
+  - intent: affirm_wipe_2
+  - action: utter_wipe_024
+  - action: utter_wipe_0261
+  - action: utter_wipe_026
+- story: fuehrung_wipe_04
+  steps:
+  - action: utter_wipe_026
+  - intent: affirm_wipe_2
+  - action: utter_wipe_027
+  - action: utter_wipe_029
+  - action: utter_wipe_ende
+- story: fuehrung_tisch_01
+  steps:
+  - intent: werk_tisch
+  - action: utter_tisch_001
+  - action: utter_tisch_002
+  - intent: affirm_tisch_2
+  - action: utter_tisch_0021
+  - action: utter_tisch_003
+  - intent: deny_tisch
+  - action: utter_tisch_004
+  - action: utter_tisch_008
+  # - checkpoint: check_tisch_02
+- story: fuehrung_tisch_01
+  steps:
+  - intent: werk_tisch
+  - action: utter_tisch_001
+  - action: utter_tisch_002
+  - intent: affirm_tisch_2
+  - action: utter_tisch_0021
+  - action: utter_tisch_003
+  - intent: affirm_tisch
+  - action: utter_tisch_005
+  - action: utter_tisch_006
+  - intent: affirm_tisch_2
+  - action: utter_tisch_007
+  - action: utter_tisch_008
+  # - checkpoint: check_tisch_02
+- story: fuehrung_tisch_02
+  steps:
+  # - checkpoint: check_tisch_02
+  - action: utter_tisch_008
+  - intent: affirm_tisch
+  - action: utter_tisch_009
+  - action: utter_tisch_011
+  - action: utter_tisch_012
+  - action: utter_tisch_013
+  # - checkpoint: check_tisch_03
+- story: fuehrung_tisch_02
+  steps:
+  # - checkpoint: check_tisch_02
+  - action: utter_tisch_008
+  - intent: deny_tisch
+  - action: utter_tisch_010
+  - action: utter_tisch_011
+  - action: utter_tisch_012
+  - action: utter_tisch_013
+- story: fuehrung_tisch_04
+  steps:
+  # - checkpoint: check_tisch_04
+  - action: utter_tisch_013
+  - intent: opt1
+  - action: utter_tisch_014
+  - action: utter_tisch_015
+  - action: utter_tisch_016
+  - action: utter_tisch_022
+  # - checkpoint: check_tisch_05
+- story: fuehrung_tisch_04
+  steps:
+  # - checkpoint: check_tisch_04
+  - action: utter_tisch_013
+  - intent: opt2
+  - action: utter_tisch_017
+  - action: utter_tisch_018
+  - action: utter_tisch_015
+  - action: utter_tisch_016
+  - action: utter_tisch_022
+  # - checkpoint: check_tisch_05
+- story: fuehrung_tisch_04
+  steps:
+  # - checkpoint: check_tisch_04
+  - action: utter_tisch_013
+  - intent: opt3
+  - action: utter_tisch_019
+  - action: utter_tisch_020
+  - action: utter_tisch_021
+  - action: utter_tisch_015
+  - action: utter_tisch_022
+  # - checkpoint: check_tisch_05
+- story: fuehrung_tisch_05
+  steps:
+  # - checkpoint: check_tisch_05
+  - action: utter_tisch_022
+  - intent: affirm_tisch
+  - action: utter_tisch_023
+  - action: utter_tisch_025
+  - action: utter_tisch_026
+  - action: utter_tisch_027
+  # - checkpoint: check_tisch_06
+- story: fuehrung_tisch_05
+  steps:
+  # - checkpoint: check_tisch_05
+  - action: utter_tisch_022
+  - intent: deny_tisch
+  - action: utter_tisch_024
+  - action: utter_tisch_025
+  - action: utter_tisch_026
+  - action: utter_tisch_027
+  # - checkpoint: check_tisch_06
+- story: fuehrung_tisch_06
+  steps:
+  - action: utter_tisch_027
+  - intent: affirm_tisch
+  - action: utter_tisch_028
+  - action: utter_tisch_029
+  - action: utter_tisch_030
+  - intent: affirm_tisch_2
+  - action: utter_tisch_031
+  - action: utter_tisch_ende
+- story: fuehrung_tisch_06
+  steps:
+  - action: utter_tisch_027
+  - intent: deny_tisch
+  - action: utter_tisch_ende
+- story: fuehrung_city_01
+  steps:
+  - intent: werk_city
+  - action: utter_city_001
+  - action: utter_city_002
+  - action: utter_city_003
+  - intent: affirm_city
+  - action: utter_city_004
+  - action: utter_city_005
+  - intent: affirm_city
+  - action: utter_city_006
+  - action: utter_city_007
+  - intent: affirm_city
+  - action: utter_city_008
+  - action: utter_city_009
+  - intent: affirm_city
+  - action: utter_city_014
+  - action: utter_city_015
+  - action: utter_city_016
+  # - checkpoint: check_city_02
+- story: fuehrung_city_01
+  steps:
+  - intent: werk_city
+  - action: utter_city_001
+  - action: utter_city_002
+  - action: utter_city_003
+  - intent: affirm_city
+  - action: utter_city_004
+  - action: utter_city_005
+  - intent: deny_city
+  - action: utter_city_010
+  - action: utter_city_011
+  - action: utter_city_012
+  - action: utter_city_0121
+  - action: utter_city_013
+  - action: utter_city_014
+  - action: utter_city_015
+  - action: utter_city_016
+  # - checkpoint: check_city_02
+- story: fuehrung_city_02
+  steps:
+  # - checkpoint: check_city_02
+  - action: utter_city_016
+  - intent: opt1
+  - action: utter_city_0161
+  - action: utter_city_023
+  # - checkpoint: check_city_03
+- story: fuehrung_city_02
+  steps:
+  # - checkpoint: check_city_02
+  - action: utter_city_016
+  - intent: opt2
+  - action: utter_city_019
+  - action: utter_city_020
+  - action: utter_city_021
+  - action: utter_city_022
+  - action: utter_city_023
+  # - checkpoint: check_city_03
+- story: fuehrung_city_02
+  steps:
+  # - checkpoint: check_city_02
+  - action: utter_city_016
+  - intent: opt3
+  - action: utter_city_017
+  - action: utter_city_018
+  - action: utter_city_023
+  # - checkpoint: check_city_03
+- story: fuehrung_city_03
+  steps:
+  # - checkpoint: check_city_03
+  - action: utter_city_023
+  - intent: affirm_city
+  - action: utter_city_024
+  - action: utter_city_025
+  - action: utter_city_026
+  - action: utter_city_031
+  # - checkpoint: check_city_04
+- story: fuehrung_city_031
+  steps:
+  # - checkpoint: check_city_03
+  - action: utter_city_023
+  - intent: deny_city
+  - action: utter_city_027
+  - action: utter_city_028
+  - action: utter_city_029
+  - action: utter_city_0291
+
+- story: fuehrung_city_0291
+  steps:
+  - action: utter_city_0291 
+  - intent: affirm_city
+  - action: utter_city_030
+  - action: utter_city_031
+  # - checkpoint: check_city_04
+- story: fuehrung_city_032
+  steps:
+  - action: utter_city_0291
+  - intent: deny_city
+  - action: utter_city_0292
+  - action: utter_city_031
+  # - checkpoint: check_city_04
+- story: fuehrung_city_04
+  steps:
+  # - checkpoint: check_city_04
+  - action: utter_city_031
+  - intent: richtig
+  - action: utter_city_032
+  - action: utter_city_034
+  # - checkpoint: check_city_05
+- story: fuehrung_city_04
+  steps:
+  # - checkpoint: check_city_04
+  - action: utter_city_031
+  - intent: falsch
+  - action: utter_city_033
+  - action: utter_city_034
+  # - checkpoint: check_city_05
+- story: fuehrung_city_05
+  steps:
+  # - checkpoint: check_city_05
+  - action: utter_city_034
+  - intent: affirm_city
+  - action: utter_city_035
+  - action: utter_city_351
+  - intent: affirm_city
+  - action: utter_city_036
+  - action: utter_city_037
+  - action: utter_city_ende
+- story: fuehrung_zuse_01
+  steps:
+  - intent: werk_zuse
+  - action: utter_zuse_001
+  - action: utter_zuse_002
+  - action: utter_zuse_003
+  - intent: affirm_zuse_2
+  - action: utter_zuse_004
+  # - checkpoint: check_zuse_02
+- story: fuehrung_zuse_02
+  steps:
+  # - checkpoint: check_zuse_02
+  - action: utter_zuse_004
+  - intent: opt1
+  - action: utter_zuse_005
+  - action: utter_zuse_0051
+  - action: utter_zuse_008
+  # - checkpoint: check_zuse_03
+- story: fuehrung_zuse_02
+  steps:
+  # - checkpoint: check_zuse_02
+  - action: utter_zuse_004
+  - intent: opt2
+  - action: utter_zuse_006
+  - action: utter_zuse_008
+  # - checkpoint: check_zuse_03
+- story: fuehrung_zuse_02
+  steps:
+  # - checkpoint: check_zuse_02
+  - action: utter_zuse_004
+  - intent: opt3
+  - action: utter_zuse_007
+  - action: utter_zuse_008
+  # - checkpoint: check_zuse_03
+- story: fuehrung_zuse_031
+  steps:
+  # - checkpoint: check_zuse_03
+  - action: utter_zuse_008
+  - intent: affirm_zuse
+  - action: utter_zuse_009
+  - action: utter_zuse_010
+  - action: utter_zuse_012
+  # - checkpoint: check_zuse_04
+- story: fuehrung_zuse_032
+  steps:
+  # - checkpoint: check_zuse_03
+  - action: utter_zuse_008
+  - intent: deny_zuse
+  - action: utter_zuse_012
+  # - checkpoint: check_zuse_04
+- story: fuerhrung_zuse_041
+  steps:
+  # - checkpoint: check_zuse_04
+  - action: utter_zuse_012
+  - intent: falsch
+  - action: utter_zuse_013
+  - action: utter_zuse_015
+- story: fuehrung_zuse_043
+  steps:
+  # - checkpoint: check_zuse_04
+  - action: utter_zuse_012
+  - intent: richtig
+  - action: utter_zuse_014
+  - action: utter_zuse_015
+- story: fuerhrung_zuse_0432
+  steps:
+  - action: utter_zuse_015
+  - intent: affirm_zuse
+  - action: utter_zuse_016
+  - action: utter_zuse_017
+
+- story: fuehrung_zuse_0432
+  steps:
+  - action: utter_zuse_015
+  - intent: deny_zuse
+  - action: utter_zuse_016
+  - action: utter_zuse_017
+- story: fuehrung_zuse_051
+  steps:
+  - action: utter_zuse_017
+  - intent: deny_zuse
+  - action: utter_zuse_019
+  - action: utter_zuse_020
+  - intent: affirm_zuse_2
+  - action: utter_zuse_021
+  - action: utter_zuse_022
+- story: fuehrung_zuse_051
+  steps:
+  - action: utter_zuse_017
+  - intent: affirm_zuse
+  - action: utter_zuse_018
+  - action: utter_zuse_022
+- story: fuehrung_zuse_07
+  steps:
+  - action: utter_zuse_022
+  - intent: affirm_zuse
+  - action: utter_zuse_023
+  - action: utter_zuse_024
+  - action: utter_zuse_025
+  - action: utter_zuse_026
+  - action: utter_zuse_ende
+- story: fuehrung_zuse_07
+  steps:
+  - action: utter_zuse_022
+  - intent: deny_zuse
+  - action: utter_zuse_027
+  - action: utter_zuse_028
+  - action: utter_zuse_ende
+- story: fuehrung_texte_01
+  steps:
+  - intent: werk_texte
+  - action: utter_texte_001
+  - intent: affirm_texte_2
+  - action: utter_texte_002
+  - action: utter_texte_004
+- story: fuehrung_texte_02
+  steps:
+  - action: utter_texte_004
+  - intent: affirm_texte
+  - action: utter_texte_005
+  - action: utter_texte_006
+- story: fuehrung_texte_02_01
+  steps:
+  - action: utter_texte_006
+  - intent: affirm_texte
+  - action: utter_texte_007
+  - action: utter_texte_008
+  - action: utter_texte_003
+  - action: utter_texte_009
+- story: fuehrung_texte_02_custom_message_success_send-email
+  steps:
+  - action: utter_texte_006
+  - intent: deny_texte
+    entities:
+    - email_type: custom_message
+  - action: action_slot_values_guides
+  - intent: email_senden_guide
+  - action: action_send_mail
+
+- story: after send_mail texte
+  steps:
+  - intent: weiter_texte
+  - action: utter_texte_008
+  - action: utter_texte_003
+  - action: utter_texte_009
+- story: fuehrung_texte_02_custom_message_success_email-cancel
+  steps:
+  - action: utter_texte_006
+  - intent: deny_texte
+    entities:
+    - email_type: custom_message
+  - action: action_slot_values_guides
+  - intent: email_cancel_guide
+  - action: utter_kontakt_abbrechen_guide
+  - action: utter_texte_008
+  - action: utter_texte_003
+  - action: utter_texte_009
+- story: fuehrung_texte_02
+  steps:
+  - action: utter_texte_004
+  - intent: deny_texte
+  - action: utter_texte_010
+  - action: utter_texte_008
+  - action: utter_texte_003
+  - action: utter_texte_009
+- story: fuehrung_texte_02_02
+  steps:
+  - action: utter_texte_009
+  - intent: affirm_texte
+    entities:
+    - example_werk: texte
+  - action: utter_texte_011
+  - action: utter_texte_012
+- story: fuehrung_texte_03
+  steps:
+  - action: utter_texte_012
+  - intent: affirm_texte
+  - action: utter_texte_0121
+  - intent: affirm_texte_3
+  - action: utter_texte_0123
+  - action: utter_texte_013
+- story: fuehrung_texte_03
+  steps:
+  - action: utter_texte_012
+  - intent: deny_texte
+  - action: utter_texte_0122
+  - action: utter_texte_0123
+  - action: utter_texte_013
+- story: fuehrung_texte_04
+  steps:
+  - action: utter_texte_013
+  - intent: richtig
+  - action: utter_texte_014
+  - action: utter_texte_015
+  - action: utter_texte_017
+- story: fuehrung_texte_04
+  steps:
+  - action: utter_texte_013
+  - intent: falsch
+  - action: utter_texte_016
+  - action: utter_texte_015
+  - action: utter_texte_017
+- story: fuehrung_texte_05
+  steps:
+  - action: utter_texte_017
+  - intent: affirm_texte
+  - action: utter_texte_022
+- story: fuehrung_texte_05
+  steps:
+  - action: utter_texte_017
+  - intent: deny_texte
+  - action: utter_texte_018
+  - action: utter_texte_019
+  - action: utter_texte_020
+  - action: utter_texte_021
+  - action: utter_texte_ende
+  # - checkpoint: check_texte_06
+- story: fuehrung_texte_051
+  steps:
+  # - checkpoint: check_texte_051
+  - action: utter_texte_022
+  - intent: affirm_texte
+  - action: utter_texte_023
+  - action: utter_texte_ende
+- story: fuehrung_texte_051
+  steps:
+  # - checkpoint: check_texte_051
+  - action: utter_texte_022
+  - intent: deny_texte
+  - action: utter_texte_018
+  - action: utter_texte_019
+  - action: utter_texte_020
+  - action: utter_texte_021
+  - action: utter_texte_ende
+- story: fuehrung_19601_01
+  steps:
+  - intent: werk_19601
+  - action: utter_19601_001
+  - action: utter_19601_002
+  - action: utter_19601_003
+  - intent: affirm
+  - action: utter_19601_004
+  - action: utter_19601_005
+- story: fuehrung_19601_02
+  steps:
+  - action: utter_19601_005
+  - intent: affirm
+  - action: utter_19601_006
+  - action: utter_19601_007
+  - action: utter_19601_011
+- story: fuehrung_19601_02
+  steps:
+  - action: utter_19601_005
+  - intent: deny
+  - action: utter_19601_008
+  - action: utter_19601_009
+  - action: utter_19601_010
+  - action: utter_19601_011
+- story: fuehrung_19601_03
+  steps:
+  - action: utter_19601_011
+  - intent: opt1
+  - action: utter_19601_012
+  - action: utter_19601_014
+  - action: utter_19601_015
+  - action: utter_19601_ende
+- story: fuehrung_19601_03
+  steps:
+  - action: utter_19601_011
+  - intent: opt2
+  - action: utter_19601_016
+  - intent: affirm
+  - action: utter_19601_017
+  - action: utter_19601_014
+  - action: utter_19601_015
+  - action: utter_19601_ende
+- story: fuehrung_labour_01
+  steps:
+  - intent: werk_labour
+  - action: utter_labour_001
+  - action: utter_labour_002
+  - intent: affirm_labour
+  - action: utter_labour_003
+  - action: utter_labour_004
+  - intent: affirm_labour
+  - action: utter_labour_005
+  - action: utter_labour_006
+
+- story: fuehrung_labour_01_2
+  steps:
+  - intent: werk_labour
+  - action: utter_labour_001
+  - action: utter_labour_002
+  - intent: affirm_labour
+  - action: utter_labour_003
+  - action: utter_labour_004
+  - intent: deny_labour
+  - action: utter_labour_008
+# - story: fuehrung_labour_02
+#   steps:
+#   - action: utter_labour_004
+#   - intent: affirm
+#   - action: utter_labour_005
+#   - action: utter_labour_006
+# - story: fuehrung_labour_02_01
+#   steps:
+#   - action: utter_labour_004
+#   - intent: deny
+#   - action: utter_labour_008
+- story: fuehrung_labour_0211
+  steps:
+  - action: utter_labour_008
+  - intent: affirm_labour
+  - action: utter_labour_009
+  - action: utter_labour_005
+  - action: utter_labour_006
+- story: fuehrung_labour_021
+  steps:
+  # - checkpoint: check_labour_021
+  - action: utter_labour_008
+  - intent: deny_labour
+  - action: utter_labour_010
+  - action: utter_labour_005
+  - action: utter_labour_006
+  # - checkpoint: check_labour_022
+- story: fuehrung_labour_022
+  steps:
+  # - checkpoint: check_labour_022
+  - action: utter_labour_006
+  - intent: affirm_labour
+  - action: utter_labour_007
+  - action: utter_labour_011
+  # - checkpoint: check_labour_03
+- story: fuehrung_labour_03
+  steps:
+  # - checkpoint: check_labour_03
+  - action: utter_labour_011
+  - intent: affirm_labour
+  - action: utter_labour_012
+  - action: utter_labour_013
+  - action: utter_labour_014
+  - action: utter_labour_015
+  # - checkpoint: check_labour_031
+- story: fuehrung_labour_031
+  steps:
+  # - checkpoint: check_labour_03
+  - action: utter_labour_011
+  - intent: deny_labour
+  - action: utter_labour_013
+  - action: utter_labour_014
+  - action: utter_labour_015
+- story: fuehrung_labour_04
+  steps:
+  # - checkpoint: check_labour_04
+  - action: utter_labour_015
+  - intent: affirm_labour
+  - action: utter_labour_016
+  - intent: affirm_labour
+  - action: utter_labour_018
+  - action: utter_labour_019
+  - action: utter_labour_020
+  - action: utter_labour_021
+  - action: utter_labour_ende
+- story: fuehrung_labour_041
+  steps:
+  - action: utter_labour_015
+  - intent: deny_labour
+  - action: utter_labour_022
+  - action: utter_labour_ende
+- story: fuehrung_amateuren_01
+  steps:
+  - intent: werk_amateure
+  - action: utter_amateure_intro
+  - action: utter_amateure_modal
+  - intent: affirm_amateure_3
+  - action: utter_amateure_001
+- story: fuehrung_amateuren_021
+  steps:
+  - action: utter_amateure_001
+  - intent: affirm_amateure
+  - action: utter_amateure_002
+- story: fuehrung_amateuren_022
+  steps:
+  - action: utter_amateure_001
+  - intent: deny_amateure
+  - action: utter_amateure_006
+  - action: utter_amateure_007
+- story: fuehrung_amateuren_031
+  steps:
+  - action: utter_amateure_007
+  - intent: affirm_amateure_3
+  - action: utter_amateure_008
+  - action: utter_amateure_002
+- story: fuehrung_amateuren_022_01
+  steps:
+  - action: utter_amateure_002
+  - intent: affirm_amateure_2
+  - action: utter_amateure_003
+  - action: utter_amateure_0031
+- story: fuehrung_amateuren_031
+  steps:
+  - action: utter_amateure_0031
+  - intent: affirm_amateure
+  - action: utter_amateure_004
+  - intent: affirm_amateure_3
+  - action: utter_amateure_009
+- story: fuehrung_amateuren_032
+  steps:
+  - action: utter_amateure_0031
+  - intent: deny_amateure
+  - action: utter_amateure_005
+  - intent: affirm_amateure_2
+  - action: utter_amateure_009
+- story: fuehrung_amateuren_061
+  steps:
+  - action: utter_amateure_009
+  - intent: affirm_amateure
+  - action: utter_amateure_010
+  - action: utter_amateure_011
+  - action: utter_amateure_0111
+- story: fuehrung_amateuren_062
+  steps:
+  - action: utter_amateure_009
+  - intent: deny_amateure
+  - action: utter_amateure_013
+  - action: utter_amateure_011
+  - action: utter_amateure_0111
+- story: fuehrung_amateuren_071
+  steps:
+  - action: utter_amateure_0111
+  - intent: affirm_amateure
+  - action: utter_amateure_0112
+  - action: utter_amateure_012
+  - action: utter_amateure_014
+- story: fuehrung_amateuren_072
+  steps:
+  - action: utter_amateure_0111
+  - intent: deny_amateure
+  - action: utter_amateure_0113
+  - action: utter_amateure_012
+  - action: utter_amateure_014
+- story: fuehrung_amateuren_091
+  steps:
+  - action: utter_amateure_014
+  - intent: affirm_amateure
+  - action: utter_amateure_015
+  - action: utter_amateure_016
+  - action: utter_amateure_ende
+- story: fuehrung_amateuren_092
+  steps:
+  - action: utter_amateure_014
+  - intent: deny_amateure
+  - action: utter_amateure_017
+  - action: utter_amateure_ende
+- story: fuehrung_labyrinth_01
+  steps:
+  - intent: werk_labyrinth
+  - action: utter_labyrinth_001
+  - action: utter_labyrinth_002
+  - intent: affirm_labyrinth_2
+  - action: utter_labyrinth_003
+  # - checkpoint: check_labyrinth_02
+- story: fuehrung_labyrinth_02
+  steps:
+  # - checkpoint: check_labyrinth_02
+  - action: utter_labyrinth_003
+  - intent: affirm_labyrinth
+  - action: utter_labyrinth_005
+
+- story: fuehrung_labyrinth_021
+  steps:
+  # - checkpoint: check_labyrinth_02
+  - action: utter_labyrinth_003
+  - intent: deny_labyrinth
+  - action: utter_labyrinth_004
+
+- story: fuehrung_labyrinth_0211
+  steps:
+  - action: utter_labyrinth_005
+  - intent: affirm_labyrinth_2
+  - action: utter_labyrinth_0051
+  - action: utter_labyrinth_006
+  - action: utter_labyrinth_007
+
+- story: fuehrung_labyrinth_0212
+  steps:
+  - action: utter_labyrinth_004
+  - intent: affirm_labyrinth_2
+  - action: utter_labyrinth_0051
+  - action: utter_labyrinth_006
+  - action: utter_labyrinth_007
+- story: fuehrung_labyrinth_04
+  steps:
+  # - checkpoint: check_labyrinth_04
+  - action: utter_labyrinth_007
+  - intent: affirm_labyrinth
+  - action: utter_labyrinth_015
+  - action: utter_labyrinth_0151
+  - action: utter_labyrinth_016
+  - action: utter_labyrinth_017
+- story: fuehrung_labyrinth_04_01
+  steps:
+  - action: utter_labyrinth_017
+  - intent: affirm_labyrinth_2
+  - action: utter_labyrinth_018
+  # - checkpoint: check_labyrinth_05
+- story: fuehrung_labyrinth_041
+  steps:
+  # - checkpoint: check_labyrinth_04
+  - action: utter_labyrinth_007
+  - intent: deny_labyrinth
+  - action: utter_labyrinth_008
+  # - checkpoint: check_labyrinth_041
+- story: fuehrung_labyrinth_042
+  steps:
+  # - checkpoint: check_labyrinth_041
+  - action: utter_labyrinth_008
+  - intent: affirm_labyrinth
+  - action: utter_labyrinth_010
+  - action: utter_labyrinth_011
+  - action: utter_labyrinth_012
+  - action: utter_labyrinth_0131
+  - action: utter_labyrinth_013
+- story: fuehrung_labyrinth_042_01
+  steps:
+  - action: utter_labyrinth_013
+  - intent: affirm_labyrinth_2
+  - action: utter_labyrinth_014
+- story: fuehrung_labyrinth_043
+  steps:
+  # - checkpoint: check_labyrinth_041
+  - action: utter_labyrinth_008
+  - intent: deny_labyrinth
+  - action: utter_labyrinth_014
+- story: fuehrung_labyrinth_05
+  steps:
+  # - checkpoint: check_labyrinth_05
+  - action: utter_labyrinth_018
+  - intent: affirm_labyrinth
+  - action: utter_labyrinth_020
+  - action: utter_labyrinth_021
+  - action: utter_labyrinth_022
+  - action: utter_labyrinth_023
+  # - checkpoint: check_labyrinth_06
+- story: fuehrung_labyrinth_051
+  steps:
+  # - checkpoint: check_labyrinth_05
+  - action: utter_labyrinth_018
+  - intent: deny_labyrinth
+  - action: utter_labyrinth_019
+  - action: utter_labyrinth_021
+  - action: utter_labyrinth_022
+  - action: utter_labyrinth_023
+- story: fuehrung_labyrinth_07
+  steps:
+  - action: utter_labyrinth_023
+  - intent: affirm_labyrinth
+  - action: utter_labyrinth_025
+  - action: utter_labyrinth_0251
+  - action: utter_labyrinth_026
+- story: fuehrung_labyrinth_07_01
+  steps:
+  - action: utter_labyrinth_026
+  - intent: affirm_labyrinth_2
+  - action: utter_labyrinth_027
+  - action: utter_labyrinth_028
+  - action: utter_labyrinth_029
+- story: fuehrung_labyrinth_071
+  steps:
+  - action: utter_labyrinth_023
+  - intent: deny_labyrinth
+  - action: utter_labyrinth_024
+  - action: utter_labyrinth_0271
+  - action: utter_labyrinth_028
+  - action: utter_labyrinth_029
+- story: fuehrung_labyrinth_072
+  steps:
+  - action: utter_labyrinth_029
+  - intent: affirm_labyrinth_2
+  - action: utter_labyrinth_030
+  - action: utter_labyrinth_031
+- story: fuehrung_labyrinth_08
+  steps:
+  - action: utter_labyrinth_031
+  - intent: deny_labyrinth
+  - action: utter_labyrinth_035
+  - action: utter_labyrinth_036
+  - action: utter_labyrinth_037
+- story: fuehrung_labyrinth_081
+  steps:
+  - action: utter_labyrinth_031
+  - intent: affirm_labyrinth
+  - action: utter_labyrinth_032
+  - action: utter_labyrinth_033
+  - action: utter_labyrinth_033_01
+- story: fuehrung_labyrinth_081_01
+  steps:
+  - action: utter_labyrinth_033_01
+  - intent: affirm_labyrinth_2
+  - action: utter_labyrinth_034
+  - action: utter_labyrinth_036
+  - action: utter_labyrinth_037
+- story: fuehrung_labyrinth_09
+  steps:
+  - action: utter_labyrinth_037
+  - intent: richtig
+  - action: utter_labyrinth_038
+  - action: utter_labyrinth_039
+  - action: utter_labyrinth_040
+- story: fuehrung_labyrinth_09_custom_message-send-email
+  steps:
+  - action: utter_labyrinth_040
+  - intent: affirm_labyrinth
+    entities:
+    - email_type: custom_message
+  - action: action_slot_values_guides
+  - intent: email_senden_guide
+  - action: action_send_mail
+
+- story: after send_mail labyrinth
+  steps:
+  - intent: weiter_labyrinth
+  - action: utter_labyrinth_ende
+- story: fuehrung_labyrinth_09_custom_message-cancel-email
+  steps:
+  - action: utter_labyrinth_040
+  - intent: affirm_labyrinth
+    entities:
+    - email_type: custom_message
+  - action: action_slot_values_guides
+  - intent: email_cancel_guide
+  - action: utter_kontakt_abbrechen
+  - action: utter_labyrinth_ende
+# - story: fuehrung_labyrinth_09_custom_message_send
+#   steps:
+#   - action: action_slot_values
+#   - intent: email_senden
+#   - action: utter_labyrinth_ende
+# - story: fuehrung_labyrinth_09_custom_message_cancel
+#   steps:
+#   - action: action_slot_values
+#   - intent: email_cancel
+#   - action: utter_kontakt_abbrechen
+#   - action: utter_labyrinth_ende
+- story: fuehrung_labyrinth_09
+  steps:
+  - action: utter_labyrinth_040
+  - intent: deny_labyrinth
+  - action: utter_labyrinth_ende
+- story: fuehrung_who_01
+  steps:
+  - intent: werk_who
+  - action: utter_who_001
+  - action: utter_who_002
+  - intent: affirm_who
+  - action: utter_who_0021
+  - intent: affirm_who
+  - action: utter_who_003
+  - intent: affirm_who_2
+  - action: utter_who_004
+  - action: utter_who_005
+- story: fuehrung_who_02
+  steps:
+  - action: utter_who_005
+  - intent: affirm_who
+  - action: utter_who_006
+  - action: utter_who_007
+- story: fuehrung_who_021
+  steps:
+  - action: utter_who_005
+  - intent: deny_who
+  - action: utter_who_011
+  - action: utter_who_012
+  - action: utter_who_013
+# - story: fuehrung_who_022
+#   steps:
+#   - action: utter_who_012
+#   - action: utter_who_013
+  # - checkpoint: check_who_211
+- story: fuehrung_who_211
+  steps:
+  # - checkpoint: check_who_211
+  - action: utter_who_013
+  - intent: affirm_who
+  - action: utter_who_014
+  - action: utter_who_016
+  # - checkpoint: check_who_04
+- story: fuehrung_who_211
+  steps:
+  # - checkpoint: check_who_211
+  - action: utter_who_013
+  - intent: deny_who
+  - action: utter_who_015
+  - action: utter_who_016
+  # - checkpoint: check_who_04
+- story: fuehrung_who_03
+  steps:
+  # - checkpoint: check_who_03
+  - action: utter_who_007
+  - intent: affirm_who
+  - action: utter_who_008
+  - intent: affirm_who
+  - action: utter_who_012
+  - action: utter_who_013
+  # - checkpoint: check_who_21
+- story: fuehrung_who_031
+  steps:
+  # - checkpoint: check_who_03
+  - action: utter_who_007
+  - intent: deny_who
+  - action: utter_who_010
+  - action: utter_who_012
+  - action: utter_who_013
+  # - checkpoint: check_who_21
+- story: fuehrung_who_04
+  steps:
+  # - checkpoint: check_who_04
+  - action: utter_who_016
+  - intent: opt1
+  - action: utter_who_017
+  - action: utter_who_018
+  - action: utter_who_ende
+- story: fuehrung_who_04
+  steps:
+  # - checkpoint: check_who_04
+  - action: utter_who_016
+  - intent: opt2
+  - action: utter_who_019
+  - action: utter_who_ende
+- story: fuehrung_who_04
+  steps:
+  # - checkpoint: check_who_04
+  - action: utter_who_016
+  - intent: opt3
+  - action: utter_who_020
+  - action: utter_who_ende

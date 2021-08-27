@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="203" height="204" viewBox="0 0 203 204">
+  <rect id="Rechteck_1" data-name="Rechteck 1" width="203" height="204" fill="#fff"/>
+  <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(12 19)" fill="#fff" stroke="#000" stroke-width="4">
+    <circle cx="89" cy="89" r="89" stroke="none"/>
+    <circle cx="89" cy="89" r="87" fill="none"/>
+  </g>
+  <path id="Pfad_1" data-name="Pfad 1" d="M154.824,223.293c6.733,29.7,83.386,20,80.279,0" transform="translate(-93.195 -85.867)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
+  <g id="Ellipse_7" data-name="Ellipse 7" transform="translate(67 78)" stroke="#000" stroke-width="1">
+    <ellipse cx="8.5" cy="10" rx="8.5" ry="10" stroke="none"/>
+    <ellipse cx="8.5" cy="10" rx="8" ry="9.5" fill="none"/>
+  </g>
+  <path id="Pfad_4" data-name="Pfad 4" d="M144.9,164.56s2.424-9.157,14.813-9.426" transform="translate(-94 -96)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="6"/>
+  <path id="Pfad_5" data-name="Pfad 5" d="M144.9,164.56s2.424-9.157,14.813-9.426" transform="translate(160.855 -148.574) rotate(50)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="6"/>
+  <path id="Pfad_6" data-name="Pfad 6" d="M209.268,174.642c5.925-2.693,13.906-2.987,18.237,1.885" transform="translate(-89 -88.04)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="8"/>
+</svg>
