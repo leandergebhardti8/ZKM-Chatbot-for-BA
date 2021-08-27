@@ -18,8 +18,12 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       
-      - name: Install Required Modules
-        run: pip install -r requirements.txt
+      - name: Install Langage Package
+        run: |
+              pip install spacy==2.1.9
+              python -m spacy download de_core_news_sm
+              python -m spacy link de_core_news_sm de_core_news_sm
+              
         
       - name: Rasa Train and Test GitHub Action
         uses: RasaHQ/rasa-train-test-gha@main
