@@ -4,10 +4,6 @@ name: Rasa-training-testing
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -21,8 +17,8 @@ jobs:
       - name: Install Langage Package
         run: |
               pip install spacy==2.1.9
-              python -m spacy download de_core_news_sm
-              python -m spacy link de_core_news_sm de_core_news_sm
+              python -m spacy download de_core_news_md
+              python -m spacy link de_core_news_md de_core_news_dm
               
         
       - name: Rasa Train and Test GitHub Action
