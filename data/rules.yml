@@ -38,7 +38,6 @@ rules:
   - slot_was_set:
     - name: valid_name_form
   - active_loop: valid_name_form
-  - active_loop: null
   - action: utter_wie_kann_ich_helfen
 
 # Guide Rules
