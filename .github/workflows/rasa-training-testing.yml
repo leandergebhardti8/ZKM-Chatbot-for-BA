@@ -13,7 +13,6 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      RASA_VERSION: 2.1.3-spacy-de
       RUN_TRAINING: false
 
     steps:
@@ -26,7 +25,6 @@ jobs:
       - name: Rasa Train
         uses: RasaHQ/rasa-train-test-gha@main
         with:
-          rasa_version: ${{ env.RASA_VERSION }}
           rasa_test: false
           data_validate: true
           github_token: ${{ secrets.TOKEN }}
@@ -37,15 +35,12 @@ jobs:
     needs: [training]
 
     env:
-      RASA_VERSION: 2.1.3-spacy-de
 
     steps:
       - uses: actions/checkout@v1
       - name: Rasa Test
-        if: ${{ env.RUN_TRAINING }} == 'true'
         uses: RasaHQ/rasa-train-test-gha@main
         with:
-          rasa_version: ${{ env.RASA_VERSION }}
           rasa_train: false
           test_type: all
           data_validate: true
@@ -53,7 +48,6 @@ jobs:
           publish_summary: true
           github_token: ${{ secrets.TOKEN }}
       - name: Upload model
-        if: ${{ env.RUN_TRAINING }} == 'true'
         uses: actions/upload-artifact@main
         with:
           name: model
