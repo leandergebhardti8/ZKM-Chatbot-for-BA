@@ -17,12 +17,13 @@ jobs:
       RUN_TRAINING: false
 
     steps:
-      - uses: actions/checkout@v1
-      - name: Rasa Train
-        uses: RasaHQ/rasa-train-test-gha@main
+      - name: Download and link spacy packages
         run: |
           python -m spacy download en_core_web_md
           python -m spacy link en_core_web_md en
+      - uses: actions/checkout@v1
+      - name: Rasa Train
+        uses: RasaHQ/rasa-train-test-gha@main
         with:
           rasa_version: ${{ env.RASA_VERSION }}
           rasa_test: false
