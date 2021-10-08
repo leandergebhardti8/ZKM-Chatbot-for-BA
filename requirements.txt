@@ -145,9 +145,9 @@ sympy==1.5.1
 tabulate==0.8.6
 tensor2tensor==1.14.1
 tensorboard
-tensorflow==2.1.1
+tensorflow
 tensorflow-addons==0.7.1
-tensorflow-cpu==1.15.0
+tensorflow-cpu
 tensorflow-cpu-estimator==1.15.1
 tensorflow-datasets==2.0.0
 tensorflow-estimator==2.1.0
