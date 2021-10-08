@@ -993,57 +993,57 @@ stories:
   - intent: freitag_kostenlos
   - action: utter_freitag_kostenlos
   - action: utter_antwort_hilfreich_frage
-- story: interactive_anfahrt_auto
-  steps:
-  - intent: anfahrt
-  - action: utter_anfahrt
-  - intent: anfahrt_auto
-  - action: utter_anfahrt_auto
-  - action: utter_antwort_hilfreich_frage
-- story: interactive_anfahrt_ bahn
-  steps:
-  - intent: anfahrt
-  - action: utter_anfahrt
-  - intent: anfahrt_bahn
-  - action: utter_anfahrt_bahn
-  - action: utter_antwort_hilfreich_frage
-- story: interactive_parken_bus
-  steps:
-  - intent: parken
-  - action: utter_parken
-  - action: utter_antwort_hilfreich_frage
-- story: interactive_ermaessigung
-  steps:
-  - intent: ermaessigung
-  - action: utter_ermaessigung
-  - action: utter_antwort_hilfreich_frage
-- story: interactive_oeffnungszeiten
-  steps:
-  - intent: start
-  - action: utter_anfang
-  - action: valid_name_form
-  - slot_was_set:
-    - name: valid_name_form
-  - active_loop: valid_name_form
-  - active_loop: null
-  - action: utter_wie_kann_ich_helfen
-  - intent: oeffnungszeiten
-  - action: utter_oeffnungszeiten
-  - action: action_shop_opening
-  - action: utter_oeffnungszeiten_andere
-  - action: utter_antwort_hilfreich_frage
-- story: interactive_story_1
-  steps:
-  - intent: ausstellung_kuenstler
-    entities:
-    - PER: Torsten Belschner
-    - event: Wittgenstein in Coen Country
-  - slot_was_set:
-    - PER: Torsten Belschner
-  - slot_was_set:
-    - event: Wittgenstein in Coen Country
-  - action: action_query_exhibition_artist
-  - action: utter_antwort_hilfreich_frage
+# - story: interactive_anfahrt_auto
+#   steps:
+#   - intent: anfahrt
+#   - action: utter_anfahrt
+#   - intent: anfahrt_auto
+#   - action: utter_anfahrt_auto
+#   - action: utter_antwort_hilfreich_frage
+# - story: interactive_anfahrt_ bahn
+#   steps:
+#   - intent: anfahrt
+#   - action: utter_anfahrt
+#   - intent: anfahrt_bahn
+#   - action: utter_anfahrt_bahn
+#   - action: utter_antwort_hilfreich_frage
+# - story: interactive_parken_bus
+#   steps:
+#   - intent: parken
+#   - action: utter_parken
+#   - action: utter_antwort_hilfreich_frage
+# - story: interactive_ermaessigung
+#   steps:
+#   - intent: ermaessigung
+#   - action: utter_ermaessigung
+#   - action: utter_antwort_hilfreich_frage
+# - story: interactive_oeffnungszeiten
+#   steps:
+#   - intent: start
+#   - action: utter_anfang
+#   - action: valid_name_form
+#   - slot_was_set:
+#     - name: valid_name_form
+#   - active_loop: valid_name_form
+#   - active_loop: null
+#   - action: utter_wie_kann_ich_helfen
+#   - intent: oeffnungszeiten
+#   - action: utter_oeffnungszeiten
+#   - action: action_shop_opening
+#   - action: utter_oeffnungszeiten_andere
+#   - action: utter_antwort_hilfreich_frage
+# - story: interactive_story_1
+#   steps:
+#   - intent: ausstellung_kuenstler
+#     entities:
+#     - PER: Torsten Belschner
+#     - event: Wittgenstein in Coen Country
+#   - slot_was_set:
+#     - PER: Torsten Belschner
+#   - slot_was_set:
+#     - event: Wittgenstein in Coen Country
+#   - action: action_query_exhibition_artist
+#   - action: utter_antwort_hilfreich_frage
 - story: oeffnungszeiten
   steps:
   - intent: oeffnungszeiten

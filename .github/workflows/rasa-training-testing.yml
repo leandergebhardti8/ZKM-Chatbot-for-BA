@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Download and link spacy packages
         run: |
-          pip install spacy
+          pip install spacy==2.1.9
           python -m spacy download en_core_web_md
           python -m spacy link en_core_web_md en
       - uses: actions/checkout@v1
