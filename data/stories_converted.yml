@@ -1054,16 +1054,6 @@ stories:
     - event: Wittgenstein in Coen Country
   - action: action_query_exhibition_artist
   - action: utter_antwort_hilfreich_frage
-- story: interactive_story_1
-  steps:
-  - intent: start
-  - action: utter_anfang
-  - action: valid_name_form
-  - slot_was_set:
-    - name: Bahar
-  - active_loop: Bahar
-  - active_loop: null
-  - action: utter_wie_kann_ich_helfen
 - story: oeffnungszeiten
   steps:
   - intent: oeffnungszeiten
