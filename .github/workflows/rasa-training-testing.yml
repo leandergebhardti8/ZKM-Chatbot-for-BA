@@ -21,6 +21,7 @@ jobs:
           pip install spacy==2.1.9
           python -m spacy download de_core_news_md
           python -m spacy link de_core_news_md de
+          python -m spacy.load(de)
       - uses: actions/checkout@v1
       - name: Rasa Train
         uses: RasaHQ/rasa-train-test-gha@main
