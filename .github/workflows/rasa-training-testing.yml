@@ -25,9 +25,7 @@ jobs:
 
   training:
     name: Train model
-    steps: 
-      run: |
-        rasa train
+    run: rasa train
 
   test-model:
     name: Test Model
@@ -36,8 +34,7 @@ jobs:
 
     steps:
       - name: Test stories
-        run: |
-          rasa test core
+        run: rasa test core
 
       - name: Upload model
         uses: actions/upload-artifact@master
