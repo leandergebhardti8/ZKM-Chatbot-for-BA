@@ -21,7 +21,7 @@ jobs:
         with:
           rasa_version: ${{ env.RASA_VERSION }}
           rasa_test: false
-          data_validate: true
+          data_validate: false
           github_token: ${{ secrets.TOKEN }}
 
   test-model:
