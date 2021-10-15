@@ -13,19 +13,13 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      RASA_VERSION: 2.4
+      RASA_VERSION: 2.4-spacy-de
 
     steps:
-      - name: Download and link spacy packages
-        run: |
-          pip install spacy==2.1.9
-          python -m spacy download de_core_news_md
-          python -m spacy link de_core_news_md de
-          spacy.load(de)
-      - uses: actions/checkout@v1
       - name: Rasa Train
         uses: RasaHQ/rasa-train-test-gha@main
         with:
+          rasa_version: ${{ env.RASA_VERSION }}
           rasa_test: false
           data_validate: true
           github_token: ${{ secrets.TOKEN }}
@@ -36,7 +30,7 @@ jobs:
     needs: [training]
 
     env:
-      RASA_VERSION: 2.4
+      RASA_VERSION: 2.4-spacy-de
 
     steps:
       - uses: actions/checkout@v1
@@ -51,7 +45,7 @@ jobs:
           publish_summary: true
           github_token: ${{ secrets.TOKEN }}
       - name: Upload model
-        uses: actions/upload-artifact@main
+        uses: actions/upload-artifact@master
         with:
           name: model
           path: models/
