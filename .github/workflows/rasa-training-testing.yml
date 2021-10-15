@@ -24,7 +24,8 @@ jobs:
           pip install -r requirements.txt
 
   training:
-  - name: Train model
+    name: Train model
+    steps:
       run: |
         rasa train
 
@@ -37,7 +38,7 @@ jobs:
       - name: Test stories
         run: |
           rasa test core
-          
+
       - name: Upload model
         uses: actions/upload-artifact@master
         with:
