@@ -115,8 +115,8 @@ python-telegram-bot==11.1.0
 pytz==2019.3
 PyYAML==5.3
 questionary==1.5.1
-rasa==1.10.2
-rasa-sdk==1.10.1
+rasa==2.4.0
+rasa-sdk==2.4.0
 redis==3.5.3
 requests==2.23.0
 requests-async==0.5.0
