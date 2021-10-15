@@ -25,7 +25,8 @@ jobs:
 
   training:
     name: Train model
-    run: rasa train
+    steps: 
+      run: rasa train
 
   test-model:
     name: Test Model
