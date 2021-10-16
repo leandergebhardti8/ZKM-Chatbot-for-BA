@@ -226,8 +226,8 @@ stories:
   - action: utter_oeffnungszeiten
   - action: action_shop_opening
   - action: utter_oeffnungszeiten_andere
-  - intent: deny
   - action: utter_antwort_hilfreich_frage
+  - intent: deny
 - story: Spieleausstellungswerke
   steps:
   - intent: werke_spiele
