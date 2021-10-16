@@ -11,4 +11,4 @@ rasa_sdk==2.4.1
 spacy==3.0.5
 python-engineio==3.13.2
 python-socketio==4.6.0
-click
+click<8
