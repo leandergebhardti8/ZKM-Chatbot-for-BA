@@ -20,12 +20,12 @@
     - action_query_programm_tagesspezifisch
     - utter_antwort_hilfreich_frage
 
-## Oeffnungzeit
+<!-- ## Oeffnungzeit
 * oeffnungszeiten: öffnungszeiten
     - utter_oeffnungszeiten
     - action_shop_opening
     - utter_oeffnungszeiten_andere
-    - utter_antwort_hilfreich_frage
+    - utter_antwort_hilfreich_frage -->
 
 ## fuehrung_arche_01
 * werk_arche: arche guide
