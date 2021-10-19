@@ -28,4 +28,4 @@ jobs:
     #     rasa train
     - name: Run Tests
       run: |
-        rasa test core --stories tests/conversation_tests.md --fail-on-prediction-errors --model data/models/20211015-142902.tar.gz
+        rasa test core --stories tests/conversation_tests.md --fail-on-prediction-errors --model /data/models/20211015-142902.tar.gz
