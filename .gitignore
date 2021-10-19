@@ -5,7 +5,6 @@ dev.js
 /router/images-dont-delete-me/*
 sample-server
 client2
-models
 
 # differently rendered on PROD env than on DEV env
 client/src/components/ExpandableImage.vue
