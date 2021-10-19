@@ -7,10 +7,10 @@ on:
 
 jobs:
   build-model:
-    # name: Build, test, and upload model
-    # runs-on: ubuntu-latest
+    name: Build, test, and upload model
+    runs-on: ubuntu-latest
 
-    # steps:
+    steps:
     # - uses: actions/checkout@v2
 
     # - name: Set up Python 3.7
