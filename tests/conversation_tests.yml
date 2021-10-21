@@ -1,0 +1,51 @@
+stories:
+- story: oeffnungszeiten
+  steps:
+  - intent: oeffnungszeiten
+  - action: utter_oeffnungszeiten
+  - action: action_shop_opening
+  - action: utter_oeffnungszeiten_andere
+  - action: utter_antwort_hilfreich_frage
+  - intent: deny
+  - action: utter_wie_kann_ich_helfen
+
+- story: arche_01
+  steps:
+  - intent: werk_arche
+  - action: utter_arche_001
+  - action: utter_arche_002
+  - intent: affirm_arche_2
+  - action: utter_arche_003
+  - intent: affirm_arche
+  - action: utter_arche_007
+  - intent: affirm_arche
+  - action: utter_arche_009
+  - action: utter_arche_011
+  - action: utter_arche_012
+  - intent: richtig
+  - action: utter_arche_0131
+  - action: utter_arche_014
+  - action: utter_arche_015
+  - intent: affirm_arche
+  - action: utter_arche_016
+  - action: utter_arche_161
+  - intent: affirm_arche_2
+  - action: utter_arche_017
+  - action: utter_arche_020
+  - intent: affirm_arche
+    entities:
+    - example_werk: arche
+  - action: utter_arche_021
+  - intent: affirm_arche_2
+  - action: utter_arche_022
+  - action: utter_arche_0231
+  - action: utter_arche_023
+  - intent: affirm_arche_2
+  - action: utter_arche_024
+  - action: utter_arche_025
+  - action: utter_arche_026
+  - action: utter_arche_027
+  - intent: opt1
+  - action: utter_arche_028
+  - action: utter_arche_030
+  - action: utter_arche_ende
