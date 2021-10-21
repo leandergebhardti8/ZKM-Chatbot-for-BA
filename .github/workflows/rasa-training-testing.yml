@@ -23,9 +23,9 @@ jobs:
         python -m pip install --upgrade "pip"
         pip install -r requirements.txt
         python -m spacy download de_core_news_md
-    # - name: Train model
-    #   run: |
-    #     rasa train
+    - name: Train model
+      run: |
+        rasa train
     - name: Run Tests
       run: |
-        rasa test core --stories tests/conversation_tests.md --fail-on-prediction-errors --model ~/data/models/20211015-142902.tar
+        rasa test core --stories tests/conversation_tests.md --fail-on-prediction-errors
