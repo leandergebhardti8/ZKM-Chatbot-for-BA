@@ -1,14 +1,3 @@
-stories:
-- story: oeffnungszeiten
-  steps:
-  - intent: oeffnungszeiten
-  - action: utter_oeffnungszeiten
-  - action: action_shop_opening
-  - action: utter_oeffnungszeiten_andere
-  - action: utter_antwort_hilfreich_frage
-  - intent: deny
-  - action: utter_wie_kann_ich_helfen
-
 - story: arche_01
   steps:
   - intent: werk_arche
