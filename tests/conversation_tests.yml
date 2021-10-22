@@ -1,3 +1,4 @@
+stories:
 - story: arche_01
   steps:
   - intent: werk_arche
