@@ -28,10 +28,8 @@ jobs:
         rasa train
     - name: Run Tests
       run: |
-        rasa test core --stories tests/conversation_tests.yml --fail-on-prediction-errors
+        rasa test core --stories tests/conversation_tests.yml
     - name: Upload Model to RasaX
       run: |
-        model_path=`ls models/*.tar.gz | head -n 1`
-        model_timestamp=$(basename "$model_path" .tar.gz)
-        model_name="$model_timestamp"_rasa"$rasa_version"
-        curl -k -F "model=@models/"$model_name".tar.gz" "http://blender.zkm.de/api/projects/default/models?api_token=9c069c93ca3b9e760a8eea08f437ad8d5b077743"
+        model_name=`ls models/* | head -n 1`
+        curl -k -F "model="$model_name"" "http://blender.zkm.de/api/projects/default/models?api_token=9c069c93ca3b9e760a8eea08f437ad8d5b077743"
