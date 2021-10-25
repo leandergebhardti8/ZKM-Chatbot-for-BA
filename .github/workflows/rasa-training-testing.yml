@@ -32,4 +32,4 @@ jobs:
     - name: Upload Model to RasaX
       run: |
         model_name=`ls models/* | head -n 1`
-        curl -k -F "model="$model_name"" "http://blender.zkm.de/api/projects/default/models?api_token=9c069c93ca3b9e760a8eea08f437ad8d5b077743"
+        curl -k -F "model=@"$model_name"" "http://blender.zkm.de/api/projects/default/models?api_token=9c069c93ca3b9e760a8eea08f437ad8d5b077743"
