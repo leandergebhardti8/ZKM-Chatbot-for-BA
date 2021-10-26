@@ -271,7 +271,6 @@ def to_dict(entity: Dict[Text, Any], entity_keys: Union[Text, List[Text]]) -> Di
     :param entity: the entity with all its attributes
     :param entity_keys: the name of the representation attributes
     :return: a dic that represents the entity
-    :return: a dic that represents the entity
     """
     if isinstance(entity_keys, str):
         entity_keys = [entity_keys]
