@@ -9,8 +9,6 @@ on:
   repository_dispatch:
     types: [action-deploy]
   # Allows you to run this workflow manually from the Actions tab
-  repository_dispatch:
-    types: [action-deploy]
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
