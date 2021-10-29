@@ -1,4 +1,4 @@
-name: CI
+name: Action Server
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
@@ -6,10 +6,8 @@ on:
     branches: [ main ]
     paths:
       - 'actions/**'
-  pull_request:
-    branches: [ main ]
-    paths:
-      - 'actions/**'
+  repository_dispatch:
+    types: [action-deploy]
   # Allows you to run this workflow manually from the Actions tab
   repository_dispatch:
     types: [action-deploy]

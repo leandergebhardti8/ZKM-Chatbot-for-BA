@@ -1,9 +1,11 @@
-name: Rasa-training-testing
+name: CI
 
 # Controls when the workflow will run
 on:
-  # Allows you to run this workflow manually from the Actions tab
-  [push]
+  push:
+    branches: [ main ]
+    paths:
+      - 'data/**'
 
 jobs:
   build-model:
