@@ -1032,18 +1032,6 @@ stories:
 #   - action: action_shop_opening
 #   - action: utter_oeffnungszeiten_andere
 #   - action: utter_antwort_hilfreich_frage
-# - story: interactive_story_1
-#   steps:
-#   - intent: ausstellung_kuenstler
-#     entities:
-#     - PER: Torsten Belschner
-#     - event: Wittgenstein in Coen Country
-#   - slot_was_set:
-#     - PER: Torsten Belschner
-#   - slot_was_set:
-#     - event: Wittgenstein in Coen Country
-#   - action: action_query_exhibition_artist
-#   - action: utter_antwort_hilfreich_frage
 - story: oeffnungszeiten
   steps:
   - intent: oeffnungszeiten

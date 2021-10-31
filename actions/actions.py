@@ -45,6 +45,7 @@ fotografie_genehmigung_email = os.environ.get("FOTOGRAFIE_GENEHMIGUNG_EMAIL", "e
 # publikation_fragen_email = os.environ.get("PUBLIKATION_FRAGEN_EMAIL", "chatbot_intern@zkm.de")
 # allgemeine_fragen_email = os.environ.get("ALLGEMEINE_FRAGEN_EMAIL", "chatbot_intern@zkm.de")
 # fotografie_genehmigung_email = os.environ.get("FOTOGRAFIE_GENEHMIGUNG_EMAIL", "chatbot_intern@zkm.de")
+# fotografie_genehmigung_email = os.environ.get("FOTOGRAFIE_GENEHMIGUNG_EMAIL", "chatbot_intern@zkm.de")
 ##########################
 #    Constants Section
 ##########################
